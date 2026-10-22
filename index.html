@@ -7,7 +7,7 @@
 <meta name="description" content="Portfolio of Ashley Lin: Blender and 3D art, 3D production, branding, animation, advertising and projects.">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500;62..125,700;62..125,800&family=Figtree:wght@400;500;600&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500;62..125,700;62..125,800&family=Figtree:wght@400;500;600&family=Barlow+Condensed:wght@500;600&family=Noto+Sans+SC:wght@400;500;700;800&display=swap">
 <style>
 :root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 body{margin:0;font:14px/1.4 system-ui,sans-serif}
@@ -305,6 +305,16 @@ dialog::backdrop{background:rgba(29,39,49,.6)}
 .steps-list{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)}
 .steps-list b{color:var(--ink)}
 code.k{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;background:var(--tint);padding:1px 5px;border-radius:4px}
+/* ---------- languages ---------- */
+html[lang="zh-Hans"]{--f-body:"Figtree","Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;--f-display:"Archivo","Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;--f-mono:"Barlow Condensed","Noto Sans SC","PingFang SC",system-ui,sans-serif}
+html[lang="zh-Hans"] .eyebrow,html[lang="zh-Hans"] .steps .st,html[lang="zh-Hans"] .stage-label,html[lang="zh-Hans"] .pp-num{letter-spacing:.04em}
+.langs{display:flex;flex:none;gap:2px;border:1px solid var(--line);border-radius:999px;padding:2px}
+.lang{all:unset;cursor:pointer;padding:4px 9px;border-radius:999px;font-size:13px;font-weight:600;color:var(--muted);line-height:1.2}
+.lang:hover{color:var(--ink)}
+.lang[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.lang:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+@media (max-width:720px){.langs{margin-left:auto}.lang{padding:4px 7px;font-size:12.5px}}
+.lang-note{margin:0;padding:10px 12px;border-radius:8px;background:var(--tint);color:var(--ink);font-size:14px}
 </style>
 </head>
 <body>
@@ -318,6 +328,76 @@ let editing = false, canEdit = false, dirty = false, saving = false;
 const pending = new Map(); // path -> {file, url} uploads waiting to be committed
 const root = document.getElementById('root');
 try{ const hsh = location.hash.slice(1); if (hsh) view = hsh }catch(e){}
+
+/* ---------- Languages ----------
+   English is the main text. Spanish and Chinese live in obj.i18n.es / obj.i18n.zh.
+   Any field without a translation shows the English text. */
+const LANGS = [['en','EN','English'],['es','ES','Español'],['zh','中文','中文（简体）']];
+let lang = (function(){
+  const ok = c => LANGS.some(l=>l[0]===c);
+  try{ const q = new URLSearchParams(location.search).get('lang'); if (ok(q)) return q }catch(e){}
+  try{ const v = localStorage.getItem('alf-lang'); if (ok(v)) return v }catch(e){}
+  const n = String(navigator.language||'en').toLowerCase();
+  return n.startsWith('es') ? 'es' : n.startsWith('zh') ? 'zh' : 'en';
+})();
+let seedData = null;
+const UI = {
+  es:{'Home':'Inicio','Copy email':'Copiar correo','Portfolio':'Portafolio','See all →':'Ver todo →','Coming soon':'Próximamente','View ':'Ver ','video':'video','Untitled':'Sin título','Email copied':'Correo copiado','Select the email to copy it':'Selecciona el correo para copiarlo','Project link':'Enlace del proyecto','Previous step':'Paso anterior','Next step':'Paso siguiente','▶ Play process':'▶ Ver proceso','❚❚ Pause':'❚❚ Pausa','Step-by-step process':'Proceso paso a paso','Close':'Cerrar','View larger':'Ver más grande','Image viewer':'Visor de imágenes','Previous image':'Imagen anterior','Next image':'Imagen siguiente','Edit':'Editar','Edit this portfolio':'Editar este portafolio','Portrait of ':'Retrato de ','Process':'Proceso','Includes':'Incluye','Sections':'Secciones','Language':'Idioma','Could not load the portfolio. Refresh the page to try again.':'No se pudo cargar el portafolio. Recarga la página para intentarlo de nuevo.',
+      step:n=>'Paso '+n, stepOf:(i,n)=>'Paso '+i+' de '+n, proc:n=>'Proceso de '+n+' pasos', files:n=>n+' archivos', projects:n=>n+(n===1?' proyecto':' proyectos')},
+  zh:{'Home':'首页','Copy email':'复制邮箱','Portfolio':'作品集','See all →':'查看全部 →','Coming soon':'敬请期待','View ':'查看 ','video':'视频','Untitled':'未命名','Email copied':'邮箱已复制','Select the email to copy it':'请选中邮箱地址进行复制','Project link':'项目链接','Previous step':'上一步','Next step':'下一步','▶ Play process':'▶ 播放过程','❚❚ Pause':'❚❚ 暂停','Step-by-step process':'分步过程','Close':'关闭','View larger':'查看大图','Image viewer':'图片查看器','Previous image':'上一张','Next image':'下一张','Edit':'编辑','Edit this portfolio':'编辑作品集','Portrait of ':'肖像：','Process':'过程','Includes':'包含','Sections':'栏目','Language':'语言','Could not load the portfolio. Refresh the page to try again.':'无法加载作品集，请刷新页面重试。',
+      step:n=>'第 '+n+' 步', stepOf:(i,n)=>'第 '+i+' 步，共 '+n+' 步', proc:n=>n+' 步过程', files:n=>n+' 个文件', projects:n=>n+' 个项目'},
+  en:{step:n=>'Step '+n, stepOf:(i,n)=>'Step '+i+' of '+n, proc:n=>n+'-step process', files:n=>n+' files', projects:n=>n+(n===1?' project':' projects')}
+};
+function t(k){ const d = UI[lang]||{}; return typeof d[k]==='string' ? d[k] : k }
+function fmt(k, ...a){ return ((UI[lang]&&UI[lang][k]) || UI.en[k])(...a) }
+function L(o){ return (lang!=='en' && o && o.i18n && o.i18n[lang]) || null }
+function tr(o, f){ if (!o) return ''; const x = L(o); return (x && x[f]) || o[f] || '' }
+function trList(o, f){ const base = (o && o[f]) || [], x = L(o), tl = x && x[f]; return base.map((v,i)=>(tl && tl[i]) || v) }
+function trLink(pr, l){ const x = L(pr); return (x && x.links && x.links[l.url]) || l.label }
+function trMedia(pr, m, f){ const x = L(pr), y = x && x.media && x.media[m.id]; return (y && y[f]) || m[f] || '' }
+function stageOwner(sectionId, groupId){ const s = sec(sectionId); if (!s) return null; if (s.groups && s.groups.length) return s.groups.find(g=>g.id===groupId) || s.groups[0]; return s }
+function stageLabel(pr, st){ if (lang==='en' || !st) return st; const o = stageOwner(pr.section, pr.group); if (!o) return st; const i = (o.stages||[]).indexOf(st); return i<0 ? st : trList(o,'stages')[i] }
+function applyLang(){ document.documentElement.lang = lang==='zh' ? 'zh-Hans' : lang; applySite() }
+function setLang(c){
+  lang = c; try{ localStorage.setItem('alf-lang', c) }catch(e){}
+  try{ const u = new URL(location.href); if (u.searchParams.has('lang')){ u.searchParams.delete('lang'); history.replaceState(null,'',u.pathname+u.search+u.hash) } }catch(e){}
+  applyLang(); render();
+}
+function langSwitch(){
+  return h('div',{class:'langs',role:'group','aria-label':t('Language')}, LANGS.map(([c,lbl,full])=>
+    h('button',{type:'button',class:'lang','aria-pressed':String(lang===c),lang:c==='zh'?'zh-Hans':c,title:full,onclick:()=>{ if (lang!==c) setLang(c) }}, lbl)));
+}
+/* Ready-made translations (i18n.json). Merged once; after the owner saves, they live in data.json.
+   A translation is only used if the English text is still the one it was translated from. */
+function mergeSeed(d, seed){
+  if (!seed || !d || (d.i18nSeed||0) >= (seed.version||1)) return false;
+  for (const p of d.projects||[]){ const fx = seed.baseFix && seed.baseFix[p.id]; if (fx && p[fx.field]===fx.old) p[fx.field] = fx.new }
+  const same = (a,b)=>JSON.stringify(a)===JSON.stringify(b);
+  const put = (o, lng, vals, en)=>{
+    if (!o || !vals) return;
+    o.i18n = o.i18n||{}; const x = o.i18n[lng] = o.i18n[lng]||{};
+    for (const [k,v] of Object.entries(vals)){
+      if (k==='groups') continue;
+      if (en && k in en && !same(o[k]==null?'':o[k], en[k])) continue;
+      if (k==='links'){ x.links = x.links||{}; const urls = (o.links||[]).map(l=>l.url); for (const [u,lb] of Object.entries(v)) if (urls.includes(u) && x.links[u]===undefined) x.links[u]=lb }
+      else if (k==='media'){ x.media = x.media||{}; const ids = (o.media||[]).map(m=>m.id); for (const [id,mv] of Object.entries(v)) if (ids.includes(id) && x.media[id]===undefined) x.media[id]=mv }
+      else if (x[k]===undefined) x[k] = v;
+    }
+  };
+  for (const lng of ['es','zh']){
+    const sp = seed.profile||{}, ss = seed.site||{};
+    put(d.profile, lng, sp[lng], sp.en);
+    d.site = d.site||{}; put(d.site, lng, ss[lng], ss.en);
+    for (const s of d.sections||[]){
+      const v = seed.sections && seed.sections[s.id]; if (!v || !v[lng]) continue;
+      put(s, lng, v[lng], v.en);
+      for (const g of s.groups||[]) put(g, lng, v[lng].groups && v[lng].groups[g.id], v.en && v.en.groups && v.en.groups[g.id]);
+    }
+    for (const p of d.projects||[]){ const v = seed.projects && seed.projects[p.id]; if (v) put(p, lng, v[lng], v.en) }
+  }
+  d.i18nSeed = seed.version||1;
+  return true;
+}
 
 function clone(o){return JSON.parse(JSON.stringify(o))}
 function h(tag, attrs, ...kids){
@@ -358,28 +438,28 @@ function render(){
 }
 
 function nav(secs){
-  return h('nav',{class:'nav gut','aria-label':'Sections'}, h('div',{class:'in'},
+  return h('nav',{class:'nav gut','aria-label':t('Sections')}, h('div',{class:'in'},
     h('button',{class:'brand',onclick:()=>setView('home'),'aria-label':(state.profile.name||'Portfolio')+' home'}, (state.site && state.site.logo) ? h('img',{class:'brand-logo',src:url(state.site.logo),alt:''}) : null, h('span',{text:state.profile.name||'Portfolio'})),
     h('div',{class:'tabs'},
-      h('button',{class:'tab','aria-current':view==='home'?'page':null,onclick:()=>setView('home')},'Home'),
-      secs.map(s=>h('button',{class:'tab'+(s.feature?' star':''),'aria-current':view===s.id?'page':null,onclick:()=>setView(s.id)}, s.title)))));
+      h('button',{class:'tab','aria-current':view==='home'?'page':null,onclick:()=>setView('home')},t('Home')),
+      secs.map(s=>h('button',{class:'tab'+(s.feature?' star':''),'aria-current':view===s.id?'page':null,onclick:()=>setView(s.id)}, tr(s,'title')))), langSwitch()));
 }
 
 function home(secs){
   const p = state.profile;
   const frag = h('div',{class:'pagewrap'});
-  const portrait = p.avatar ? h('figure',{class:'portrait'}, h('img',{src:url(p.avatar),alt:'Portrait of '+(p.name||'me')})) : null;
+  const portrait = p.avatar ? h('figure',{class:'portrait'}, h('img',{src:url(p.avatar),alt:t('Portrait of ')+(p.name||'me')})) : null;
   const contact = h('div',{class:'contact'});
-  if (p.email) contact.append(h('span',{class:'mail',text:p.email}), h('button',{class:'linkbtn',onclick:()=>copy(p.email)},'Copy email'));
+  if (p.email) contact.append(h('span',{class:'mail',text:p.email}), h('button',{class:'linkbtn',onclick:()=>copy(p.email)},t('Copy email')));
   for (const l of (p.links||[])) if (l.url) contact.append(h('a',{href:l.url,target:'_blank',rel:'noopener'}, l.label||l.url));
   frag.append(h('div',{class:'gut tint-band'}, h('header',{class:'in hero'+(portrait?' has-photo':'')},
     h('div',{class:'hero-text'},
-      h('div',{class:'eyebrow',text:p.location?'Portfolio · '+p.location:'Portfolio'}),
+      h('div',{class:'eyebrow',text:p.location?t('Portfolio')+' · '+p.location:t('Portfolio')}),
       h('h1',{text:p.name||'Your Name'}),
-      p.role ? h('p',{class:'role',text:p.role}) : null,
-      p.bio ? h('p',{class:'bio',text:p.bio}) : null,
+      p.role ? h('p',{class:'role',text:tr(p,'role')}) : null,
+      p.bio ? h('p',{class:'bio',text:tr(p,'bio')}) : null,
       contact.childNodes.length ? contact : null,
-      secs.length ? h('div',{class:'disc'}, secs.map(s=>h('button',{onclick:()=>setView(s.id)}, s.title+' →'))) : null,
+      secs.length ? h('div',{class:'disc'}, secs.map(s=>h('button',{onclick:()=>setView(s.id)}, tr(s,'title')+' →'))) : null,
       editing ? h('div',{class:'tools'}, h('button',{class:'btn small',onclick:openProfileEditor},'Edit profile'), h('button',{class:'btn small',onclick:addSection},'+ New section')) : null),
     portrait)));
 
@@ -401,22 +481,22 @@ function shead(s, withLink){
   const n = projectsOf(s.id).length;
   return h('div',{class:'shead'},
     h('div',{},
-      h('div',{class:'eyebrow',text:s.kicker||''}),
-      h('h2',{}, s.title, h('small',{text:String(n).padStart(2,'0')})),
-      s.intro ? h('p',{class:'intro',text:s.intro}) : null,
+      h('div',{class:'eyebrow',text:tr(s,'kicker')}),
+      h('h2',{}, tr(s,'title'), h('small',{text:String(n).padStart(2,'0')})),
+      s.intro ? h('p',{class:'intro',text:tr(s,'intro')}) : null,
       steps(s)),
     h('div',{class:'tools'},
       editing ? h('button',{class:'btn small',onclick:()=>openSectionEditor(s)},'Edit section') : null,
-      withLink && n ? h('button',{class:'seeall',onclick:()=>setView(s.id)},'See all →') : null));
+      withLink && n ? h('button',{class:'seeall',onclick:()=>setView(s.id)},t('See all →')) : null));
 }
 
 function steps(s){
-  const st = s.stages||[];
+  const st = trList(s,'stages');
   if (!st.length) return null;
   const flow = s.id==='animation';
   const kids = [];
   st.forEach((x,i)=>{ if (flow && i) kids.push(h('span',{class:'arr','aria-hidden':'true'},'→')); kids.push(h('span',{class:'st'},x)) });
-  return h('div',{class:'steps'+(flow?' flow':''),'aria-label':flow?'Process':'Includes'}, kids);
+  return h('div',{class:'steps'+(flow?' flow':''),'aria-label':flow?t('Process'):t('Includes')}, kids);
 }
 
 function sectionPage(s){
@@ -424,11 +504,11 @@ function sectionPage(s){
   const wrap = h('div',{class:'pagewrap'});
   const n = projectsOf(s.id).length;
   const head = h('div',{class:'in page-head'},
-    h('div',{class:'eyebrow',text:s.kicker||''}),
-    h('h2',{}, s.title),
-    s.intro ? h('p',{class:'intro',text:s.intro}) : null,
+    h('div',{class:'eyebrow',text:tr(s,'kicker')}),
+    h('h2',{}, tr(s,'title')),
+    s.intro ? h('p',{class:'intro',text:tr(s,'intro')}) : null,
     h('div',{class:'tools'},
-      h('span',{class:'meta',text:n+(n===1?' project':' projects')}),
+      h('span',{class:'meta',text:fmt('projects',n)}),
       editing ? h('button',{class:'btn small',onclick:()=>openSectionEditor(s)},'Edit section') : null));
   if (big){
     wrap.append(h('section',{class:'band gut'}, h('div',{class:'in'}, head, projectGrid(s, 0, true))));
@@ -450,14 +530,14 @@ function groupedGrid(s, limit, feature){
     const all = projectsOf(s.id).filter(p=>groupOf(p,s)===gp);
     const list = limit ? all.slice(0,limit) : all;
     let body;
-    if (!list.length && !editing) body = h('div',{class:'empty-grid'}, h('div',{class:'empty',text:'Coming soon'}), h('div',{class:'empty',text:'Coming soon'}));
+    if (!list.length && !editing) body = h('div',{class:'empty-grid'}, h('div',{class:'empty',text:t('Coming soon')}), h('div',{class:'empty',text:t('Coming soon')}));
     else {
       body = h('div',{class:'grid'+(feature && list.length+(editing?1:0)>1 ? ' feature' : '')});
       list.forEach(pr=>body.append(card(pr)));
       if (editing) body.append(h('button',{class:'addcard',onclick:()=>openProjectEditor(null, s.id, gp.id)}, '+ New '+gp.title+' project'));
     }
     wrap.append(h('div',{class:'group'},
-      h('div',{class:'group-head'}, h('h3',{text:gp.title}), h('span',{class:'meta',text:String(all.length).padStart(2,'0')}), steps(gp)),
+      h('div',{class:'group-head'}, h('h3',{text:tr(gp,'title')}), h('span',{class:'meta',text:String(all.length).padStart(2,'0')}), steps(gp)),
       body));
   });
   return wrap;
@@ -467,7 +547,7 @@ function projectGrid(s, limit, feature){
   if (s.groups && s.groups.length) return groupedGrid(s, limit, feature);
   const all = projectsOf(s.id);
   const list = limit ? all.slice(0, limit) : all;
-  if (!list.length && !editing) return h('div',{class:'empty-grid'}, h('div',{class:'empty',text:'Coming soon'}), h('div',{class:'empty',text:'Coming soon'}));
+  if (!list.length && !editing) return h('div',{class:'empty-grid'}, h('div',{class:'empty',text:t('Coming soon')}), h('div',{class:'empty',text:t('Coming soon')}));
   const g = h('div',{class:'grid'+(feature && list.length+(editing?1:0)>1 ? ' feature' : '')});
   list.forEach(pr=>g.append(card(pr)));
   if (editing) g.append(h('button',{class:'addcard',onclick:()=>openProjectEditor(null, s.id)},
@@ -481,10 +561,10 @@ function cover(pr){
   const hasVideo = m.some(x=>x.kind==='video');
   const steps = pr.process ? m.filter(x=>x.kind!=='video') : [];
   const img = first ? coverMedia(first, pr.coverPos) : null;
-  const btn = h('button',{class:'cover',onclick:()=>openProject(pr),'aria-label':'View '+pr.title},
-    img || h('div',{class:'ph'}, pr.title||'Project'),
-    hasVideo ? h('span',{class:'play',text:'▶ video'}) : null,
-    steps.length>1 ? h('span',{class:'play proc',text:'▶ '+steps.length+'-step process'}) : (m.length>1 ? h('span',{class:'count',text:m.length+' files'}) : null));
+  const btn = h('button',{class:'cover',onclick:()=>openProject(pr),'aria-label':t('View ')+tr(pr,'title')},
+    img || h('div',{class:'ph'}, tr(pr,'title')||'Project'),
+    hasVideo ? h('span',{class:'play',text:'▶ '+t('video')}) : null,
+    steps.length>1 ? h('span',{class:'play proc',text:'▶ '+fmt('proc',steps.length)}) : (m.length>1 ? h('span',{class:'count',text:fmt('files',m.length)}) : null));
   if (steps.length>1 && img && img.tagName==='IMG'){
     let t=null, k=0;
     const stop=()=>{ clearInterval(t); t=null; img.src=url(first.id) };
@@ -503,10 +583,10 @@ function card(pr){
   const list = state.projects, idx = list.indexOf(pr);
   const sib = list.filter(x=>x.section===pr.section), sidx = sib.indexOf(pr);
   return h('article',{class:'card'}, cover(pr),
-    h('div',{class:'meta'}, pr.year?h('span',{text:pr.year}):null, pr.tag?h('span',{text:'· '+pr.tag}):null),
-    h('h3',{}, h('button',{onclick:()=>openProject(pr)}, pr.title||'Untitled')),
-    pr.award ? h('div',{class:'award',text:pr.award}) : null,
-    pr.summary ? h('p',{text:pr.summary}) : null,
+    h('div',{class:'meta'}, pr.year?h('span',{text:pr.year}):null, pr.tag?h('span',{text:'· '+tr(pr,'tag')}):null),
+    h('h3',{}, h('button',{onclick:()=>openProject(pr)}, tr(pr,'title')||t('Untitled'))),
+    pr.award ? h('div',{class:'award',text:tr(pr,'award')}) : null,
+    pr.summary ? h('p',{text:tr(pr,'summary')}) : null,
     editing ? h('div',{class:'tools'},
       h('button',{class:'btn small',onclick:()=>openProjectEditor(pr)},'Edit'),
       h('button',{class:'btn small',disabled:sidx===0,'aria-label':'Move earlier',onclick:()=>move(pr,-1)},'↑'),
@@ -518,7 +598,7 @@ function move(pr,d){
   const a = state.projects, i=a.indexOf(pr), j=a.indexOf(other);
   [a[i],a[j]]=[a[j],a[i]]; markDirty();
 }
-async function copy(t){ try{ await navigator.clipboard.writeText(t); toast('Email copied') }catch(e){ toast('Select the email to copy it') } }
+async function copy(t){ try{ await navigator.clipboard.writeText(t); toast(t('Email copied')) }catch(e){ toast(t('Select the email to copy it')) } }
 
 function dock(){
   const inner = h('div',{class:'inner'});
@@ -544,9 +624,9 @@ function dialog(content){
 
 function linkList(pr){
   const ls = (pr.links||[]).filter(l=>l.url);
-  if (pr.link && !ls.some(l=>l.url===pr.link)) ls.unshift({label:'Project link',url:pr.link});
+  if (pr.link && !ls.some(l=>l.url===pr.link)) ls.unshift({label:t('Project link'),url:pr.link});
   if (!ls.length) return null;
-  return h('div',{class:'plinks'}, ls.map(l=>h('a',{href:l.url,target:'_blank',rel:'noopener'}, (l.label||l.url)+' ↗')));
+  return h('div',{class:'plinks'}, ls.map(l=>h('a',{href:l.url,target:'_blank',rel:'noopener'}, (trLink(pr,l)||l.url)+' ↗')));
 }
 
 function processPlayer(pr){
@@ -554,31 +634,31 @@ function processPlayer(pr){
   if (!items.length) return null;
   let i = 0, timer = null;
   const view = h('div',{class:'pp-view'});
-  const imgs = items.map((m,k)=>{ const im=h('img',{src:url(m.id),alt:(m.caption||m.stage||'Step '+(k+1)),class:k===0?'on':'',loading:k<2?'eager':'lazy'}); view.append(im); return im });
+  const imgs = items.map((m,k)=>{ const im=h('img',{src:url(m.id),alt:(trMedia(pr,m,'caption')||stageLabel(pr,m.stage)||fmt('step',k+1)),class:k===0?'on':'',loading:k<2?'eager':'lazy'}); view.append(im); return im });
   const num = h('span',{class:'pp-num'});
   const cap = h('div',{class:'pp-cap'});
   const fill = h('span');
   const bar = h('div',{class:'pp-bar','aria-hidden':'true'}, fill);
   const play = h('button',{type:'button',class:'btn small pp-play'});
-  const prev = h('button',{type:'button',class:'pp-arrow','aria-label':'Previous step'},'\u2190');
-  const next = h('button',{type:'button',class:'pp-arrow','aria-label':'Next step'},'\u2192');
+  const prev = h('button',{type:'button',class:'pp-arrow','aria-label':t('Previous step')},'\u2190');
+  const next = h('button',{type:'button',class:'pp-arrow','aria-label':t('Next step')},'\u2192');
   const dots = items.map((m,k)=>h('button',{type:'button',class:'pp-step',onclick:()=>{ stopPlay(); go(k) }},
-    h('span',{class:'pp-dot'}), h('span',{class:'pp-time',text:m.time||('Step '+(k+1))}), h('span',{class:'pp-label',text:m.stage||''})));
+    h('span',{class:'pp-dot'}), h('span',{class:'pp-time',text:trMedia(pr,m,'time')||fmt('step',k+1)}), h('span',{class:'pp-label',text:stageLabel(pr,m.stage)||''})));
   const track = h('div',{class:'pp-track',style:'grid-template-columns:repeat('+items.length+',minmax(0,1fr))'}, dots);
   function go(k){
     i = (k+items.length)%items.length;
     imgs.forEach((im,j)=>im.classList.toggle('on',j===i));
     dots.forEach((b,j)=>{ b.classList.toggle('done',j<i); b.setAttribute('aria-current',j===i?'step':'false') });
-    num.textContent = 'Step '+(i+1)+' of '+items.length+(items[i].stage?' \u00b7 '+items[i].stage:'')+(items[i].time?' \u00b7 '+items[i].time:'');
-    cap.textContent = items[i].caption||'';
+    num.textContent = fmt('stepOf',i+1,items.length)+(items[i].stage?' \u00b7 '+stageLabel(pr,items[i].stage):'')+(trMedia(pr,items[i],'time')?' \u00b7 '+trMedia(pr,items[i],'time'):'');
+    cap.textContent = trMedia(pr,items[i],'caption');
     fill.style.width = (items.length>1 ? i/(items.length-1)*100 : 100)+'%';
   }
-  function stopPlay(){ clearInterval(timer); timer=null; play.textContent='\u25B6 Play process' }
-  function startPlay(){ if (i===items.length-1) go(0); play.textContent='\u275A\u275A Pause'; timer=setInterval(()=>{ if(!view.isConnected){ stopPlay(); return } if(i===items.length-1){ stopPlay(); return } go(i+1) },1800) }
+  function stopPlay(){ clearInterval(timer); timer=null; play.textContent=t('\u25B6 Play process') }
+  function startPlay(){ if (i===items.length-1) go(0); play.textContent=t('\u275A\u275A Pause'); timer=setInterval(()=>{ if(!view.isConnected){ stopPlay(); return } if(i===items.length-1){ stopPlay(); return } go(i+1) },1800) }
   play.onclick = ()=> timer ? stopPlay() : startPlay();
   prev.onclick = ()=>{ stopPlay(); go(i-1) };
   next.onclick = ()=>{ stopPlay(); go(i+1) };
-  const wrap = h('div',{class:'pp',tabindex:'0','aria-label':'Step-by-step process'},
+  const wrap = h('div',{class:'pp',tabindex:'0','aria-label':t('Step-by-step process')},
     h('div',{class:'pp-frame'}, view, prev, next),
     h('div',{class:'pp-info'}, h('div',{}, num, cap), play),
     h('div',{class:'pp-rail'}, bar, track));
@@ -596,20 +676,20 @@ function openProject(pr){
   const loose = media.filter(m=>!m.stage || !order.includes(m.stage));
   const d = dialog(h('div',{class:'dlg'},
     h('div',{class:'dlg-head'},
-      h('div',{}, h('div',{class:'meta'}, h('span',{text:s.title||''}), pr.year?h('span',{text:'· '+pr.year}):null, pr.tag?h('span',{text:'· '+pr.tag}):null), h('h2',{text:pr.title})),
-      h('button',{class:'x','aria-label':'Close',onclick:()=>d.close()},'×')),
-    pr.body ? h('p',{class:'body',text:pr.body}) : (pr.summary? h('p',{class:'body',text:pr.summary}):null),
-    pr.award ? h('div',{class:'award big',text:pr.award}) : null,
+      h('div',{}, h('div',{class:'meta'}, h('span',{text:tr(s,'title')}), pr.year?h('span',{text:'· '+pr.year}):null, pr.tag?h('span',{text:'· '+tr(pr,'tag')}):null), h('h2',{text:tr(pr,'title')})),
+      h('button',{class:'x','aria-label':t('Close'),onclick:()=>d.close()},'×')),
+    (pr.body||pr.summary) ? h('p',{class:'body',text:tr(pr,'body')||tr(pr,'summary')}) : null,
+    pr.award ? h('div',{class:'award big',text:tr(pr,'award')}) : null,
     linkList(pr),
     pr.process ? processPlayer(pr) : null,
     !pr.process && loose.length ? h('div',{class:'gallery'}, loose.map(m=>mediaEl(m,null,true))) : null,
-    pr.process ? null : groups.map(g=>h('div',{class:'stage'}, h('div',{class:'stage-label',text:g.st}), h('div',{class:'gallery'}, g.items.map(m=>mediaEl(m,null,true)))))
+    pr.process ? null : groups.map(g=>h('div',{class:'stage'}, h('div',{class:'stage-label',text:stageLabel(pr,g.st)}), h('div',{class:'gallery'}, g.items.map(m=>mediaEl(m,null,true)))))
   ));
   // click any image to view it large
   const imgs = [...d.querySelectorAll('.gallery img, .pp-view img')];
   const list = imgs.map(im=>({src:im.getAttribute('src'), cap:im.closest('.pp-view') ? '' : (im.closest('.stage')?.querySelector('.stage-label')?.textContent||'')}));
-  if (pr.process){ const its=(pr.media||[]).filter(m=>m.kind!=='video'); its.forEach((m,k)=>{ if(list[k]) list[k].cap=[m.stage,m.time,m.caption].filter(Boolean).join(' \u00b7 ') }) }
-  d.querySelectorAll('.gallery img').forEach(im=>{ im.tabIndex=0; im.setAttribute('role','button'); im.setAttribute('aria-label','View larger');
+  if (pr.process){ const its=(pr.media||[]).filter(m=>m.kind!=='video'); its.forEach((m,k)=>{ if(list[k]) list[k].cap=[stageLabel(pr,m.stage),trMedia(pr,m,'time'),trMedia(pr,m,'caption')].filter(Boolean).join(' \u00b7 ') }) }
+  d.querySelectorAll('.gallery img').forEach(im=>{ im.tabIndex=0; im.setAttribute('role','button'); im.setAttribute('aria-label',t('View larger'));
     const open=()=>lightbox(list, imgs.indexOf(im)); im.addEventListener('click',open); im.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); open() } }) });
   const ppv = d.querySelector('.pp-view');
   if (ppv) ppv.addEventListener('click',()=>{ const on=ppv.querySelector('img.on'); if(on) lightbox(list, imgs.indexOf(on)) });
@@ -623,12 +703,12 @@ function lightbox(list, start){
   const count = h('span',{class:'lb-count'});
   const go = k=>{ i=(k+list.length)%list.length; img.src=list[i].src; cap.textContent=list[i].cap||''; count.textContent=(i+1)+' / '+list.length };
   const multi = list.length>1;
-  const lb = h('dialog',{class:'lb','aria-label':'Image viewer'},
-    h('div',{class:'lb-top'}, count, h('button',{type:'button',class:'lb-btn lb-close','aria-label':'Close',onclick:()=>lb.close()},'\u00d7')),
+  const lb = h('dialog',{class:'lb','aria-label':t('Image viewer')},
+    h('div',{class:'lb-top'}, count, h('button',{type:'button',class:'lb-btn lb-close','aria-label':t('Close'),onclick:()=>lb.close()},'\u00d7')),
     h('div',{class:'lb-stage'},
-      multi ? h('button',{type:'button',class:'lb-btn lb-prev','aria-label':'Previous image',onclick:e=>{e.stopPropagation();go(i-1)}},'\u2190') : null,
+      multi ? h('button',{type:'button',class:'lb-btn lb-prev','aria-label':t('Previous image'),onclick:e=>{e.stopPropagation();go(i-1)}},'\u2190') : null,
       img,
-      multi ? h('button',{type:'button',class:'lb-btn lb-next','aria-label':'Next image',onclick:e=>{e.stopPropagation();go(i+1)}},'\u2192') : null),
+      multi ? h('button',{type:'button',class:'lb-btn lb-next','aria-label':t('Next image'),onclick:e=>{e.stopPropagation();go(i+1)}},'\u2192') : null),
     cap);
   lb.addEventListener('click',e=>{ if(e.target===lb || e.target.classList.contains('lb-stage')) lb.close() });
   lb.addEventListener('keydown',e=>{ if(e.key==='ArrowRight'){go(i+1);e.preventDefault()} else if(e.key==='ArrowLeft'){go(i-1);e.preventDefault()} });
@@ -667,25 +747,28 @@ function openProjectEditor(pr, sectionId, groupId){
   const isNew = !pr;
   const draft = pr ? clone(pr) : {id:uid(),section:sectionId||state.sections[0].id,title:'',tag:'',year:String(new Date().getFullYear()),summary:'',body:'',link:'',media:[],group:groupId||''};
   draft.media = draft.media||[];
-  const secSel = h('select',{id:'f-sec'}, state.sections.map(s=>{ const o=h('option',{value:s.id},s.title); if(s.id===draft.section) o.selected=true; return o }));
+  const LX = lang!=='en' ? ((draft.i18n=draft.i18n||{})[lang] = draft.i18n[lang]||{}) : null;
+  const tv = (k,ph)=>LX ? [LX[k]||'', draft[k]||ph] : [draft[k], ph];
+  const secSel = h('select',{id:'f-sec'}, state.sections.map(s=>{ const o=h('option',{value:s.id},tr(s,'title')); if(s.id===draft.section) o.selected=true; return o }));
   const f = {
-    title: inp('f-title',draft.title,'Project name'),
-    tag: inp('f-tag',draft.tag,'Character, Product, Logo…'),
+    title: inp('f-title',...tv('title','Project name')),
+    tag: inp('f-tag',...tv('tag','Character, Product, Logo…')),
     year: inp('f-year',draft.year,'2026'),
-    summary: inp('f-sum',draft.summary,'One sentence shown on the card'),
-    body: area('f-body',draft.body,'What you did, which tools you used, and the result'),
-    award: inp('f-award',draft.award,'e.g. 1st place, Design Awards 2026'),
+    summary: inp('f-sum',...tv('summary','One sentence shown on the card')),
+    body: area('f-body',...tv('body','What you did, which tools you used, and the result')),
+    award: inp('f-award',...tv('award','e.g. 1st place, Design Awards 2026')),
   };
   const posSel = h('select',{id:'f-pos'}, [['','Center'],['top','Top (keep heads)'],['bottom','Bottom'],['contain','Show whole image']].map(([v,l])=>{ const o=h('option',{value:v},l); if((draft.coverPos||'')===v) o.selected=true; return o }));
   draft.links = (draft.links||[]).map(l=>({...l}));
   if (draft.link && !draft.links.some(l=>l.url===draft.link)) draft.links.unshift({label:'Project link',url:draft.link});
   draft.link = '';
+  if (LX) draft.links.forEach(l=>{ l._t = (LX.links||{})[l.url]||'' });
   const linkRows = h('div',{style:'display:flex;flex-direction:column;gap:8px'});
   function drawLinks(){
     linkRows.replaceChildren(...draft.links.map((l,i)=>{
-      const a=h('input',{class:'mini',value:l.label||'',placeholder:'Label (Video, Behance, Website…)','aria-label':'Link label'});
+      const a=h('input',{class:'mini',value:(LX?l._t:l.label)||'',placeholder:(LX&&l.label)||'Label (Video, Behance, Website…)','aria-label':'Link label'});
       const b=h('input',{class:'mini',value:l.url||'',placeholder:'https://…','aria-label':'Link URL'});
-      a.oninput=()=>l.label=a.value; b.oninput=()=>l.url=b.value.trim();
+      a.oninput=()=>{ if (LX) l._t=a.value; else l.label=a.value }; b.oninput=()=>l.url=b.value.trim();
       return h('div',{class:'linkrow'}, a, b, h('button',{type:'button',class:'btn small',onclick:()=>{draft.links.splice(i,1);drawLinks()}},'Remove'));
     }));
   }
@@ -697,21 +780,23 @@ function openProjectEditor(pr, sectionId, groupId){
   const grpWrap = field('Category',grpSel);
   function drawGroups(){
     const s = sec(secSel.value); const gs = (s&&s.groups)||[];
-    grpSel.replaceChildren(...gs.map(g=>{ const o=h('option',{value:g.id},g.title); if(g.id===draft.group) o.selected=true; return o }));
+    grpSel.replaceChildren(...gs.map(g=>{ const o=h('option',{value:g.id},tr(g,'title')); if(g.id===draft.group) o.selected=true; return o }));
     grpWrap.hidden = !gs.length;
   }
   drawGroups();
   function stagesFor(){ return stagesOf(secSel.value, grpWrap.hidden ? '' : grpSel.value) }
   function drawThumbs(){
     const st = stagesFor();
+    const own = stageOwner(secSel.value, grpWrap.hidden ? '' : grpSel.value), stN = own ? trList(own,'stages') : st;
     thumbs.replaceChildren(...draft.media.map((m,i)=>{
       const sel = h('select',{class:'mini','aria-label':'Stage'},
         h('option',{value:''},'No stage'),
-        st.map(x=>{ const o=h('option',{value:x},x); if(m.stage===x) o.selected=true; return o }));
+        st.map((x,j)=>{ const o=h('option',{value:x},stN[j]||x); if(m.stage===x) o.selected=true; return o }));
       if (m.stage && !st.includes(m.stage)){ const o=h('option',{value:m.stage},m.stage); o.selected=true; sel.append(o) }
       sel.onchange=()=>m.stage=sel.value;
-      const capIn = h('input',{class:'mini',value:m.caption||'',placeholder:'Caption (optional)','aria-label':'Caption'});
-      capIn.oninput=()=>{ m.caption=capIn.value };
+      const mL = LX ? ((LX.media=LX.media||{})[m.id] = LX.media[m.id]||{}) : null;
+      const capIn = h('input',{class:'mini',value:(mL?mL.caption:m.caption)||'',placeholder:(mL&&m.caption)||'Caption (optional)','aria-label':'Caption'});
+      capIn.oninput=()=>{ if (mL) mL.caption=capIn.value; else m.caption=capIn.value };
       const isCover = draft.coverId ? m.id===draft.coverId : i===0;
       return h('div',{class:'thumb'},
         h('div',{class:'pic'}, mediaEl(m), isCover?h('span',{class:'badge'},'Cover'):null),
@@ -738,8 +823,18 @@ function openProjectEditor(pr, sectionId, groupId){
   }
   const form = h('form',{class:'dlg',onsubmit:e=>{
     e.preventDefault();
-    for (const k of Object.keys(f)) draft[k]=f[k].value.trim();
+    for (const k of Object.keys(f)){
+      const v = f[k].value.trim();
+      if (LX && k!=='year'){ if (v) LX[k]=v; else delete LX[k]; if (!draft[k]) draft[k]=v }
+      else draft[k]=v;
+    }
     draft.links = draft.links.filter(l=>l.url);
+    if (LX){
+      LX.links = {};
+      for (const l of draft.links){ const v=(l._t||'').trim(); if (v){ LX.links[l.url]=v; if (!l.label) l.label=v } }
+      if (LX.media) for (const id of Object.keys(LX.media)){ const x=LX.media[id]; if (!draft.media.some(m=>m.id===id) || !(x.caption||x.time)) delete LX.media[id]; else if (!x.caption) delete x.caption }
+    }
+    draft.links.forEach(l=>delete l._t);
     draft.coverPos = posSel.value;
     draft.process = procBox.checked;
     draft.section = secSel.value;
@@ -750,6 +845,7 @@ function openProjectEditor(pr, sectionId, groupId){
     d.close(); markDirty();
   }},
     h('div',{class:'dlg-head'}, h('h2',{text:isNew?'New project':'Edit project'}), h('button',{type:'button',class:'x','aria-label':'Close',onclick:()=>d.close()},'×')),
+    LX ? h('p',{class:'lang-note',text:'You are editing the '+(lang==='es'?'Spanish':'Chinese')+' text. Empty fields show the English text. Switch to EN at the top to edit English.'}) : null,
     field('Title',f.title),
     h('div',{class:'row3'}, field('Section',secSel), field('Tag',f.tag), field('Year',f.year)),
     grpWrap,
@@ -757,8 +853,8 @@ function openProjectEditor(pr, sectionId, groupId){
     field('Description',f.body),
     field('Award or highlight (optional)',f.award),
     h('div',{class:'field'}, h('label',{},'Links'), h('span',{class:'hint',text:'Videos, websites, Drive folders, documents…'}), linkRows,
-      h('div',{class:'tools'}, h('button',{type:'button',class:'btn small',onclick:()=>{draft.links.push({label:'',url:''});drawLinks()}},'+ Add link'),
-        uploadControl('Upload PDF',{accept:'application/pdf,.pdf',folder:'files'},m=>{ draft.links.push({label:(m.name||'Document').replace(/\.pdf$/i,'')+' (PDF)',url:m.id}); drawLinks() }))),
+      h('div',{class:'tools'}, h('button',{type:'button',class:'btn small',onclick:()=>{draft.links.push({label:'',url:'',_t:''});drawLinks()}},'+ Add link'),
+        uploadControl('Upload PDF',{accept:'application/pdf,.pdf',folder:'files'},m=>{ const lb=(m.name||'Document').replace(/\.pdf$/i,'')+' (PDF)'; draft.links.push({label:lb,url:m.id,_t:lb}); drawLinks() }))),
     h('div',{class:'field'}, h('label',{},'Images and videos'),
       h('span',{class:'hint',text:'Assign each file to a stage (for example Storyboard, Making of, Render) and they will be shown grouped. Max 45 MB per file.'}),
       thumbs,
@@ -774,12 +870,21 @@ function openProjectEditor(pr, sectionId, groupId){
 function openSectionEditor(s){
   const draft = clone(s);
   draft.groups = draft.groups||[];
+  const LX = lang!=='en' ? ((draft.i18n=draft.i18n||{})[lang] = draft.i18n[lang]||{}) : null;
+  const gL = g=>((g.i18n=g.i18n||{})[lang] = g.i18n[lang]||{});
   const grpRows = h('div',{style:'display:flex;flex-direction:column;gap:8px'});
   function drawGroups(){
     grpRows.replaceChildren(...draft.groups.map((g,i)=>{
+      if (LX){
+        const x = gL(g); if (x._st===undefined) x._st = (x.stages||[]).join(', ');
+        const a=h('input',{class:'mini',value:x.title||'',placeholder:g.title||'Category name','aria-label':'Category name'});
+        const b=h('input',{class:'mini',value:x._st,placeholder:(g.stages||[]).join(', ')||'Stages, comma-separated','aria-label':'Category stages'});
+        a.oninput=()=>x.title=a.value; b.oninput=()=>x._st=b.value;
+        return h('div',{class:'linkrow'}, a, b, h('span'));
+      }
       const a=h('input',{class:'mini',value:g.title||'',placeholder:'Category name','aria-label':'Category name'});
       const b=h('input',{class:'mini',value:(g.stages||[]).join(', '),placeholder:'Stages, comma-separated','aria-label':'Category stages'});
-      a.oninput=()=>g.title=a.value; b.oninput=()=>g.stages=b.value.split(',').map(x=>x.trim()).filter(Boolean);
+      a.oninput=()=>g.title=a.value; b.oninput=()=>g.stages=b.value.split(/[,，、]/).map(x=>x.trim()).filter(Boolean);
       return h('div',{class:'linkrow'}, a, b, h('button',{type:'button',class:'btn small',onclick:()=>{draft.groups.splice(i,1);drawGroups()}},'Remove'));
     }));
     if(!draft.groups.length) grpRows.append(h('span',{class:'note',text:'No categories. Projects show in one grid.'}));
@@ -796,24 +901,32 @@ function openSectionEditor(s){
   delWrap.append(delBtn);
   const moveSec = k=>{ const j=idx+k; if(j<0||j>=state.sections.length) return; const a=state.sections; [a[idx],a[j]]=[a[j],a[idx]]; d.close(); markDirty() };
   const f = {
-    title: inp('s-title',draft.title),
-    kicker: inp('s-kick',draft.kicker,'Short line above the title'),
-    intro: area('s-intro',draft.intro,'One or two sentences about this section'),
-    stages: inp('s-stages',(draft.stages||[]).join(', '),'Storyboard, Making of, Render'),
+    title: LX ? inp('s-title',LX.title,draft.title) : inp('s-title',draft.title),
+    kicker: LX ? inp('s-kick',LX.kicker,draft.kicker) : inp('s-kick',draft.kicker,'Short line above the title'),
+    intro: LX ? area('s-intro',LX.intro,draft.intro) : area('s-intro',draft.intro,'One or two sentences about this section'),
+    stages: LX ? inp('s-stages',(LX.stages||[]).join(', '),(draft.stages||[]).join(', ')) : inp('s-stages',(draft.stages||[]).join(', '),'Storyboard, Making of, Render'),
   };
   const form = h('form',{class:'dlg',onsubmit:e=>{
     e.preventDefault();
-    draft.title=f.title.value.trim()||s.title; draft.kicker=f.kicker.value.trim(); draft.intro=f.intro.value.trim();
-    draft.stages=f.stages.value.split(',').map(x=>x.trim()).filter(Boolean);
-    draft.groups=draft.groups.filter(g=>(g.title||'').trim()).map(g=>({id:g.id||slug(g.title)||uid('g'), title:g.title.trim(), stages:g.stages||[]}));
+    const list = v=>v.split(/[,，、]/).map(x=>x.trim()).filter(Boolean);
+    if (LX){
+      const set=(k,v)=>{ if (v && (!Array.isArray(v) || v.length)) LX[k]=v; else delete LX[k] };
+      set('title',f.title.value.trim()); set('kicker',f.kicker.value.trim()); set('intro',f.intro.value.trim()); set('stages',list(f.stages.value));
+      for (const g of draft.groups){ const x=gL(g); const st=list(x._st||''); delete x._st; if (st.length) x.stages=st; else delete x.stages; if (!(x.title||'').trim()) delete x.title }
+    } else {
+      draft.title=f.title.value.trim()||s.title; draft.kicker=f.kicker.value.trim(); draft.intro=f.intro.value.trim();
+      draft.stages=list(f.stages.value);
+    }
+    draft.groups=draft.groups.filter(g=>(g.title||'').trim()).map(g=>Object.assign({id:g.id||slug(g.title)||uid('g'), title:g.title.trim(), stages:g.stages||[]}, g.i18n?{i18n:g.i18n}:{}));
     if(!draft.groups.length) delete draft.groups;
     state.sections[state.sections.findIndex(x=>x.id===s.id)] = draft; d.close(); markDirty();
   }},
     h('div',{class:'dlg-head'}, h('h2',{text:'Edit section'}), h('button',{type:'button',class:'x','aria-label':'Close',onclick:()=>d.close()},'×')),
+    LX ? h('p',{class:'lang-note',text:'You are editing the '+(lang==='es'?'Spanish':'Chinese')+' text. Empty fields show the English text. Switch to EN at the top to edit English.'}) : null,
     field('Name',f.title), field('Subtitle',f.kicker), field('Intro',f.intro),
     field('Stages',f.stages,'Comma-separated. Used to group the images of each project.'),
     h('div',{class:'field'}, h('label',{},'Categories'), h('span',{class:'hint',text:'Optional sub-groups inside this section, each with its own stages (like 3D style, 2D visual, Low poly).'}), grpRows,
-      h('div',{}, h('button',{type:'button',class:'btn small',onclick:()=>{draft.groups.push({id:'',title:'',stages:[]});drawGroups()}},'+ Add category'))),
+      LX ? h('span',{class:'hint',text:'Translate the names and stages here, in the same order as English. To add or remove categories, switch to EN.'}) : h('div',{}, h('button',{type:'button',class:'btn small',onclick:()=>{draft.groups.push({id:'',title:'',stages:[]});drawGroups()}},'+ Add category'))),
     h('div',{class:'field'}, h('label',{},'Order'), h('div',{class:'tools'},
       h('button',{type:'button',class:'btn small',disabled:idx<=0,onclick:()=>moveSec(-1)},'\u2190 Move earlier'),
       h('button',{type:'button',class:'btn small',disabled:idx>=state.sections.length-1,onclick:()=>moveSec(1)},'Move later \u2192'))),
@@ -832,12 +945,13 @@ function addSection(){
 function openProfileEditor(){
   const draft = clone(state.profile);
   draft.links = draft.links||[];
+  const LX = lang!=='en' ? ((draft.i18n=draft.i18n||{})[lang] = draft.i18n[lang]||{}) : null;
   const f = {
     name: inp('p-name',draft.name,'Your name'),
-    role: inp('p-role',draft.role,'e.g. 3D artist and brand designer'),
+    role: LX ? inp('p-role',LX.role,draft.role) : inp('p-role',draft.role,'e.g. 3D artist and brand designer'),
     location: inp('p-loc',draft.location,'City, country'),
     email: inp('p-mail',draft.email,'you@email.com'),
-    bio: area('p-bio',draft.bio,'Two or three lines about you'),
+    bio: LX ? area('p-bio',LX.bio,draft.bio) : area('p-bio',draft.bio,'Two or three lines about you'),
   };
   const linkRows = h('div',{style:'display:flex;flex-direction:column;gap:8px'});
   function drawLinks(){
@@ -850,7 +964,8 @@ function openProfileEditor(){
   }
   drawLinks();
   const siteDraft = {logo:(state.site&&state.site.logo)||''};
-  const siteTitle = inp('p-site-title',(state.site&&state.site.title)||'','Name shown in the browser tab');
+  const siteL = (state.site && state.site.i18n && state.site.i18n[lang]) || {};
+  const siteTitle = LX ? inp('p-site-title',siteL.title||'',(state.site&&state.site.title)||'') : inp('p-site-title',(state.site&&state.site.title)||'','Name shown in the browser tab');
   const logoPrev = h('div',{style:'width:56px;height:56px;border-radius:10px;overflow:hidden;background:var(--tint)'});
   function drawLogo(){ logoPrev.replaceChildren(siteDraft.logo?h('img',{src:url(siteDraft.logo),alt:'',style:'width:100%;height:100%;object-fit:cover'}):'') }
   drawLogo();
@@ -859,13 +974,23 @@ function openProfileEditor(){
   drawAv();
   const form = h('form',{class:'dlg',onsubmit:e=>{
     e.preventDefault();
-    for (const k of Object.keys(f)) draft[k]=f[k].value.trim();
+    for (const k of Object.keys(f)){
+      const v = f[k].value.trim();
+      if (LX && (k==='role'||k==='bio')){ if (v) LX[k]=v; else delete LX[k]; if (!draft[k]) draft[k]=v }
+      else draft[k]=v;
+    }
     draft.links = draft.links.filter(l=>l.url);
     state.profile = draft;
-    state.site = Object.assign({}, state.site||{}, {title:siteTitle.value.trim()||state.site?.title||'', logo:siteDraft.logo});
+    if (LX){
+      const site = state.site = Object.assign({}, state.site||{}, {logo:siteDraft.logo});
+      site.i18n = clone(site.i18n||{}); const x = site.i18n[lang] = site.i18n[lang]||{};
+      const v = siteTitle.value.trim(); if (v) x.title = v; else delete x.title;
+    } else state.site = Object.assign({}, state.site||{}, {title:siteTitle.value.trim()||state.site?.title||'', logo:siteDraft.logo});
+    applySite();
     d.close(); markDirty();
   }},
     h('div',{class:'dlg-head'}, h('h2',{text:'Edit profile'}), h('button',{type:'button',class:'x','aria-label':'Close',onclick:()=>d.close()},'×')),
+    LX ? h('p',{class:'lang-note',text:'You are editing the '+(lang==='es'?'Spanish':'Chinese')+' text. Empty fields show the English text. Switch to EN at the top to edit English.'}) : null,
     h('div',{style:'display:flex;gap:14px;align-items:center;flex-wrap:wrap'}, avPrev,
       uploadControl('Change photo',{},m=>{draft.avatar=m.id;drawAv()}),
       h('button',{type:'button',class:'btn small',onclick:()=>{draft.avatar='';drawAv()}},'Remove photo')),
@@ -905,7 +1030,7 @@ function pendingPath(file, folder){
   const base = slug(dot>0 ? file.name.slice(0,dot) : file.name) || 'file';
   return folder+'/'+base+'-'+Math.random().toString(36).slice(2,7)+'.'+ext;
 }
-function applySite(){ try{ if (state.site && state.site.title) document.title = state.site.title }catch(e){} }
+function applySite(){ try{ const ti = state && tr(state.site,'title'); if (ti) document.title = ti }catch(e){} }
 
 function discard(){
   state = clone(saved); dirty=false; editing=false;
@@ -917,7 +1042,7 @@ function footer(){
   const p = state.profile||{};
   return h('footer',{class:'site-foot gut'}, h('div',{class:'in'},
     h('span',{text:'© '+new Date().getFullYear()+' '+(p.name||'')}),
-    canEdit ? null : h('button',{class:'foot-edit',type:'button',onclick:openUnlock,'aria-label':'Edit this portfolio'}, '✎ Edit')));
+    canEdit ? null : h('button',{class:'foot-edit',type:'button',onclick:openUnlock,'aria-label':t('Edit this portfolio')}, '✎ '+t('Edit'))));
 }
 
 function lock(){ ghToken=null; canEdit=false; editing=false; render(); toast('Locked') }
@@ -1112,6 +1237,7 @@ async function afterUnlock(){
   try{
     const txt = await gh('/contents/data.json?ref='+encodeURIComponent(cfg.branch||'main'), {accept:'application/vnd.github.raw+json', raw:true});
     const remote = JSON.parse(txt);
+    mergeSeed(remote, seedData);
     if (!dirty && JSON.stringify(remote)!==JSON.stringify(saved)){ saved = remote; state = clone(remote); applySite() }
   }catch(e){ /* keep the published copy */ }
   render(); toast('Unlocked. You can edit now.');
@@ -1122,14 +1248,18 @@ window.addEventListener('beforeunload', e=>{ if (dirty){ e.preventDefault(); e.r
 /* ---------- start ---------- */
 (async function boot(){
   try{
+    const seedReq = fetch('i18n.json?v='+Date.now(), {cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
     const r = await fetch('data.json?v='+Date.now(), {cache:'no-store'});
     if (!r.ok) throw new Error(r.status);
     saved = await r.json();
+    seedData = await seedReq;
+    mergeSeed(saved, seedData);
   }catch(e){
-    root.replaceChildren(h('div',{class:'loading',text:'Could not load the portfolio. Refresh the page to try again.'}));
+    applyLang();
+    root.replaceChildren(h('div',{class:'loading',text:t('Could not load the portfolio. Refresh the page to try again.')}));
     return;
   }
-  state = clone(saved); applySite(); render();
+  state = clone(saved); applyLang(); render();
 })();
 
 })();
