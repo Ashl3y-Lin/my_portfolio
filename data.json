@@ -556,6 +556,10 @@
     {
      "label": "Instagram @mairinapp",
      "url": "https://instagram.com/mairinapp"
+    },
+    {
+     "label": "Figma Design Prototype",
+     "url": "https://www.figma.com/design/v0uNJ1K5DAYq5Pxo8lOWUK/APP?node-id=0-1&p=f&t=zI3ECsG9uAoPz5qT-0"
     }
    ],
    "media": [
@@ -624,7 +628,10 @@
      "kind": "image",
      "stage": ""
     }
-   ]
+   ],
+   "coverPos": "",
+   "process": false,
+   "group": ""
   },
   {
    "id": "p2",
