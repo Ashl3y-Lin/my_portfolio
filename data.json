@@ -1,0 +1,1392 @@
+{
+ "profile": {
+  "name": "Ashley Lin",
+  "role": "3D Artist · Branding · Animation · Advertising",
+  "bio": "Write two or three lines about yourself: what you make, the tools you use, and the kind of projects you are looking for.",
+  "location": "",
+  "email": "",
+  "avatar": "images/ashley-lin.jpg",
+  "links": []
+ },
+ "sections": [
+  {
+   "id": "blender",
+   "title": "Blender",
+   "kicker": "3D · Modeling, lighting and rendering",
+   "intro": "My 3D scenes, characters and product renders.",
+   "stages": [
+    "Final render",
+    "Wireframe",
+    "Process"
+   ],
+   "feature": true,
+   "groups": [
+    {
+     "id": "3d",
+     "title": "3D style",
+     "stages": [
+      "Concept sketch",
+      "Final render",
+      "Wireframe",
+      "Process"
+     ]
+    },
+    {
+     "id": "2d",
+     "title": "2D visual",
+     "stages": [
+      "Final render",
+      "Process"
+     ]
+    },
+    {
+     "id": "lowpoly",
+     "title": "Low poly",
+     "stages": [
+      "Final render",
+      "Wireframe",
+      "Process"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "printing",
+   "title": "3D Production",
+   "kicker": "3D printing · Sculpting",
+   "intro": "Pieces I take from idea to physical object, printed in 3D or sculpted by hand.",
+   "stages": [],
+   "groups": [
+    {
+     "id": "clay",
+     "title": "Sculpting",
+     "stages": [
+      "Sketch",
+      "Armature",
+      "Sculpting",
+      "Painting",
+      "Finished piece"
+     ]
+    },
+    {
+     "id": "print",
+     "title": "3D printing",
+     "stages": [
+      "3D model",
+      "Mesh check",
+      "Printed piece"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "branding",
+   "title": "Branding",
+   "kicker": "Logos · Palettes · Applications",
+   "intro": "Visual identity system",
+   "stages": [
+    "Logo",
+    "Identity",
+    "Applications"
+   ]
+  },
+  {
+   "id": "animation",
+   "title": "Animation",
+   "kicker": "2D & 3D animation",
+   "intro": "2D and 3D animation, from character design and storyboard to the final render.",
+   "stages": [
+    "Character design",
+    "Storyboard",
+    "Making of",
+    "Render"
+   ]
+  },
+  {
+   "id": "advertising",
+   "title": "Advertising",
+   "kicker": "Campaigns and ads",
+   "intro": "Ads, campaigns and social media pieces.",
+   "stages": [
+    "Commercial",
+    "3D render",
+    "Packaging design"
+   ]
+  },
+  {
+   "id": "projects",
+   "title": "Projects",
+   "kicker": "Entrepreneurship and tech",
+   "intro": "Projects I have worked on.",
+   "stages": [
+    "3D render",
+    "Brand identity",
+    "App",
+    "Print materials",
+    "Mockups",
+    "Website",
+    "Competition"
+   ]
+  }
+ ],
+ "projects": [
+  {
+   "id": "b1",
+   "section": "blender",
+   "title": "Antlered Mage",
+   "year": "",
+   "tag": "Character",
+   "summary": "A stylized antlered character with a staff, standing on a glowing summoning circle.",
+   "body": "Character modeled and rendered in Blender: a masked figure with large antlers, a flowing coral cloak, a staff with a red ribbon and a magic circle on the ground.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/antlered-mage.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ],
+   "group": "3d"
+  },
+  {
+   "id": "b2",
+   "section": "blender",
+   "group": "3d",
+   "title": "Caped Wanderer",
+   "year": "",
+   "tag": "Character",
+   "summary": "A masked traveler in a flowing coral cape, holding a golden staff.",
+   "body": "Character modeled and rendered in Blender: a white masked figure with a windswept cape, scarf, tall boots and a golden staff, on a round display base.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/caped-wanderer.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "section": "blender",
+   "group": "3d",
+   "title": "Fox Hood Girl",
+   "year": "",
+   "tag": "Character",
+   "summary": "A chibi character in a fox-eared hood with button eyes.",
+   "body": "Chibi character modeled and rendered in Blender: a fox-eared hood and tail-like cape, button eyes, a bow and a wooden display base.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/fox-hood-girl.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "section": "blender",
+   "group": "3d",
+   "title": "Twin-Tail Fighter",
+   "year": "",
+   "tag": "Character",
+   "summary": "A stylized figure with long twin tails decorated with orange diamonds.",
+   "body": "Character modeled and rendered in Blender: a confident pose, long sculpted twin tails, a black and orange outfit with diamond details, and an orange display base.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/twin-tail-fighter.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ],
+   "coverPos": "top"
+  },
+  {
+   "id": "b5",
+   "section": "blender",
+   "group": "3d",
+   "title": "Leek Trio",
+   "year": "",
+   "tag": "Character",
+   "summary": "Three leek characters, each with its own attitude: cool, curious and nervous.",
+   "body": "Three vegetable characters modeled and rendered in Blender, with soft, matte materials and expressive faces.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/leek-trio.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b6",
+   "section": "blender",
+   "group": "3d",
+   "title": "Carrot Buddy",
+   "year": "",
+   "tag": "Character",
+   "summary": "A round, big-eyed carrot with blushing cheeks.",
+   "body": "A cute carrot character modeled and rendered in Blender, with large glossy eyes, painted stripes and a leafy top.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/carrot-buddy.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b7",
+   "section": "blender",
+   "group": "3d",
+   "title": "Axe Kid",
+   "year": "",
+   "tag": "Character",
+   "summary": "A chibi warrior with wild orange hair and a double-bladed axe.",
+   "body": "Chibi character modeled and rendered in Blender, sitting on a sculpted rock base with a gold-trimmed axe.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/axe-kid.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b8",
+   "section": "blender",
+   "group": "3d",
+   "title": "Elf Mage",
+   "year": "",
+   "tag": "Character",
+   "summary": "A chibi elf with a crescent-moon staff, sitting on a bench in a flower meadow.",
+   "body": "Chibi character modeled and rendered in Blender, with a white and gold outfit, a crescent staff and a grassy base with flowers.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/elf-mage.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b9",
+   "section": "blender",
+   "group": "3d",
+   "title": "Little Knight",
+   "year": "",
+   "tag": "Character",
+   "summary": "A tiny armored knight with glowing eyes, a spear and a shield.",
+   "body": "Chibi knight modeled and rendered in Blender, in grayscale armor with a cape, a spear with a banner and a small blue flag on the helmet.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/little-knight.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "section": "blender",
+   "group": "3d",
+   "title": "Boy with Twin Dogs",
+   "year": "",
+   "tag": "Character",
+   "summary": "A chibi boy holding a white dog, with a black dog at his feet.",
+   "body": "Chibi character modeled and rendered in Blender, with glossy spiky hair, a black uniform and two small dog companions on a pink base.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/boy-with-twin-dogs.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b11",
+   "section": "blender",
+   "group": "3d",
+   "title": "Night Abduction",
+   "year": "",
+   "tag": "Scene",
+   "summary": "A UFO beaming up a cow in a moonlit pine forest.",
+   "body": "A full scene built in Blender: a flying saucer with an alien pilot, a floating cow, a textured grass field and layered pine trees.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/night-abduction.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "b12",
+   "section": "blender",
+   "group": "3d",
+   "title": "Frog Raincoat Girl",
+   "year": "",
+   "tag": "Character · First reference build",
+   "summary": "My first character built in Blender from a reference: a girl in a frog-hood raincoat, from 2D sketch to 3D.",
+   "body": "My first time building a character in Blender from a reference. I started from a 2D sketch and turned it into a full 3D model: a girl with blue hair in an oversized green raincoat with a frog hood, drawstrings, pockets and rain boots, standing in a small puddle.\n\nThe challenge was keeping the charm of the drawing, like the big frog eyes, the soft silhouette and her shy smile, while giving everything volume and a soft, padded fabric look. Press play to compare the reference with the final render.",
+   "link": "",
+   "links": [],
+   "process": true,
+   "coverId": "images/frog-girl-render.jpg",
+   "media": [
+    {
+     "id": "images/frog-girl-sketch.jpg",
+     "kind": "image",
+     "stage": "Concept sketch",
+     "time": "Step 1",
+     "caption": "The 2D sketch I used as reference."
+    },
+    {
+     "id": "images/frog-girl-render.jpg",
+     "kind": "image",
+     "stage": "Final render",
+     "time": "Step 2",
+     "caption": "The finished 3D character, modeled and rendered in Blender."
+    }
+   ]
+  },
+  {
+   "id": "b13",
+   "section": "blender",
+   "group": "3d",
+   "title": "Little Archer",
+   "year": "",
+   "tag": "Character · Concept to 3D",
+   "summary": "A small archer with a bow and quiver, turned from a 2D concept into a 3D figure.",
+   "body": "A 3D character built in Blender from a 2D concept: a young archer with a cap, a scarf over the face, a quiver of arrows and a bow held across the body, displayed on a round base.\n\nI translated the flat, painterly concept into 3D, keeping the faceted shapes of the bow and hair and giving the character my own color palette of blues and greens. Press play to compare the concept with the final render.",
+   "link": "",
+   "links": [],
+   "process": true,
+   "coverId": "images/little-archer-render.jpg",
+   "media": [
+    {
+     "id": "images/little-archer-concept.jpg",
+     "kind": "image",
+     "stage": "Concept sketch",
+     "time": "Step 1",
+     "caption": "The 2D concept the model is based on."
+    },
+    {
+     "id": "images/little-archer-render.jpg",
+     "kind": "image",
+     "stage": "Final render",
+     "time": "Step 2",
+     "caption": "The finished 3D character, modeled and rendered in Blender."
+    }
+   ]
+  },
+  {
+   "id": "v1",
+   "section": "blender",
+   "group": "2d",
+   "title": "Koi Yin-Yang",
+   "year": "",
+   "tag": "Illustration",
+   "summary": "A black and a white koi circling a lotus flower, in a flat, ink-outlined style.",
+   "body": "Made in Blender with a 2D, toon-shaded look: two koi forming a yin-yang around a pink lotus, over layered blue water shapes.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/koi-yin-yang.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "v2",
+   "section": "blender",
+   "group": "2d",
+   "title": "Totoro (Fan Art)",
+   "year": "",
+   "tag": "Fan art",
+   "summary": "A fan-art Totoro modeled in Blender with soft shading and hand-drawn-style outlines.",
+   "body": "Fan art of Totoro from Studio Ghibli’s My Neighbor Totoro, modeled in Blender and rendered with line art for a 2D, illustrated look.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/totoro-fan-art.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "v3",
+   "section": "blender",
+   "group": "2d",
+   "title": "Headband Duo",
+   "year": "",
+   "tag": "Character",
+   "summary": "Two grumpy bean-shaped fighters with headbands and wrapped arms.",
+   "body": "Two characters modeled in Blender and rendered with outlines for a cartoon, 2D look: headbands, bandaged arms and matching grumpy faces.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/headband-duo.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "v4",
+   "section": "blender",
+   "group": "2d",
+   "title": "Orange Blade",
+   "year": "",
+   "tag": "Character",
+   "summary": "A sword fighter in a flat black, white and orange palette.",
+   "body": "Character modeled in Blender and rendered with toon shading and outlines for a flat, graphic 2D look, using only black, white and orange.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/orange-blade.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "v5",
+   "section": "blender",
+   "group": "2d",
+   "title": "Coffee Cat",
+   "year": "",
+   "tag": "Character",
+   "summary": "A lazy blue cat reaching for a coffee cup, drawn-style outlines.",
+   "body": "A cartoon cat modeled in Blender and rendered with line art for a hand-drawn 2D look, stretched across a table next to a coffee cup.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/coffee-cat.jpg",
+     "kind": "image",
+     "stage": "Final render"
+    }
+   ]
+  },
+  {
+   "id": "p1",
+   "section": "projects",
+   "title": "MAIRIN",
+   "year": "2026",
+   "tag": "Women’s health app",
+   "award": "🥈 2nd place · Hackathon Kronox, 10th edition",
+   "summary": "A digital companion that supports women through every stage of life: menstruation, pregnancy and menopause.",
+   "body": "MAIRIN supports women holistically through every stage of their lives (menstruation, pregnancy and menopause) with digital tools that offer reliable information, guidance and support, so they can better understand their bodies, take care of their wellbeing and make informed decisions about their health.\n\nTeam MAIRIN won 2nd place in the 10th edition of Hackathon Kronox in October 2026, after three months of work on the project. The app’s content is available in Spanish, Miskito and Creole.",
+   "link": "",
+   "links": [
+    {
+     "label": "Video #1 (1 min)",
+     "url": "https://youtu.be/o-AoAJSH-J8"
+    },
+    {
+     "label": "Video #2 (2 min)",
+     "url": "https://youtu.be/uyFT9Ja565I"
+    },
+    {
+     "label": "Website",
+     "url": "https://ashl3y-lin.github.io/mairin_web/"
+    },
+    {
+     "label": "Identity manual (PDF, English)",
+     "url": "files/MAIRIN-Identity-Manual-EN.pdf"
+    },
+    {
+     "label": "Identity manual (PDF, Spanish)",
+     "url": "files/MAIRIN-Identity-Manual-ES.pdf"
+    },
+    {
+     "label": "Brochure: before & after app launch",
+     "url": "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing"
+    },
+    {
+     "label": "Drafts and work process",
+     "url": "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing"
+    },
+    {
+     "label": "Hackathon deliverables",
+     "url": "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing"
+    },
+    {
+     "label": "Icons and illustrations",
+     "url": "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing"
+    },
+    {
+     "label": "Marketing posts",
+     "url": "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing"
+    },
+    {
+     "label": "Stickers (Silhouette Studio)",
+     "url": "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing"
+    },
+    {
+     "label": "Instagram @mairinapp",
+     "url": "https://instagram.com/mairinapp"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/mairin-logo-pink.png",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-logo.png",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-manual-cover.jpg",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-manual-moodboard.jpg",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-manual-colors.jpg",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-manual-icons.jpg",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-app-calendar.png",
+     "kind": "image",
+     "stage": "App"
+    },
+    {
+     "id": "images/mairin-app-birth-prep.png",
+     "kind": "image",
+     "stage": "App"
+    },
+    {
+     "id": "images/mairin-manual-digital-mockups.jpg",
+     "kind": "image",
+     "stage": "App"
+    },
+    {
+     "id": "images/mairin-manual-clothing.jpg",
+     "kind": "image",
+     "stage": "Mockups"
+    },
+    {
+     "id": "images/mairin-manual-mockups-1.jpg",
+     "kind": "image",
+     "stage": "Mockups"
+    },
+    {
+     "id": "images/mairin-manual-mockups-2.jpg",
+     "kind": "image",
+     "stage": "Mockups"
+    },
+    {
+     "id": "images/mairin-award.jpg",
+     "kind": "image",
+     "stage": ""
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "section": "projects",
+   "title": "AquaMotriz",
+   "year": "2026",
+   "tag": "Circular economy · AgriTech",
+   "award": "🥇🏆 1st place · Latin American Rally, UAM campus & Nicaragua national stage\n🥈 2nd place · Latin American Rally, Latin American stage",
+   "summary": "Low-cost agro-hydraulic stations built from recycled appliance motors, for small vegetable farmers.",
+   "body": "AquaMotriz aims to give small vegetable farmers access to affordable pumping and irrigation systems while reducing electronic waste. The proposal recovers and adapts motors from discarded household appliances to build low-cost agro-hydraulic stations that support pumping, irrigation and wind energy, combining circular economy, innovation and sustainability.\n\nAquaMotriz busca facilitar el acceso de pequeños productores hortícolas a sistemas de bombeo y riego económicos, mientras reduce los residuos electrónicos. La propuesta consiste en recuperar y adaptar motores de electrodomésticos en desuso para crear estaciones agrohídricas de bajo costo que apoyen el bombeo, el riego y la energía eólica, combinando economía circular, innovación y sostenibilidad.\n\nTeam Avocado won 1st place at the UAM campus and Nicaragua national stages of the Latin American Rally, and then 2nd place at the Latin American stage.\n\nEl Equipo Avocado ganó el 1er lugar en las etapas de sede (UAM) y nacional (Nicaragua) del Rally Latinoamericano, y luego el 2do lugar en la etapa latinoamericana.",
+   "link": "",
+   "links": [
+    {
+     "label": "Video (2 min)",
+     "url": "https://www.youtube.com/watch?v=g0pXDNbKRIM"
+    },
+    {
+     "label": "TikTok",
+     "url": "https://www.tiktok.com/@aguacatech5/video/7697464846438124801"
+    },
+    {
+     "label": "Project report (PDF)",
+     "url": "https://drive.google.com/file/d/1KmpHEHPOcYr6Rf3QdV2lm6Yqz6x5RvFo/view?usp=sharing"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/aquamotriz-render-field.png",
+     "kind": "image",
+     "stage": "3D render"
+    },
+    {
+     "id": "images/aquamotriz-render-station.png",
+     "kind": "image",
+     "stage": "3D render"
+    },
+    {
+     "id": "images/aquamotriz-logo.png",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/aquamotriz-brochure-1.jpg",
+     "kind": "image",
+     "stage": "Print materials"
+    },
+    {
+     "id": "images/aquamotriz-brochure-2.jpg",
+     "kind": "image",
+     "stage": "Print materials"
+    },
+    {
+     "id": "images/aquamotriz-team.jpg",
+     "kind": "image",
+     "stage": ""
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "section": "projects",
+   "title": "Vitalia",
+   "year": "2026",
+   "tag": "Urban innovation",
+   "award": "🥇🏆 1st place · National Innovation Rally, Nicaragua (Innovation category)",
+   "summary": "Smart, bioclimatic micro-parks that turn illegal dumpsites in Managua into living community spaces, so the trash does not come back.",
+   "body": "— English —\n\nIn Managua, illegal dumpsites keep reappearing on empty lots and green areas. A site that gets cleaned but stays abandoned, with no purpose and no one caring for it, fills up with trash again.\n\nVitalia turns those sites into Creative and Bioclimatic Micro-parks built on three parts:\n• Vitalia Eco: bioclimatic landscaping, low-water plants, furniture made from recovered materials and rainwater harvesting.\n• Vitalia Smart: a low-cost, solar-powered ESP32 IoT node that monitors the park and automates irrigation and lighting, feeding a dashboard and a “Biocreative Index”.\n• Vitalia Community: a “Park Godparents” network, QR-code murals and the “Biocreative Challenge” for students, neighbors and local businesses.\n\nTeam Avocado won 1st place in the Innovation category of the National Innovation Rally (Nicaragua Innova 2026) in late August 2026. I designed the project’s brochure.\n\n— Español —\n\nEn Managua, los botaderos ilegales reaparecen en terrenos baldíos y áreas verdes. Un espacio que se limpia pero sigue abandonado, sin función ni cuidado, vuelve a llenarse de basura.\n\nVitalia es un sistema integral de regeneración urbana que transforma botaderos ilegales en Microparques Creativos y Bioclimáticos Inteligentes, en tres componentes:\n• Vitalia Eco: paisajismo bioclimático, especies de bajo consumo de agua, mobiliario hecho con residuos del sitio y captación de lluvia.\n• Vitalia Smart: un nodo IoT de bajo costo basado en ESP32, alimentado con energía solar, que monitorea el parque y automatiza el riego y la iluminación; los datos alimentan un Dashboard y el «Índice Biocreativo».\n• Vitalia Community: la red «Padrinos del Parque», murales con códigos QR y el «Reto Biocreativo» para estudiantes, vecinos y negocios.\n\nNo limpiamos un botadero para esperar que vuelva la basura: lo transformamos.\n\nEl Equipo Avocado ganó el 1er lugar en la categoría de Innovación del Rally Nacional de Innovación (Nicaragua Innova 2026), a finales de agosto de 2026. Diseñé el brochure del proyecto.",
+   "link": "",
+   "links": [
+    {
+     "label": "Video (improved version)",
+     "url": "https://youtu.be/Eq8VXgx-7iM"
+    },
+    {
+     "label": "Video (competition submission)",
+     "url": "https://youtu.be/NHt7gJ_N8rU"
+    },
+    {
+     "label": "Solution proposal report (PDF)",
+     "url": "https://drive.google.com/file/d/1BCVMAG3PFUlzgDThVJhZYVH1AUenLv_q/view?usp=sharing"
+    },
+    {
+     "label": "Brochure (PDF)",
+     "url": "https://drive.google.com/file/d/1ofonL3tmIv9Nza0Fp6aRYtOGm20fX1Sw/view?usp=drive_link"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/vitalia-3d-render.png",
+     "kind": "image",
+     "stage": "3D render"
+    },
+    {
+     "id": "images/vitalia-brochure-1.jpg",
+     "kind": "image",
+     "stage": "Print materials"
+    },
+    {
+     "id": "images/vitalia-brochure-2.jpg",
+     "kind": "image",
+     "stage": "Print materials"
+    },
+    {
+     "id": "images/vitalia-banner.jpg",
+     "kind": "image",
+     "stage": "Print materials"
+    },
+    {
+     "id": "images/vitalia-award.jpg",
+     "kind": "image",
+     "stage": ""
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "section": "projects",
+   "title": "Reviste",
+   "year": "2025",
+   "tag": "Circular fashion · Textile recycling",
+   "award": "🥈🏆 2nd place · Latin American Innovation Rally 2025, UAM DIEM campus stage (Social Impact area)",
+   "summary": "A digital platform that connects the community with textile recycling, so your clothes get another life.",
+   "body": "— English —\n\nWe buy fast and throw away even faster. Only 1% of the clothes produced ever get recycled, the textile industry accounts for about 8% of global greenhouse gas emissions, and around 215 billion liters of water are used every year to make textiles.\n\nReviste is a digital platform that connects the community with textile recycling: donate, reuse, transform.\n• Donate online: register the clothes you no longer wear on the Reviste website.\n• We collect: donated clothes, plus clothes rescued from landfills, go to our center and are sorted into three grades. Excellent condition (AAA) is resold second-hand; medium condition (AA) is customized into a new style; worn-out pieces are shredded and pressed with a bio-based adhesive into new fabric for local artisans.\n• The shredder: a machine modeled in 3D with two electric motors, each connected by a chain to a crusher made of two stacks of gears turning in opposite directions, inside a box covered in clear plastic.\n• We close the loop: the products return to the platform, and part of the profits funds rural education projects.\n\nReviste contributes to 8 UN Sustainable Development Goals. Team AguacaTech won 2nd place at the UAM DIEM campus stage of the Latin American Innovation Rally, in the Social Impact area (Challenge 02: Textile Recycling).\n\n— Español —\n\nCompramos rápido. Desechamos más rápido. Solo el 1% de las prendas producidas logra reciclarse, la industria textil genera cerca del 8% de las emisiones globales de gases de efecto invernadero y se usan unos 215 billones de litros de agua cada año para producir textiles.\n\nReviste es una plataforma digital que conecta a tu comunidad con el reciclaje textil: dona, reutiliza, transforma.\n• Dona en línea: registra en el sitio web de Reviste las prendas que ya no usas.\n• Recolectamos: la ropa donada, y la rescatada de vertederos, llega a nuestro centro y se clasifica en tres categorías. Excelente estado (AAA) se vende como segunda mano; estado medio (AA) se personaliza y se convierte en un estilo nuevo; las prendas en mal estado se trituran y compactan con un adhesivo biobasado para crear tela para artesanos locales.\n• La trituradora: una máquina modelada en 3D con dos motores eléctricos, cada uno conectado por una cadena a una trituradora de 2 pilas de engranajes que giran en sentidos opuestos, dentro de una caja cubierta de plástico transparente.\n• Cerramos el ciclo: los productos vuelven a la plataforma y parte de las ganancias financia proyectos educativos rurales.\n\nTu ropa merece otra vida. Reviste contribuye a 8 ODS de la ONU. El equipo AguacaTech obtuvo el segundo lugar en la etapa de sede (UAM, Sede DIEM) del Rally Latinoamericano de Innovación, en el Área Impacto Social (Desafío 02: Reciclado Textil).",
+   "link": "",
+   "links": [
+    {
+     "label": "Reviste website",
+     "url": "https://illuminateyouquote.wixsite.com/reviste"
+    },
+    {
+     "label": "Video",
+     "url": "https://www.youtube.com/watch?v=UUU2PZUgIx4"
+    },
+    {
+     "label": "Project report (PDF)",
+     "url": "files/Reviste-Project-Report.pdf"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/reviste-logo.png",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/reviste-award.jpg",
+     "kind": "image",
+     "stage": ""
+    },
+    {
+     "id": "images/reviste-brochure-1.jpg",
+     "kind": "image",
+     "stage": "Print materials"
+    },
+    {
+     "id": "images/reviste-brochure-2.jpg",
+     "kind": "image",
+     "stage": "Print materials"
+    },
+    {
+     "id": "images/reviste-shredder.jpg",
+     "kind": "image",
+     "stage": "3D render"
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "section": "projects",
+   "title": "ANS Robotics Website",
+   "year": "2024",
+   "tag": "Robotics · Web design",
+   "award": "🥈 2nd place · World Robot Olympiad (WRO), after 3 years of competing",
+   "summary": "A learning website I created for my high school’s new robotics program, plus three years competing in WRO and now coaching.",
+   "body": "I created the ANS Robotics hub, a website for my high school’s new robotics program where students learn robotics while having fun.\n\nHow I built it: I was passionate about robotics, wanted to help my community, and was a complete beginner in programming. My video (linked below) follows that journey:\n• Teaching myself to build a website from scratch through free online courses.\n• Planning the site’s design and structure.\n• Recording the robots’ movements to show how they work.\n• Putting it all together and publishing it online.\n\nI competed in the World Robot Olympiad (WRO) for three years and kept improving until I reached the podium:\n• Year 1: 5th place\n• Year 2: 4th place\n• Year 3: 2nd place\n\nToday I’m the robotics coach at my high school, leading my teams toward the championship.",
+   "link": "",
+   "links": [
+    {
+     "label": "ANS Robotics website",
+     "url": "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/"
+    },
+    {
+     "label": "Video: my journey building the website",
+     "url": "https://youtu.be/xHw7wPLTmTk"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/ans-robotics-website.jpg",
+     "kind": "image",
+     "stage": "Website"
+    },
+    {
+     "id": "images/wro-logo.png",
+     "kind": "image",
+     "stage": "Competition"
+    },
+    {
+     "id": "images/wro-team.jpg",
+     "kind": "image",
+     "stage": ""
+    },
+    {
+     "id": "images/wro-robot.jpg",
+     "kind": "image",
+     "stage": ""
+    }
+   ]
+  },
+  {
+   "id": "a1",
+   "section": "advertising",
+   "title": "PIM Bandages",
+   "year": "",
+   "tag": "First commercial · Original characters · Made in Blender",
+   "summary": "“The Best Bandage Ever”: my first commercial, starring Pio, Iko and Mill, three characters I created.",
+   "body": "Every great bandage needs a hero. Mine needed three.\n\nPIM is a trio of characters I created from my own imagination: Pio the chicken, Iko the sheep and Mill the cat. Together their names spell PIM, and they are the start of a series I have in mind. This bandage box is their very first job.\n\nThis was my first time making a commercial. I drew the characters, designed the packaging around them (front, sides, the hanging tab, even a barcode), wrapped the artwork onto a 3D box in Blender and animated the reveal, with bandages flying out of the box.\n\nThe tagline says it all: “The Best Bandage Ever.” One thumbs-up, one bandage, zero boo-boos left behind.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/pim-bandages-box.jpg",
+     "kind": "image",
+     "stage": "3D render"
+    },
+    {
+     "id": "images/pim-bandages-commercial.gif",
+     "kind": "image",
+     "stage": "Commercial"
+    },
+    {
+     "id": "images/pim-bandages-packaging.jpg",
+     "kind": "image",
+     "stage": "Packaging design"
+    }
+   ]
+  },
+  {
+   "id": "a2",
+   "section": "advertising",
+   "title": "iPhone Concept Ad",
+   "year": "",
+   "tag": "3D product ad · Concept · Made in Blender",
+   "summary": "A 3D product spot for a pink iPhone, modeled, lit and animated in Blender.",
+   "body": "A short product commercial in the style of a tech launch: the camera glides around a pink iPhone in the dark, revealing the camera module, the side buttons, the edges and the screen frame in a series of close-ups.\n\nI modeled the phone, set up the studio lighting and animated the camera moves in Blender. This is a personal concept piece to practice product visualization, not a commissioned ad for Apple.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/iphone-ad.gif",
+     "kind": "image",
+     "stage": "Commercial"
+    },
+    {
+     "id": "images/iphone-render-1.jpg",
+     "kind": "image",
+     "stage": "3D render"
+    },
+    {
+     "id": "images/iphone-render-2.jpg",
+     "kind": "image",
+     "stage": "3D render"
+    }
+   ],
+   "coverId": "images/iphone-render-1.jpg"
+  },
+  {
+   "id": "a3",
+   "section": "advertising",
+   "title": "Baby-G Watch Concept Ad",
+   "year": "",
+   "tag": "3D product ad · Concept · Made in Blender",
+   "summary": "A 3D product spot for a white and gold Baby-G watch, from a slow close-up turn to a gift-box presentation.",
+   "body": "A product commercial for a white Baby-G watch with a gold bezel and glowing hands. The animation slowly turns the watch to show the dial, the bezel and the link bracelet, and the stills present it in a dark close-up and resting in a wooden gift box lined with blue velvet.\n\nI modeled the watch, its bracelet and the presentation box, and set up the lighting and camera animation in Blender. This is a personal concept piece to practice product visualization, not a commissioned ad for Casio.",
+   "link": "",
+   "links": [],
+   "coverId": "images/watch-gift-box.jpg",
+   "media": [
+    {
+     "id": "images/watch-ad.gif",
+     "kind": "image",
+     "stage": "Commercial"
+    },
+    {
+     "id": "images/watch-gift-box.jpg",
+     "kind": "image",
+     "stage": "3D render"
+    },
+    {
+     "id": "images/watch-closeup.jpg",
+     "kind": "image",
+     "stage": "3D render"
+    }
+   ]
+  },
+  {
+   "id": "a4",
+   "section": "advertising",
+   "title": "Nerf Elite 2.3 Concept Ad",
+   "year": "",
+   "tag": "3D product ad · Concept · Made in Blender",
+   "summary": "A short 3D product spot for an orange and blue Nerf blaster that ends by firing a dart.",
+   "body": "A quick product commercial for a toy blaster: the camera circles the orange and blue “Elite 2.3” model in a clean studio setting, then the blaster fires a dart across the frame.\n\nI modeled the blaster, the dart and the details, and set up the lighting and animation in Blender. This is a personal concept piece to practice product visualization, not a commissioned ad for Nerf or Hasbro.",
+   "link": "",
+   "links": [],
+   "coverId": "images/nerf-render.jpg",
+   "media": [
+    {
+     "id": "images/nerf-ad.gif",
+     "kind": "image",
+     "stage": "Commercial"
+    },
+    {
+     "id": "images/nerf-render.jpg",
+     "kind": "image",
+     "stage": "3D render"
+    }
+   ]
+  },
+  {
+   "id": "an2",
+   "section": "animation",
+   "title": "PIM",
+   "year": "2025",
+   "tag": "2D art animation · Original series",
+   "summary": "An animated series starring Pio, Iko and Mill, three characters I created and brought to life.",
+   "body": "I have always wanted to create my own characters. In 2025, I made it possible.\n\nPio the chicken, Iko the sheep and Mill the cat: three characters that came straight out of my imagination, and that I wanted to bring to life. Put their names together and you get PIM.\n\nI created PIM as an animated series for YouTube and social media. So far I have made 4 episodes, plus a short that introduces the trio. The series is paused for now, but the characters are ready for more.\n\nWhat I learned:\n• How to design characters from scratch, from the first sketch to a consistent look.\n• What makes a good character: a unique personality and clear traits. Pio is cheerful, Iko is unimpressed and Mill is playful, and you can tell before they say a word.\n• What captivates an audience: in short animations like these, exaggerated and dramatic expressions are what let a character’s personality come through.",
+   "link": "",
+   "links": [
+    {
+     "label": "PIM YouTube channel",
+     "url": "https://www.youtube.com/channel/UCOBdLZuojNimDScZw_MrUfA"
+    },
+    {
+     "label": "Watch all the episodes",
+     "url": "https://youtu.be/frOI_FOqxjM"
+    },
+    {
+     "label": "PIM introduction (Short)",
+     "url": "https://youtube.com/shorts/sUX2VXuhQY0"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/pim-scene.jpg",
+     "kind": "image",
+     "stage": "Render"
+    },
+    {
+     "id": "images/pim-characters.jpg",
+     "kind": "image",
+     "stage": "Character design"
+    },
+    {
+     "id": "images/pim-logo.jpg",
+     "kind": "image",
+     "stage": "Character design"
+    }
+   ]
+  },
+  {
+   "id": "an1",
+   "section": "animation",
+   "title": "Creatively Club Animation",
+   "year": "2021",
+   "tag": "2D art animation",
+   "summary": "The story behind the Creatively club logo: a little light bulb that learns to think outside the box.",
+   "body": "A 2D art animation that tells the story behind the logo of the Creatively club, whose motto is “Think outside the box”.\n\nThe animation follows a small, glowing light bulb character and ends on the club’s logo: the bulb jumping out of an open box next to the Creatively wordmark.",
+   "link": "",
+   "links": [
+    {
+     "label": "Watch the animation on YouTube",
+     "url": "https://youtu.be/BA6XbgSX7vY"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/creatively-frame.jpg",
+     "kind": "image",
+     "stage": "Render"
+    },
+    {
+     "id": "images/creatively-logo.jpg",
+     "kind": "image",
+     "stage": "Render"
+    }
+   ]
+  },
+  {
+   "id": "s1",
+   "section": "printing",
+   "group": "clay",
+   "title": "Koi Fish",
+   "year": "2021",
+   "tag": "First sculpture",
+   "summary": "My first sculpture: two koi circling in a little pond, from raw clay to finished piece in one afternoon.",
+   "body": "My first sculpting project: two koi fish, one gold and one white with red and black patterns, swimming around each other in a small green pond.\n\nThe whole piece came together in a single day, on December 29, 2021. Press play to follow it step by step, from bare clay just before noon to the finished piece by late afternoon.",
+   "link": "",
+   "links": [],
+   "process": true,
+   "coverId": "images/koi-5-finished.jpg",
+   "coverPos": "",
+   "media": [
+    {
+     "id": "images/koi-1-clay.jpg",
+     "kind": "image",
+     "stage": "Sculpting",
+     "time": "11:57 AM",
+     "caption": "Bare clay: shaping the two koi, their fins and the pond base."
+    },
+    {
+     "id": "images/koi-2-first-color.jpg",
+     "kind": "image",
+     "stage": "Painting",
+     "time": "2:27 PM",
+     "caption": "First coat of color: a gold koi, a white koi and a green pond."
+    },
+    {
+     "id": "images/koi-3-patterns.jpg",
+     "kind": "image",
+     "stage": "Painting",
+     "time": "2:55 PM",
+     "caption": "Adding the red-orange patterns and the fins."
+    },
+    {
+     "id": "images/koi-4-details.jpg",
+     "kind": "image",
+     "stage": "Painting",
+     "time": "3:46 PM",
+     "caption": "Black spots and a sparkle of glitter on the scales."
+    },
+    {
+     "id": "images/koi-5-finished.jpg",
+     "kind": "image",
+     "stage": "Finished piece",
+     "time": "4:40 PM",
+     "caption": "Finished: the koi inside a clear case with gold corners, like a tiny pond."
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "section": "printing",
+   "group": "clay",
+   "title": "Dragon",
+   "year": "2022",
+   "tag": "Sculpture",
+   "summary": "A coiling dragon rising from a blue base, built up from a foil skeleton over three weeks.",
+   "body": "A dragon coiling upward from a blue, wave-like base, with a golden mane, red and orange scales and long whiskers.\n\nUnlike my first sculpture, this one was planned from the start. I drew the design on February 12, then built it in May and June: it started as a twisted aluminum foil skeleton, was covered in clay the same morning, and then was painted and detailed layer by layer. Press play to follow it from the first sketch to the finished piece.",
+   "link": "",
+   "links": [],
+   "process": true,
+   "coverId": "images/dragon-5-finished.jpg",
+   "media": [
+    {
+     "id": "images/dragon-1-sketch.jpg",
+     "kind": "image",
+     "stage": "Sketch",
+     "time": "Feb 12",
+     "caption": "The original design: a dragon coiling through clouds, planned in gold, red and gold glitter."
+    },
+    {
+     "id": "images/dragon-2-armature.jpg",
+     "kind": "image",
+     "stage": "Armature",
+     "time": "May 28 · 10:13 AM",
+     "caption": "The skeleton: aluminum foil twisted into the dragon’s winding body."
+    },
+    {
+     "id": "images/dragon-3-clay.jpg",
+     "kind": "image",
+     "stage": "Sculpting",
+     "time": "May 28 · 12:29 PM",
+     "caption": "Two hours later: covered in clay, with the head, horns, claws and base."
+    },
+    {
+     "id": "images/dragon-4-painting.jpg",
+     "kind": "image",
+     "stage": "Painting",
+     "time": "June 8",
+     "caption": "Color: red and orange scales, a golden mane and a blue sea base."
+    },
+    {
+     "id": "images/dragon-5-finished.jpg",
+     "kind": "image",
+     "stage": "Finished piece",
+     "time": "June 18",
+     "caption": "Finished: gold details, glitter and whiskers bring the dragon to life."
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "section": "printing",
+   "group": "clay",
+   "title": "River Valley Scenery",
+   "year": "2022",
+   "tag": "Scenery",
+   "summary": "A miniature river valley with mountains, a plank bridge, a sailboat and a tiny village on an island.",
+   "body": "A full miniature landscape instead of a single figure: a river running between mountains, a big old tree, a wooden plank bridge, a sailboat and a little island with tiny houses.\n\nI sketched it on May 30 as a personal challenge, then built it in four days: first sculpting the whole terrain in clay, then painting the water and rocks, and finally adding colorful foliage to bring the valley to life. Press play to see it change.",
+   "link": "",
+   "links": [],
+   "process": true,
+   "coverId": "images/scenery-4-finished.jpg",
+   "media": [
+    {
+     "id": "images/scenery-1-sketch.jpg",
+     "kind": "image",
+     "stage": "Sketch",
+     "time": "May 30",
+     "caption": "The plan, drawn as a “challenge”: a dusk landscape with land, a bridge, a boat and houses touching the water."
+    },
+    {
+     "id": "images/scenery-2-clay.jpg",
+     "kind": "image",
+     "stage": "Sculpting",
+     "time": "June 7 · 5:16 PM",
+     "caption": "The terrain in bare clay: mountains, the tree, the plank bridge and the boat."
+    },
+    {
+     "id": "images/scenery-3-painted.jpg",
+     "kind": "image",
+     "stage": "Painting",
+     "time": "June 8",
+     "caption": "Painted: a blue river, mossy green rocks and a village on the island."
+    },
+    {
+     "id": "images/scenery-4-finished.jpg",
+     "kind": "image",
+     "stage": "Finished piece",
+     "time": "June 10",
+     "caption": "Finished: bright green, orange and red foliage covers the valley."
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "section": "printing",
+   "group": "clay",
+   "title": "Little Tigers",
+   "year": "2022",
+   "tag": "Handmade gifts",
+   "summary": "Six tiny hand-sculpted tigers, each one made to be given away.",
+   "body": "A set of six little tigers, each sculpted and painted by hand, with orange stripes, white paws and a small loop on top so they can be hung.\n\nI made them as gifts, and that is what taught me the most: a present made with my own hands and effort means much more than anything bought in a store.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/little-tigers.jpg",
+     "kind": "image",
+     "stage": "Finished piece"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "section": "printing",
+   "group": "clay",
+   "title": "Hummingbird and Roses",
+   "year": "2022",
+   "tag": "Sculpture",
+   "summary": "A hummingbird in mid-flight sipping from a cluster of red roses, sculpted and painted by hand.",
+   "body": "A hummingbird hovering with its wings raised, its long, thin beak reaching into a cluster of red roses and buds on a green base of leaves.\n\nThe hardest part was the thin, delicate pieces: the layered rose petals, the open wings and the beak. Once the clay was shaped, I painted the roses red, the bird in blues and purples, and finished everything with glitter so it sparkles in the light. I designed it on May 30 and sculpted it on June 6. Press play to follow it from the sketch to the finished color.",
+   "link": "",
+   "links": [],
+   "process": true,
+   "coverId": "images/hummingbird-3-finished.jpg",
+   "media": [
+    {
+     "id": "images/hummingbird-1-sketch.jpg",
+     "kind": "image",
+     "stage": "Sketch",
+     "time": "May 30",
+     "caption": "The design: the hummingbird reaching into the flowers, with notes on colors and plants."
+    },
+    {
+     "id": "images/hummingbird-2-clay.jpg",
+     "kind": "image",
+     "stage": "Sculpting",
+     "time": "June 6",
+     "caption": "Bare clay: the hummingbird, the roses and the leafy base, before painting."
+    },
+    {
+     "id": "images/hummingbird-3-finished.jpg",
+     "kind": "image",
+     "stage": "Finished piece",
+     "time": "Finished",
+     "caption": "Finished: painted red roses and a blue-purple hummingbird covered in glitter."
+    }
+   ]
+  },
+  {
+   "id": "br1",
+   "section": "branding",
+   "title": "MAIRIN Identity Manual",
+   "year": "2026",
+   "tag": "Visual identity system",
+   "summary": "The complete brand identity manual for MAIRIN, a women’s health app: logo, colors, type, icons, UI and mockups.",
+   "body": "A full visual identity system for MAIRIN, a women’s health app that accompanies women through every stage of life.\n\nThe 42-page manual covers the brand (who we are, mission, vision, brand DNA and target audience), the moodboard, the logo and its symbolism, construction, color and positive/negative versions, correct and incorrect uses, clear space and minimum sizes, corporate typography and colors, custom icons, the UI/UX visual system (inputs, cards, buttons) and mockups on clothing, stationery, bottles, bags and the app itself.",
+   "link": "",
+   "links": [
+    {
+     "label": "Identity manual (PDF, English)",
+     "url": "files/MAIRIN-Identity-Manual-EN.pdf"
+    },
+    {
+     "label": "Identity manual (PDF, Spanish)",
+     "url": "files/MAIRIN-Identity-Manual-ES.pdf"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/mairin-logo.png",
+     "kind": "image",
+     "stage": "Logo"
+    },
+    {
+     "id": "images/mairin-logo-pink.png",
+     "kind": "image",
+     "stage": "Logo"
+    },
+    {
+     "id": "images/mairin-manual-main-logos.jpg",
+     "kind": "image",
+     "stage": "Logo",
+     "caption": "Main logos"
+    },
+    {
+     "id": "images/mairin-manual-color-variations.jpg",
+     "kind": "image",
+     "stage": "Logo",
+     "caption": "Color variations"
+    },
+    {
+     "id": "images/mairin-manual-positive-negative.jpg",
+     "kind": "image",
+     "stage": "Logo",
+     "caption": "Positive and negative versions"
+    },
+    {
+     "id": "images/mairin-manual-typography.jpg",
+     "kind": "image",
+     "stage": "Identity",
+     "caption": "Corporate typography"
+    },
+    {
+     "id": "images/mairin-manual-cover.jpg",
+     "kind": "image",
+     "stage": "Identity"
+    },
+    {
+     "id": "images/mairin-manual-moodboard.jpg",
+     "kind": "image",
+     "stage": "Identity"
+    },
+    {
+     "id": "images/mairin-manual-colors.jpg",
+     "kind": "image",
+     "stage": "Identity"
+    },
+    {
+     "id": "images/mairin-manual-icons.jpg",
+     "kind": "image",
+     "stage": "Identity"
+    },
+    {
+     "id": "images/mairin-manual-clothing.jpg",
+     "kind": "image",
+     "stage": "Applications"
+    },
+    {
+     "id": "images/mairin-manual-mockups-1.jpg",
+     "kind": "image",
+     "stage": "Applications"
+    },
+    {
+     "id": "images/mairin-manual-mockups-2.jpg",
+     "kind": "image",
+     "stage": "Applications"
+    },
+    {
+     "id": "images/mairin-manual-digital-mockups.jpg",
+     "kind": "image",
+     "stage": "Applications"
+    }
+   ]
+  },
+  {
+   "id": "t1",
+   "section": "printing",
+   "group": "print",
+   "title": "Virgin Mary Figurine",
+   "year": "2026",
+   "tag": "3D printing · A thank-you gift",
+   "summary": "A figurine modeled in Blender and tested as an .stl for 3D printing, made as a thank-you gift.",
+   "body": "A figurine of the Virgin Mary, modeled in Blender and prepared as an .stl file for 3D printing: a soft white veil with gold trim, a halo and a red heart.\n\nI made it as a gift for a very important person in my life, someone who has supported me so much. With this piece I want to show her how far I have come, and to say thank you.\n\nThis figurine was a process of trial and error. My first attempt turned out very badly, but I learned from it, and that is how I learned to model people in 3D. This version is the result of starting over with what that first try taught me.\n\nI don’t have a 3D printer yet, so I tested the file the way a printer would read it. I exported the model from Blender as an .stl and opened it in Fusion and Tinkercad to check that the mesh holds together. Those checks showed where the geometry still needs work, especially around the face, before it is ready to print. Press play to follow the process.",
+   "link": "",
+   "links": [
+    {
+     "label": "Project files (Google Drive)",
+     "url": "https://drive.google.com/drive/folders/17EWn1K_AjD48LKI-Zxi4EYukAjvu29RC?usp=sharing"
+    }
+   ],
+   "process": true,
+   "coverId": "images/virgin-mary-render.jpg",
+   "coverPos": "contain",
+   "media": [
+    {
+     "id": "images/virgin-mary-render.jpg",
+     "kind": "image",
+     "stage": "3D model",
+     "time": "Blender",
+     "caption": "The final render in Blender: veil, halo and heart."
+    },
+    {
+     "id": "images/virgin-mary-fusion.jpg",
+     "kind": "image",
+     "stage": "Mesh check",
+     "time": "Fusion",
+     "caption": "The exported .stl opened in Fusion to inspect the mesh as one solid."
+    },
+    {
+     "id": "images/virgin-mary-tinkercad.jpg",
+     "kind": "image",
+     "stage": "Mesh check",
+     "time": "Tinkercad",
+     "caption": "The same file in Tinkercad, placed on the build plate as a printer would see it."
+    }
+   ]
+  },
+  {
+   "id": "l1",
+   "section": "blender",
+   "group": "lowpoly",
+   "title": "Alien UFO Abducting a Cow",
+   "year": "",
+   "tag": "Scene · Low poly",
+   "summary": "A low poly diorama at night: a flying saucer beams a cow out of a fenced field while the herd watches.",
+   "body": "A low poly diorama built in Blender: a floating square of field under a starry night sky, with a wooden fence, faceted pine trees and crystal-like rocks. A flying saucer hovers between two blocky clouds and beams one cow into the air, while the rest of the herd gathers around the glowing spot to watch.\n\nThe scene is shown from three camera angles: from above, from the front and from a low, close view inside the field.",
+   "link": "",
+   "links": [],
+   "media": [
+    {
+     "id": "images/ufo-cow-front.jpg",
+     "kind": "image",
+     "stage": "Final render",
+     "caption": "Front view."
+    },
+    {
+     "id": "images/ufo-cow-top.jpg",
+     "kind": "image",
+     "stage": "Final render",
+     "caption": "View from above."
+    },
+    {
+     "id": "images/ufo-cow-close.jpg",
+     "kind": "image",
+     "stage": "Final render",
+     "caption": "Close view from inside the field."
+    }
+   ]
+  }
+ ],
+ "site": {
+  "title": "Ashley Lin · Portfolio",
+  "logo": "images/alf-logo.png"
+ }
+}
