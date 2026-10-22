@@ -446,7 +446,7 @@
    "year": "",
    "tag": "Character",
    "summary": "Two grumpy bean-shaped fighters with headbands and wrapped arms.",
-   "body": "Two characters modeled in Blender and rendered with outlines for a cartoon, 2D look: headbands, bandaged arms and matching grumpy faces.",
+   "body": "Two characters modeled in Blender and rendered with outlines for a cartoon, 2D look: headbands, bandaged arms and matching grumpy faces.\nFor me, it looks like a potato, but most people say they are breads",
    "link": "",
    "links": [],
    "media": [
@@ -455,7 +455,10 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "award": "",
+   "coverPos": "",
+   "process": false
   },
   {
    "id": "v4",
