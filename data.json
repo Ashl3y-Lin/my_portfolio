@@ -131,6 +131,29 @@
  ],
  "projects": [
   {
+   "id": "pmvixh6jwp1g5",
+   "section": "branding",
+   "title": "Creatively club Branding | Improved Version",
+   "tag": "Logo",
+   "year": "2026",
+   "summary": "Creatively club logo was created in 2021 and it has gone a long way.",
+   "body": "It's time to improve the branding. Because it has too many color and complex, I want to do a branding that can be more simplified and used in many other areas, especially that the brand is simpler",
+   "link": "",
+   "media": [
+    {
+     "id": "images/cccreatively-5hq9h.png",
+     "kind": "image",
+     "name": "Cccreatively.png",
+     "stage": "Applications"
+    }
+   ],
+   "group": "",
+   "links": [],
+   "award": "",
+   "coverPos": "",
+   "process": false
+  },
+  {
    "id": "b1",
    "section": "blender",
    "title": "Antlered Mage",
