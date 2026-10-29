@@ -369,82 +369,178 @@
  ],
  "projects": [
   {
-   "id": "pmvocc8ptucnt",
+   "id": "p1",
    "section": "projects",
-   "title": "Creative Challenge | Art Competition | Art Gallery| Creatively Club",
-   "tag": "Art Gallery",
-   "year": "2020",
-   "summary": "Creatively Challenge is an art competition, the most important activity hosted by Creatively Club. As Co-Founder and Vice-president of this club, I am excited to have organized this event.",
-   "body": "The purpose of the Creative Challenge is to invite aspiring artists to join in this challenge and create innovative pieces that show your exceptional creativity and artistic skills. Our goal for this challenge is to inspire the community and establish a culture of artistic appreciation at ANS and other schools. By being willing to accept this challenge, you will become part of an ongoing tradition that will foster art and innovative ideas in the community.",
+   "title": "MAIRIN",
+   "year": "2026",
+   "tag": "Women’s health app",
+   "award": "🥈 2nd place · Hackathon Kronox, 10th edition",
+   "summary": "A digital companion that supports women through every stage of life: menstruation, pregnancy and menopause.",
+   "body": "MAIRIN supports women holistically through every stage of their lives (menstruation, pregnancy and menopause) with digital tools that offer reliable information, guidance and support, so they can better understand their bodies, take care of their wellbeing and make informed decisions about their health.\n\nTeam MAIRIN won 2nd place in the 10th edition of Hackathon Kronox in October 2026, after three months of work on the project. The app’s content is available in Spanish, Miskito and Creole.",
    "link": "",
-   "media": [
-    {
-     "id": "images/screenshot-2026-10-25-at-3-25-57-pm-b7e6r.png",
-     "kind": "image",
-     "name": "Screenshot 2026-10-25 at 3.25.57 PM.png",
-     "stage": "Competition",
-     "caption": "Art Gallery"
-    },
-    {
-     "id": "images/screenshot-2026-10-25-at-3-22-44-pm-udvyi.png",
-     "kind": "image",
-     "name": "Screenshot 2026-10-25 at 3.22.44 PM.png",
-     "stage": "Competition",
-     "caption": "Art Gallery Overview"
-    },
-    {
-     "id": "images/cccreatively-aub1u.png",
-     "kind": "image",
-     "name": "Cccreatively.png",
-     "stage": "Competition",
-     "caption": "Creatively Club Logo"
-    },
-    {
-     "id": "images/club-tajcv.png",
-     "kind": "image",
-     "name": "club.png",
-     "stage": "Competition",
-     "caption": "Creatively Club Creative Challenge Design"
-    }
-   ],
-   "group": "",
    "links": [
     {
-     "label": "Art Gallery Link",
-     "url": "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963"
+     "label": "Video #1 (1 min)",
+     "url": "https://youtu.be/o-AoAJSH-J8"
     },
     {
-     "label": "Creative Challenge Website",
-     "url": "https://creativechallenges.wixsite.com/creatively-club-ans"
+     "label": "Video #2 (2 min)",
+     "url": "https://youtu.be/uyFT9Ja565I"
+    },
+    {
+     "label": "Website",
+     "url": "https://ashl3y-lin.github.io/mairin_web/"
+    },
+    {
+     "label": "Identity manual (PDF, English)",
+     "url": "files/MAIRIN-Identity-Manual-EN.pdf"
+    },
+    {
+     "label": "Identity manual (PDF, Spanish)",
+     "url": "files/MAIRIN-Identity-Manual-ES.pdf"
+    },
+    {
+     "label": "Brochure: before & after app launch",
+     "url": "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing"
+    },
+    {
+     "label": "Drafts and work process",
+     "url": "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing"
+    },
+    {
+     "label": "Hackathon deliverables",
+     "url": "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing"
+    },
+    {
+     "label": "Icons and illustrations",
+     "url": "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing"
+    },
+    {
+     "label": "Marketing posts",
+     "url": "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing"
+    },
+    {
+     "label": "Stickers (Silhouette Studio)",
+     "url": "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing"
+    },
+    {
+     "label": "Instagram @mairinapp",
+     "url": "https://instagram.com/mairinapp"
+    },
+    {
+     "label": "Figma Design Prototype",
+     "url": "https://www.figma.com/design/v0uNJ1K5DAYq5Pxo8lOWUK/APP?node-id=0-1&p=f&t=zI3ECsG9uAoPz5qT-0"
     }
    ],
-   "award": "Creative Challenge 3rd edition",
+   "media": [
+    {
+     "id": "images/mairin-logo-pink.png",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-logo.png",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-manual-cover.jpg",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-manual-moodboard.jpg",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-manual-colors.jpg",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-manual-icons.jpg",
+     "kind": "image",
+     "stage": "Brand identity"
+    },
+    {
+     "id": "images/mairin-app-calendar.png",
+     "kind": "image",
+     "stage": "App"
+    },
+    {
+     "id": "images/mairin-app-birth-prep.png",
+     "kind": "image",
+     "stage": "App"
+    },
+    {
+     "id": "images/mairin-manual-digital-mockups.jpg",
+     "kind": "image",
+     "stage": "App"
+    },
+    {
+     "id": "images/mairin-manual-clothing.jpg",
+     "kind": "image",
+     "stage": "Mockups"
+    },
+    {
+     "id": "images/mairin-manual-mockups-1.jpg",
+     "kind": "image",
+     "stage": "Mockups"
+    },
+    {
+     "id": "images/mairin-manual-mockups-2.jpg",
+     "kind": "image",
+     "stage": "Mockups"
+    },
+    {
+     "id": "images/mairin-award.jpg",
+     "kind": "image",
+     "stage": ""
+    }
+   ],
    "coverPos": "",
-   "process": true,
-   "coverId": "",
+   "process": false,
+   "group": "",
    "i18n": {
     "es": {
-     "media": {},
-     "title": "Creative Challenge | Concurso de Arte | Galería de Arte | Creatively Club",
-     "tag": "Galería de Arte",
-     "summary": "Creative Challenge es un concurso de arte y la actividad más importante de Creatively Club. Como cofundadora y vicepresidenta del club, me alegra haber organizado este evento.",
-     "body": "El objetivo de Creative Challenge es invitar a jóvenes artistas a crear obras originales que demuestren su creatividad y talento artístico. Queremos inspirar a la comunidad y promover el aprecio por el arte en ANS y otras escuelas. Al participar, formarás parte de una tradición que impulsa el arte y las nuevas ideas.",
-     "award": "Creative Challenge, 4.ª edición",
+     "tag": "App de salud femenina",
+     "summary": "Un acompañamiento digital que apoya a las mujeres en cada etapa de su vida: menstruación, embarazo y menopausia.",
+     "award": "🥈 2do lugar · Hackathon Kronox, 10ma edición",
+     "body": "Nuestro proyecto acompaña y apoya integralmente a las mujeres en cada etapa de su vida —menstruación, embarazo y menopausia— con herramientas digitales que brindan información confiable, orientación y apoyo, para que comprendan mejor sus procesos, cuiden su bienestar y tomen decisiones informadas sobre su salud.\n\nEl Equipo MAIRIN ganó el 2do lugar en la 10ma edición del Hackathon Kronox en octubre de 2026, después de tres meses de trabajo en el proyecto. El contenido de la app está disponible en español, miskito y criollo.",
      "links": {
-      "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963": "Enlace a la Galería de Arte",
-      "https://creativechallenges.wixsite.com/creatively-club-ans": "Sitio web de Creative Challenge"
+      "https://youtu.be/o-AoAJSH-J8": "Video #1 (1 min)",
+      "https://youtu.be/uyFT9Ja565I": "Video #2 (2 min)",
+      "https://ashl3y-lin.github.io/mairin_web/": "Sitio web",
+      "files/MAIRIN-Identity-Manual-EN.pdf": "Manual de identidad (PDF, inglés)",
+      "files/MAIRIN-Identity-Manual-ES.pdf": "Manual de identidad (PDF, español)",
+      "https://instagram.com/mairinapp": "Instagram @mairinapp",
+      "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing": "Brochure: antes y después del lanzamiento de la app",
+      "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing": "Borradores y proceso de trabajo",
+      "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing": "Entregables del hackathon",
+      "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing": "Íconos e ilustraciones",
+      "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing": "Posts de marketing",
+      "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing": "Stickers (Silhouette Studio)"
      }
     },
     "zh": {
-     "media": {},
-     "title": "Creative Challenge | 艺术比赛 | 艺术画廊 | Creatively Club",
-     "tag": "艺术画廊",
-     "summary": "Creative Challenge 是 Creatively Club 最重要的活动之一，也是一项艺术比赛。作为俱乐部的联合创始人和副主席，我很高兴能够组织这次活动。",
-     "body": "Creative Challenge 邀请热爱艺术的年轻人创作原创作品，展示他们的创造力和艺术才能。我们的目标是激发社区的灵感，并在 ANS 和其他学校推广艺术欣赏文化。\n\n通过参加比赛，你也将成为这个艺术传统的一部分，一起推动艺术与创新。",
-     "award": "Creative Challenge 第4届",
+     "tag": "女性健康应用",
+     "summary": "一款陪伴女性走过人生每个阶段的数字助手：月经、怀孕与更年期。",
+     "award": "🥈 第二名 · Kronox 黑客松第十届",
+     "body": "MAIRIN 以数字工具全面陪伴和支持女性走过人生的每个阶段（月经、怀孕和更年期），提供可靠的信息、指导与支持，帮助她们更好地了解自己的身体、照顾自身健康，并在健康问题上做出知情的决定。\n\nMAIRIN 团队经过三个月的努力，于 2026 年 10 月在第十届 Kronox 黑客松中获得第二名。应用内容提供西班牙语、米斯基托语和克里奥尔语版本。",
      "links": {
-      "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963": "艺术画廊链接",
-      "https://creativechallenges.wixsite.com/creatively-club-ans": "Creative Challenge 网站"
+      "https://youtu.be/o-AoAJSH-J8": "视频 #1（1 分钟）",
+      "https://youtu.be/uyFT9Ja565I": "视频 #2（2 分钟）",
+      "https://ashl3y-lin.github.io/mairin_web/": "网站",
+      "files/MAIRIN-Identity-Manual-EN.pdf": "品牌识别手册（PDF，英文）",
+      "files/MAIRIN-Identity-Manual-ES.pdf": "品牌识别手册（PDF，西班牙文）",
+      "https://instagram.com/mairinapp": "Instagram @mairinapp",
+      "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing": "宣传册：应用上线前后",
+      "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing": "草稿与工作过程",
+      "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing": "黑客松交付成果",
+      "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing": "图标与插画",
+      "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing": "营销帖子",
+      "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing": "贴纸（Silhouette Studio）"
      }
     }
    }
@@ -1108,178 +1204,259 @@
    }
   },
   {
-   "id": "p1",
+   "id": "creatively-club",
    "section": "projects",
-   "title": "MAIRIN",
-   "year": "2026",
-   "tag": "Women’s health app",
-   "award": "🥈 2nd place · Hackathon Kronox, 10th edition",
-   "summary": "A digital companion that supports women through every stage of life: menstruation, pregnancy and menopause.",
-   "body": "MAIRIN supports women holistically through every stage of their lives (menstruation, pregnancy and menopause) with digital tools that offer reliable information, guidance and support, so they can better understand their bodies, take care of their wellbeing and make informed decisions about their health.\n\nTeam MAIRIN won 2nd place in the 10th edition of Hackathon Kronox in October 2026, after three months of work on the project. The app’s content is available in Spanish, Miskito and Creole.",
-   "link": "",
+   "group": "",
+   "year": "2021",
+   "process": false,
+   "coverId": "images/creatively-site-about.jpg",
+   "coverPos": "top",
+   "title": "Creatively Art Club",
+   "tag": "Leadership · Co-founder · Art club",
+   "summary": "The art club I co-founded at my high school: from 30 to 60+ members, four Creative Challenges, and the place where I learned to lead.",
+   "body": "I always wanted to create a club at my school. In the final months of the 2020–2021 school year, I co-founded Creatively Art Club at the American Nicaraguan School with one simple idea: think outside the box.\n\nThe club grew from 30 members in its first year to 60 in its second, and kept more than 60 members from middle school and high school in its third. Our biggest event is the Creative Challenge, a yearly art competition open to every student at ANS: we held four of them, and four schools joined us. All year long we also ran booths at the Open House, the Fall Festival and the Kermesse, painted walls, held bake sales and mentored younger artists, raising funds for art materials. In April 2024, Creatively became ANS’s National Art Honor Society.\n\nThis club represents a lot of my growth. As Vice President on the 2023–2024 officer team, I learned to:\n• organize events, from the first idea to running the booth on the day\n• speak in front of an audience and lead our members\n• plan activities and work as a team with the other officers\n• coordinate with principals and teachers to get our ideas approved\n• raise funds and make the most of what we had\n\nIt also helped me overcome many fears in high school: speaking in public, talking to new people, asking adults for support, and taking responsibility when things didn’t go as planned. I also designed the club’s brand identity and built its website, which shows everything we have done as a club and where Creatively is going next.",
+   "award": "",
    "links": [
     {
-     "label": "Video #1 (1 min)",
-     "url": "https://youtu.be/o-AoAJSH-J8"
-    },
-    {
-     "label": "Video #2 (2 min)",
-     "url": "https://youtu.be/uyFT9Ja565I"
-    },
-    {
-     "label": "Website",
-     "url": "https://ashl3y-lin.github.io/mairin_web/"
-    },
-    {
-     "label": "Identity manual (PDF, English)",
-     "url": "files/MAIRIN-Identity-Manual-EN.pdf"
-    },
-    {
-     "label": "Identity manual (PDF, Spanish)",
-     "url": "files/MAIRIN-Identity-Manual-ES.pdf"
-    },
-    {
-     "label": "Brochure: before & after app launch",
-     "url": "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing"
-    },
-    {
-     "label": "Drafts and work process",
-     "url": "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing"
-    },
-    {
-     "label": "Hackathon deliverables",
-     "url": "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing"
-    },
-    {
-     "label": "Icons and illustrations",
-     "url": "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing"
-    },
-    {
-     "label": "Marketing posts",
-     "url": "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing"
-    },
-    {
-     "label": "Stickers (Silhouette Studio)",
-     "url": "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing"
-    },
-    {
-     "label": "Instagram @mairinapp",
-     "url": "https://instagram.com/mairinapp"
-    },
-    {
-     "label": "Figma Design Prototype",
-     "url": "https://www.figma.com/design/v0uNJ1K5DAYq5Pxo8lOWUK/APP?node-id=0-1&p=f&t=zI3ECsG9uAoPz5qT-0"
+     "label": "Visit the Creatively Art Club website",
+     "url": "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/",
+     "big": true
     }
    ],
    "media": [
     {
-     "id": "images/mairin-logo-pink.png",
+     "id": "images/creatively-site-about.jpg",
      "kind": "image",
-     "stage": "Brand identity"
+     "stage": "Website",
+     "caption": "About us: how the club started in 2021, and our 2023–2024 officer team."
     },
     {
-     "id": "images/mairin-logo.png",
+     "id": "images/creatively-site-members.jpg",
      "kind": "image",
-     "stage": "Brand identity"
+     "stage": "Website",
+     "caption": "Our club members, from 30 in the first year to 60+."
     },
     {
-     "id": "images/mairin-manual-cover.jpg",
+     "id": "images/creatively-site-events.jpg",
      "kind": "image",
-     "stage": "Brand identity"
+     "stage": "Website",
+     "caption": "Our events, like our pirate-themed Fall Festival booth."
     },
     {
-     "id": "images/mairin-manual-moodboard.jpg",
+     "id": "images/screenshot-2026-10-29-at-1-09-35-pm-seosq.png",
      "kind": "image",
-     "stage": "Brand identity"
+     "name": "Screenshot 2026-10-29 at 1.09.35 PM.png",
+     "stage": "Competition"
+    }
+   ],
+   "i18n": {
+    "es": {
+     "tag": "Liderazgo · Cofundadora · Club de arte",
+     "summary": "El club de arte que cofundé en mi colegio: de 30 a más de 60 miembros, cuatro Creative Challenges y el lugar donde aprendí a liderar.",
+     "body": "Siempre quise crear un club en mi colegio. En los últimos meses del año escolar 2020–2021 cofundé Creatively Art Club en el American Nicaraguan School con una idea sencilla: pensar fuera de la caja.\n\nEl club creció de 30 miembros en su primer año a 60 en el segundo, y mantuvo más de 60 miembros de secundaria y bachillerato en el tercero. Nuestro evento más grande es el Creative Challenge, una competencia anual de arte abierta a todos los estudiantes del ANS: organizamos cuatro, y cuatro colegios se unieron. Durante todo el año también tuvimos stands en el Open House, el Fall Festival y la Kermés, pintamos murales, hicimos ventas de repostería y fuimos mentores de artistas más jóvenes, recaudando fondos para materiales de arte. En abril de 2024, Creatively se convirtió en la National Art Honor Society del ANS.\n\nEste club representa gran parte de mi crecimiento. Como vicepresidenta del equipo de directiva 2023–2024, aprendí a:\n• organizar eventos, desde la primera idea hasta atender el stand el mismo día\n• hablar frente al público y liderar a nuestros miembros\n• planificar actividades y trabajar en equipo con los demás miembros de la directiva\n• coordinar con directores y profesores para que aprobaran nuestras ideas\n• recaudar fondos y aprovechar al máximo lo que teníamos\n\nTambién me ayudó a superar muchos miedos en el colegio: hablar en público, hablar con personas nuevas, pedir apoyo a los adultos y asumir la responsabilidad cuando las cosas no salían como esperábamos. Además, diseñé la identidad de marca del club y construí su sitio web, que muestra todo lo que hemos hecho como club y hacia dónde va Creatively.",
+     "links": {
+      "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/": "Visita el sitio web de Creatively Art Club"
+     },
+     "media": {
+      "images/creatively-site-about.jpg": {
+       "caption": "Sobre nosotros: cómo empezó el club en 2021 y nuestra directiva 2023–2024."
+      },
+      "images/creatively-site-members.jpg": {
+       "caption": "Los miembros del club: de 30 en el primer año a más de 60."
+      },
+      "images/creatively-site-events.jpg": {
+       "caption": "Nuestros eventos, como nuestro stand de piratas en el Fall Festival."
+      },
+      "images/screenshot-2026-10-29-at-1-09-35-pm-seosq.png": {
+       "caption": "LOGO"
+      }
+     }
+    },
+    "zh": {
+     "title": "Creatively 美术社",
+     "tag": "领导力 · 联合创始人 · 美术社",
+     "summary": "我在高中参与创办的美术社：社员从 30 人增长到 60 多人，举办了四届 Creative Challenge，也是我学会领导的地方。",
+     "body": "我一直想在学校创办一个社团。2020–2021 学年的最后几个月，我在美国尼加拉瓜学校（ANS）参与创办了 Creatively Art Club，理念很简单：跳出框框思考。\n\n社团第一年有 30 名社员，第二年增长到 60 名，第三年依然保持着 60 多名来自初中和高中的社员。我们最大的活动是 Creative Challenge，一项面向 ANS 全体学生的年度艺术比赛：我们一共举办了四届，还有四所学校加入。一年到头，我们还在开放日、秋季嘉年华和义卖会上摆摊，绘制墙画，举办烘焙义卖，并辅导年纪更小的小画家，为购买美术材料筹集资金。2024 年 4 月，Creatively 成为 ANS 的美国国家艺术荣誉协会（National Art Honor Society）分会。\n\n这个社团见证了我的成长。作为 2023–2024 届干部团队的副社长，我学会了：\n• 组织活动，从最初的想法到活动当天亲自守摊\n• 在众人面前讲话，并带领社员\n• 规划活动，和其他干部团队合作\n• 与校长和老师沟通协调，让我们的想法获得批准\n• 筹集资金，把手上的资源发挥到最大\n\n它也帮助我克服了高中时的许多恐惧：当众讲话、和陌生人交流、向大人寻求支持，以及在事情不如预期时承担责任。我还为社团设计了品牌识别并搭建了它的网站，网站记录了我们作为一个社团所做的一切，以及 Creatively 未来的方向。",
+     "links": {
+      "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/": "访问 Creatively 美术社网站"
+     },
+     "media": {
+      "images/creatively-site-about.jpg": {
+       "caption": "关于我们：社团在 2021 年如何起步，以及我们 2023–2024 届的干部团队。"
+      },
+      "images/creatively-site-members.jpg": {
+       "caption": "我们的社员：从第一年的 30 人到 60 多人。"
+      },
+      "images/creatively-site-events.jpg": {
+       "caption": "我们的活动，比如秋季嘉年华上的海盗主题摊位。"
+      }
+     }
+    }
+   },
+   "link": ""
+  },
+  {
+   "id": "pmvocc8ptucnt",
+   "section": "projects",
+   "title": "Creative Challenge | Art Competition | Art Gallery| Creatively Club",
+   "tag": "Art Gallery",
+   "year": "2020",
+   "summary": "Creatively Challenge is an art competition, the most important activity hosted by Creatively Club. As Co-Founder and Vice-president of this club, I am excited to have organized this event.",
+   "body": "The purpose of the Creative Challenge is to invite aspiring artists to join in this challenge and create innovative pieces that show your exceptional creativity and artistic skills. Our goal for this challenge is to inspire the community and establish a culture of artistic appreciation at ANS and other schools. By being willing to accept this challenge, you will become part of an ongoing tradition that will foster art and innovative ideas in the community.",
+   "link": "",
+   "media": [
+    {
+     "id": "images/screenshot-2026-10-25-at-3-25-57-pm-b7e6r.png",
+     "kind": "image",
+     "name": "Screenshot 2026-10-25 at 3.25.57 PM.png",
+     "stage": "Competition",
+     "caption": "Art Gallery"
     },
     {
-     "id": "images/mairin-manual-colors.jpg",
+     "id": "images/screenshot-2026-10-25-at-3-22-44-pm-udvyi.png",
      "kind": "image",
-     "stage": "Brand identity"
+     "name": "Screenshot 2026-10-25 at 3.22.44 PM.png",
+     "stage": "Competition",
+     "caption": "Art Gallery Overview"
     },
     {
-     "id": "images/mairin-manual-icons.jpg",
+     "id": "images/cccreatively-aub1u.png",
      "kind": "image",
-     "stage": "Brand identity"
+     "name": "Cccreatively.png",
+     "stage": "Competition",
+     "caption": "Creatively Club Logo"
     },
     {
-     "id": "images/mairin-app-calendar.png",
+     "id": "images/club-tajcv.png",
      "kind": "image",
-     "stage": "App"
+     "name": "club.png",
+     "stage": "Competition",
+     "caption": "Creatively Club Creative Challenge Design"
     },
     {
-     "id": "images/mairin-app-birth-prep.png",
+     "id": "images/screenshot-2026-10-29-at-1-28-52-pm-j3ck3.png",
      "kind": "image",
-     "stage": "App"
+     "name": "Screenshot 2026-10-29 at 1.28.52 PM.png",
+     "stage": "Competition",
+     "caption": "Art Gallery"
+    }
+   ],
+   "group": "",
+   "links": [
+    {
+     "label": "Art Gallery Link",
+     "url": "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963",
+     "big": true
     },
     {
-     "id": "images/mairin-manual-digital-mockups.jpg",
-     "kind": "image",
-     "stage": "App"
+     "label": "Creative Challenge Website",
+     "url": "https://creativechallenges.wixsite.com/creatively-club-ans"
     },
     {
-     "id": "images/mairin-manual-clothing.jpg",
-     "kind": "image",
-     "stage": "Mockups"
+     "label": "Official Website of Creatively Club",
+     "url": "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/"
+    }
+   ],
+   "award": "Creative Challenge 4th edition",
+   "coverPos": "",
+   "process": true,
+   "coverId": "images/screenshot-2026-10-29-at-1-28-52-pm-j3ck3.png",
+   "i18n": {
+    "es": {
+     "media": {
+      "images/screenshot-2026-10-29-at-1-28-52-pm-j3ck3.png": {
+       "caption": "Art Gallery"
+      }
+     },
+     "title": "Creative Challenge | Concurso de Arte | Galería de Arte | Creatively Club",
+     "tag": "Galería de Arte",
+     "summary": "Creative Challenge es un concurso de arte y la actividad más importante de Creatively Club. Como cofundadora y vicepresidenta del club, me alegra haber organizado este evento.",
+     "body": "El objetivo de Creative Challenge es invitar a jóvenes artistas a crear obras originales que demuestren su creatividad y talento artístico. Queremos inspirar a la comunidad y promover el aprecio por el arte en ANS y otras escuelas. Al participar, formarás parte de una tradición que impulsa el arte y las nuevas ideas.",
+     "award": "Creative Challenge, 4.ª edición",
+     "links": {
+      "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963": "Enlace a la Galería de Arte",
+      "https://creativechallenges.wixsite.com/creatively-club-ans": "Sitio web de Creative Challenge",
+      "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/": "Sitio Web Oficial de Club Creatively"
+     }
+    },
+    "zh": {
+     "media": {},
+     "title": "Creative Challenge | 艺术比赛 | 艺术画廊 | Creatively Club",
+     "tag": "艺术画廊",
+     "summary": "Creative Challenge 是 Creatively Club 最重要的活动之一，也是一项艺术比赛。作为俱乐部的联合创始人和副主席，我很高兴能够组织这次活动。",
+     "body": "Creative Challenge 邀请热爱艺术的年轻人创作原创作品，展示他们的创造力和艺术才能。我们的目标是激发社区的灵感，并在 ANS 和其他学校推广艺术欣赏文化。\n\n通过参加比赛，你也将成为这个艺术传统的一部分，一起推动艺术与创新。",
+     "award": "Creative Challenge 第4届",
+     "links": {
+      "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963": "艺术画廊链接",
+      "https://creativechallenges.wixsite.com/creatively-club-ans": "Creative Challenge 网站",
+      "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/": "Creatively Club 官方网站"
+     }
+    }
+   }
+  },
+  {
+   "id": "r1",
+   "section": "projects",
+   "title": "ANS Robotics Website",
+   "year": "2024",
+   "tag": "Robotics · Web design",
+   "award": "🥈 2nd place · World Robot Olympiad (WRO), after 3 years of competing",
+   "summary": "A learning website I created for my high school’s new robotics program, plus three years competing in WRO and now coaching.",
+   "body": "I created the ANS Robotics hub, a website for my high school’s new robotics program where students learn robotics while having fun.\n\nHow I built it: I was passionate about robotics, wanted to help my community, and was a complete beginner in programming. My video (linked below) follows that journey:\n• Teaching myself to build a website from scratch through free online courses.\n• Planning the site’s design and structure.\n• Recording the robots’ movements to show how they work.\n• Putting it all together and publishing it online.\n\nI competed in the World Robot Olympiad (WRO) for three years and kept improving until I reached the podium:\n• Year 1: 5th place\n• Year 2: 4th place\n• Year 3: 2nd place\n\nToday I’m the robotics coach at my high school, leading my teams toward the championship.",
+   "link": "",
+   "links": [
+    {
+     "label": "ANS Robotics website",
+     "url": "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/"
     },
     {
-     "id": "images/mairin-manual-mockups-1.jpg",
+     "label": "Video: my journey building the website",
+     "url": "https://youtu.be/xHw7wPLTmTk"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/ans-robotics-website.jpg",
      "kind": "image",
-     "stage": "Mockups"
+     "stage": "Website"
     },
     {
-     "id": "images/mairin-manual-mockups-2.jpg",
+     "id": "images/wro-logo.png",
      "kind": "image",
-     "stage": "Mockups"
+     "stage": "Competition"
     },
     {
-     "id": "images/mairin-award.jpg",
+     "id": "images/wro-team.jpg",
+     "kind": "image",
+     "stage": ""
+    },
+    {
+     "id": "images/wro-robot.jpg",
      "kind": "image",
      "stage": ""
     }
    ],
-   "coverPos": "",
-   "process": false,
-   "group": "",
    "i18n": {
     "es": {
-     "tag": "App de salud femenina",
-     "summary": "Un acompañamiento digital que apoya a las mujeres en cada etapa de su vida: menstruación, embarazo y menopausia.",
-     "award": "🥈 2do lugar · Hackathon Kronox, 10ma edición",
-     "body": "Nuestro proyecto acompaña y apoya integralmente a las mujeres en cada etapa de su vida —menstruación, embarazo y menopausia— con herramientas digitales que brindan información confiable, orientación y apoyo, para que comprendan mejor sus procesos, cuiden su bienestar y tomen decisiones informadas sobre su salud.\n\nEl Equipo MAIRIN ganó el 2do lugar en la 10ma edición del Hackathon Kronox en octubre de 2026, después de tres meses de trabajo en el proyecto. El contenido de la app está disponible en español, miskito y criollo.",
+     "title": "Sitio web de ANS Robotics",
+     "tag": "Robótica · Diseño web",
+     "summary": "Un sitio web de aprendizaje que creé para el nuevo programa de robótica de mi colegio, más tres años compitiendo en la WRO y ahora como entrenadora.",
+     "award": "🥈 2do lugar · World Robot Olympiad (WRO), después de 3 años compitiendo",
+     "body": "Creé ANS Robotics, un sitio web para el nuevo programa de robótica de mi colegio, donde los estudiantes aprenden robótica mientras se divierten.\n\nCómo lo construí: me apasionaba la robótica, quería ayudar a mi comunidad y era completamente principiante en programación. Mi video (enlace abajo) cuenta ese camino:\n• Aprender por mi cuenta a construir un sitio web desde cero con cursos gratuitos en línea.\n• Planificar el diseño y la estructura del sitio.\n• Grabar los movimientos de los robots para mostrar cómo funcionan.\n• Unir todo y publicarlo en internet.\n\nCompetí en la World Robot Olympiad (WRO) durante tres años y seguí mejorando hasta llegar al podio:\n• Año 1: 5to lugar\n• Año 2: 4to lugar\n• Año 3: 2do lugar\n\nHoy soy la entrenadora de robótica de mi colegio y llevo a mis equipos hacia el campeonato.",
      "links": {
-      "https://youtu.be/o-AoAJSH-J8": "Video #1 (1 min)",
-      "https://youtu.be/uyFT9Ja565I": "Video #2 (2 min)",
-      "https://ashl3y-lin.github.io/mairin_web/": "Sitio web",
-      "files/MAIRIN-Identity-Manual-EN.pdf": "Manual de identidad (PDF, inglés)",
-      "files/MAIRIN-Identity-Manual-ES.pdf": "Manual de identidad (PDF, español)",
-      "https://instagram.com/mairinapp": "Instagram @mairinapp",
-      "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing": "Brochure: antes y después del lanzamiento de la app",
-      "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing": "Borradores y proceso de trabajo",
-      "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing": "Entregables del hackathon",
-      "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing": "Íconos e ilustraciones",
-      "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing": "Posts de marketing",
-      "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing": "Stickers (Silhouette Studio)"
+      "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/": "Sitio web de ANS Robotics",
+      "https://youtu.be/xHw7wPLTmTk": "Video: mi camino construyendo el sitio web"
      }
     },
     "zh": {
-     "tag": "女性健康应用",
-     "summary": "一款陪伴女性走过人生每个阶段的数字助手：月经、怀孕与更年期。",
-     "award": "🥈 第二名 · Kronox 黑客松第十届",
-     "body": "MAIRIN 以数字工具全面陪伴和支持女性走过人生的每个阶段（月经、怀孕和更年期），提供可靠的信息、指导与支持，帮助她们更好地了解自己的身体、照顾自身健康，并在健康问题上做出知情的决定。\n\nMAIRIN 团队经过三个月的努力，于 2026 年 10 月在第十届 Kronox 黑客松中获得第二名。应用内容提供西班牙语、米斯基托语和克里奥尔语版本。",
+     "title": "ANS 机器人网站",
+     "tag": "机器人 · 网页设计",
+     "summary": "我为高中新成立的机器人课程制作的学习网站，以及三年参加 WRO 比赛、如今担任教练的经历。",
+     "award": "🥈 第二名 · 世界机器人奥林匹克（WRO），参赛三年后登上领奖台",
+     "body": "我创建了 ANS Robotics 学习平台，这是为我们高中新成立的机器人课程制作的网站，让同学们在快乐中学习机器人。\n\n我是怎么做出来的：我热爱机器人，想帮助我的社区，而且当时完全是编程新手。我的视频（链接见下方）记录了这段历程：\n• 通过免费的网络课程，自学从零开始搭建网站。\n• 规划网站的设计与结构。\n• 拍摄机器人的动作，展示它们如何运作。\n• 把一切整合起来并发布到网上。\n\n我参加了三年世界机器人奥林匹克（WRO），一路进步，最终登上领奖台：\n• 第一年：第五名\n• 第二年：第四名\n• 第三年：第二名\n\n如今我是学校的机器人教练，带领我的队伍向冠军迈进。",
      "links": {
-      "https://youtu.be/o-AoAJSH-J8": "视频 #1（1 分钟）",
-      "https://youtu.be/uyFT9Ja565I": "视频 #2（2 分钟）",
-      "https://ashl3y-lin.github.io/mairin_web/": "网站",
-      "files/MAIRIN-Identity-Manual-EN.pdf": "品牌识别手册（PDF，英文）",
-      "files/MAIRIN-Identity-Manual-ES.pdf": "品牌识别手册（PDF，西班牙文）",
-      "https://instagram.com/mairinapp": "Instagram @mairinapp",
-      "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing": "宣传册：应用上线前后",
-      "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing": "草稿与工作过程",
-      "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing": "黑客松交付成果",
-      "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing": "图标与插画",
-      "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing": "营销帖子",
-      "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing": "贴纸（Silhouette Studio）"
+      "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/": "ANS Robotics 网站",
+      "https://youtu.be/xHw7wPLTmTk": "视频：我搭建网站的历程"
      }
     }
    }
@@ -1519,155 +1696,6 @@
       "https://illuminateyouquote.wixsite.com/reviste": "Reviste 网站",
       "https://www.youtube.com/watch?v=UUU2PZUgIx4": "视频",
       "files/Reviste-Project-Report.pdf": "项目报告（PDF）"
-     }
-    }
-   }
-  },
-  {
-   "id": "r1",
-   "section": "projects",
-   "title": "ANS Robotics Website",
-   "year": "2024",
-   "tag": "Robotics · Web design",
-   "award": "🥈 2nd place · World Robot Olympiad (WRO), after 3 years of competing",
-   "summary": "A learning website I created for my high school’s new robotics program, plus three years competing in WRO and now coaching.",
-   "body": "I created the ANS Robotics hub, a website for my high school’s new robotics program where students learn robotics while having fun.\n\nHow I built it: I was passionate about robotics, wanted to help my community, and was a complete beginner in programming. My video (linked below) follows that journey:\n• Teaching myself to build a website from scratch through free online courses.\n• Planning the site’s design and structure.\n• Recording the robots’ movements to show how they work.\n• Putting it all together and publishing it online.\n\nI competed in the World Robot Olympiad (WRO) for three years and kept improving until I reached the podium:\n• Year 1: 5th place\n• Year 2: 4th place\n• Year 3: 2nd place\n\nToday I’m the robotics coach at my high school, leading my teams toward the championship.",
-   "link": "",
-   "links": [
-    {
-     "label": "ANS Robotics website",
-     "url": "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/"
-    },
-    {
-     "label": "Video: my journey building the website",
-     "url": "https://youtu.be/xHw7wPLTmTk"
-    }
-   ],
-   "media": [
-    {
-     "id": "images/ans-robotics-website.jpg",
-     "kind": "image",
-     "stage": "Website"
-    },
-    {
-     "id": "images/wro-logo.png",
-     "kind": "image",
-     "stage": "Competition"
-    },
-    {
-     "id": "images/wro-team.jpg",
-     "kind": "image",
-     "stage": ""
-    },
-    {
-     "id": "images/wro-robot.jpg",
-     "kind": "image",
-     "stage": ""
-    }
-   ],
-   "i18n": {
-    "es": {
-     "title": "Sitio web de ANS Robotics",
-     "tag": "Robótica · Diseño web",
-     "summary": "Un sitio web de aprendizaje que creé para el nuevo programa de robótica de mi colegio, más tres años compitiendo en la WRO y ahora como entrenadora.",
-     "award": "🥈 2do lugar · World Robot Olympiad (WRO), después de 3 años compitiendo",
-     "body": "Creé ANS Robotics, un sitio web para el nuevo programa de robótica de mi colegio, donde los estudiantes aprenden robótica mientras se divierten.\n\nCómo lo construí: me apasionaba la robótica, quería ayudar a mi comunidad y era completamente principiante en programación. Mi video (enlace abajo) cuenta ese camino:\n• Aprender por mi cuenta a construir un sitio web desde cero con cursos gratuitos en línea.\n• Planificar el diseño y la estructura del sitio.\n• Grabar los movimientos de los robots para mostrar cómo funcionan.\n• Unir todo y publicarlo en internet.\n\nCompetí en la World Robot Olympiad (WRO) durante tres años y seguí mejorando hasta llegar al podio:\n• Año 1: 5to lugar\n• Año 2: 4to lugar\n• Año 3: 2do lugar\n\nHoy soy la entrenadora de robótica de mi colegio y llevo a mis equipos hacia el campeonato.",
-     "links": {
-      "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/": "Sitio web de ANS Robotics",
-      "https://youtu.be/xHw7wPLTmTk": "Video: mi camino construyendo el sitio web"
-     }
-    },
-    "zh": {
-     "title": "ANS 机器人网站",
-     "tag": "机器人 · 网页设计",
-     "summary": "我为高中新成立的机器人课程制作的学习网站，以及三年参加 WRO 比赛、如今担任教练的经历。",
-     "award": "🥈 第二名 · 世界机器人奥林匹克（WRO），参赛三年后登上领奖台",
-     "body": "我创建了 ANS Robotics 学习平台，这是为我们高中新成立的机器人课程制作的网站，让同学们在快乐中学习机器人。\n\n我是怎么做出来的：我热爱机器人，想帮助我的社区，而且当时完全是编程新手。我的视频（链接见下方）记录了这段历程：\n• 通过免费的网络课程，自学从零开始搭建网站。\n• 规划网站的设计与结构。\n• 拍摄机器人的动作，展示它们如何运作。\n• 把一切整合起来并发布到网上。\n\n我参加了三年世界机器人奥林匹克（WRO），一路进步，最终登上领奖台：\n• 第一年：第五名\n• 第二年：第四名\n• 第三年：第二名\n\n如今我是学校的机器人教练，带领我的队伍向冠军迈进。",
-     "links": {
-      "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/": "ANS Robotics 网站",
-      "https://youtu.be/xHw7wPLTmTk": "视频：我搭建网站的历程"
-     }
-    }
-   }
-  },
-  {
-   "id": "creatively-club",
-   "section": "projects",
-   "group": "",
-   "year": "2021",
-   "process": false,
-   "coverId": "images/creatively-site-about.jpg",
-   "coverPos": "top",
-   "title": "Creatively Art Club",
-   "tag": "Leadership · Co-founder · Art club",
-   "summary": "The art club I co-founded at my high school: from 30 to 60+ members, four Creative Challenges, and the place where I learned to lead.",
-   "body": "I always wanted to create a club at my school. In the final months of the 2020–2021 school year, I co-founded Creatively Art Club at the American Nicaraguan School with one simple idea: think outside the box.\n\nThe club grew from 30 members in its first year to 60 in its second, and kept more than 60 members from middle school and high school in its third. Our biggest event is the Creative Challenge, a yearly art competition open to every student at ANS: we held four of them, and four schools joined us. All year long we also ran booths at the Open House, the Fall Festival and the Kermesse, painted walls, held bake sales and mentored younger artists, raising funds for art materials. In April 2024, Creatively became ANS’s National Art Honor Society.\n\nThis club represents a lot of my growth. As Vice President on the 2023–2024 officer team, I learned to:\n• organize events, from the first idea to running the booth on the day\n• speak in front of an audience and lead our members\n• plan activities and work as a team with the other officers\n• coordinate with principals and teachers to get our ideas approved\n• raise funds and make the most of what we had\n\nIt also helped me overcome many fears in high school: speaking in public, talking to new people, asking adults for support, and taking responsibility when things didn’t go as planned. I also designed the club’s brand identity and built its website, which shows everything we have done as a club and where Creatively is going next.",
-   "award": "",
-   "links": [
-    {
-     "label": "Visit the Creatively Art Club website",
-     "url": "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/",
-     "big": true
-    }
-   ],
-   "media": [
-    {
-     "id": "images/creatively-site-about.jpg",
-     "kind": "image",
-     "stage": "Website",
-     "caption": "About us: how the club started in 2021, and our 2023–2024 officer team."
-    },
-    {
-     "id": "images/creatively-site-members.jpg",
-     "kind": "image",
-     "stage": "Website",
-     "caption": "Our club members, from 30 in the first year to 60+."
-    },
-    {
-     "id": "images/creatively-site-events.jpg",
-     "kind": "image",
-     "stage": "Website",
-     "caption": "Our events, like our pirate-themed Fall Festival booth."
-    }
-   ],
-   "i18n": {
-    "es": {
-     "tag": "Liderazgo · Cofundadora · Club de arte",
-     "summary": "El club de arte que cofundé en mi colegio: de 30 a más de 60 miembros, cuatro Creative Challenges y el lugar donde aprendí a liderar.",
-     "body": "Siempre quise crear un club en mi colegio. En los últimos meses del año escolar 2020–2021 cofundé Creatively Art Club en el American Nicaraguan School con una idea sencilla: pensar fuera de la caja.\n\nEl club creció de 30 miembros en su primer año a 60 en el segundo, y mantuvo más de 60 miembros de secundaria y bachillerato en el tercero. Nuestro evento más grande es el Creative Challenge, una competencia anual de arte abierta a todos los estudiantes del ANS: organizamos cuatro, y cuatro colegios se unieron. Durante todo el año también tuvimos stands en el Open House, el Fall Festival y la Kermés, pintamos murales, hicimos ventas de repostería y fuimos mentores de artistas más jóvenes, recaudando fondos para materiales de arte. En abril de 2024, Creatively se convirtió en la National Art Honor Society del ANS.\n\nEste club representa gran parte de mi crecimiento. Como vicepresidenta del equipo de directiva 2023–2024, aprendí a:\n• organizar eventos, desde la primera idea hasta atender el stand el mismo día\n• hablar frente al público y liderar a nuestros miembros\n• planificar actividades y trabajar en equipo con los demás miembros de la directiva\n• coordinar con directores y profesores para que aprobaran nuestras ideas\n• recaudar fondos y aprovechar al máximo lo que teníamos\n\nTambién me ayudó a superar muchos miedos en el colegio: hablar en público, hablar con personas nuevas, pedir apoyo a los adultos y asumir la responsabilidad cuando las cosas no salían como esperábamos. Además, diseñé la identidad de marca del club y construí su sitio web, que muestra todo lo que hemos hecho como club y hacia dónde va Creatively.",
-     "links": {
-      "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/": "Visita el sitio web de Creatively Art Club"
-     },
-     "media": {
-      "images/creatively-site-about.jpg": {
-       "caption": "Sobre nosotros: cómo empezó el club en 2021 y nuestra directiva 2023–2024."
-      },
-      "images/creatively-site-members.jpg": {
-       "caption": "Los miembros del club: de 30 en el primer año a más de 60."
-      },
-      "images/creatively-site-events.jpg": {
-       "caption": "Nuestros eventos, como nuestro stand de piratas en el Fall Festival."
-      }
-     }
-    },
-    "zh": {
-     "title": "Creatively 美术社",
-     "tag": "领导力 · 联合创始人 · 美术社",
-     "summary": "我在高中参与创办的美术社：社员从 30 人增长到 60 多人，举办了四届 Creative Challenge，也是我学会领导的地方。",
-     "body": "我一直想在学校创办一个社团。2020–2021 学年的最后几个月，我在美国尼加拉瓜学校（ANS）参与创办了 Creatively Art Club，理念很简单：跳出框框思考。\n\n社团第一年有 30 名社员，第二年增长到 60 名，第三年依然保持着 60 多名来自初中和高中的社员。我们最大的活动是 Creative Challenge，一项面向 ANS 全体学生的年度艺术比赛：我们一共举办了四届，还有四所学校加入。一年到头，我们还在开放日、秋季嘉年华和义卖会上摆摊，绘制墙画，举办烘焙义卖，并辅导年纪更小的小画家，为购买美术材料筹集资金。2024 年 4 月，Creatively 成为 ANS 的美国国家艺术荣誉协会（National Art Honor Society）分会。\n\n这个社团见证了我的成长。作为 2023–2024 届干部团队的副社长，我学会了：\n• 组织活动，从最初的想法到活动当天亲自守摊\n• 在众人面前讲话，并带领社员\n• 规划活动，和其他干部团队合作\n• 与校长和老师沟通协调，让我们的想法获得批准\n• 筹集资金，把手上的资源发挥到最大\n\n它也帮助我克服了高中时的许多恐惧：当众讲话、和陌生人交流、向大人寻求支持，以及在事情不如预期时承担责任。我还为社团设计了品牌识别并搭建了它的网站，网站记录了我们作为一个社团所做的一切，以及 Creatively 未来的方向。",
-     "links": {
-      "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/": "访问 Creatively 美术社网站"
-     },
-     "media": {
-      "images/creatively-site-about.jpg": {
-       "caption": "关于我们：社团在 2021 年如何起步，以及我们 2023–2024 届的干部团队。"
-      },
-      "images/creatively-site-members.jpg": {
-       "caption": "我们的社员：从第一年的 30 人到 60 多人。"
-      },
-      "images/creatively-site-events.jpg": {
-       "caption": "我们的活动，比如秋季嘉年华上的海盗主题摊位。"
-      }
      }
     }
    }
