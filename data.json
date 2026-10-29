@@ -450,47 +450,6 @@
    }
   },
   {
-   "id": "pmvixh6jwp1g5",
-   "section": "branding",
-   "title": "Creatively club Branding | Improved Version",
-   "tag": "Logo",
-   "year": "2026",
-   "summary": "Creatively club logo was created in 2021 and it has gone a long way.",
-   "body": "It's time to improve the branding. Because it has too many color and complex, I want to do a branding that can be more simplified and used in many other areas, especially that the brand is simpler",
-   "link": "",
-   "media": [
-    {
-     "id": "images/screenshot-2026-10-29-at-1-09-35-pm-44fkc.png",
-     "kind": "image",
-     "name": "Screenshot 2026-10-29 at 1.09.35 PM.png",
-     "stage": "Applications"
-    },
-    {
-     "id": "images/cccreatively-5hq9h.png",
-     "kind": "image",
-     "name": "Cccreatively.png",
-     "stage": "Applications"
-    }
-   ],
-   "group": "",
-   "links": [],
-   "award": "A club that started in highschool",
-   "coverPos": "",
-   "process": false,
-   "i18n": {
-    "zh": {
-     "media": {
-      "images/screenshot-2026-10-29-at-1-09-35-pm-44fkc.png": {
-       "caption": "Creatively Improved logo"
-      }
-     },
-     "links": {},
-     "award": "A club that started in highschool"
-    }
-   },
-   "coverId": ""
-  },
-  {
    "id": "b1",
    "section": "blender",
    "title": "Antlered Mage",
@@ -1632,6 +1591,88 @@
    }
   },
   {
+   "id": "creatively-club",
+   "section": "projects",
+   "group": "",
+   "year": "2021",
+   "process": false,
+   "coverId": "images/creatively-site-about.jpg",
+   "coverPos": "top",
+   "title": "Creatively Art Club",
+   "tag": "Leadership · Co-founder · Art club",
+   "summary": "The art club I co-founded at my high school: from 30 to 60+ members, four Creative Challenges, and the place where I learned to lead.",
+   "body": "I always wanted to create a club at my school. In the final months of the 2020–2021 school year, I co-founded Creatively Art Club at the American Nicaraguan School with one simple idea: think outside the box.\n\nThe club grew from 30 members in its first year to 60 in its second, and kept more than 60 members from middle school and high school in its third. Our biggest event is the Creative Challenge, a yearly art competition open to every student at ANS: we held four of them, and four schools joined us. All year long we also ran booths at the Open House, the Fall Festival and the Kermesse, painted walls, held bake sales and mentored younger artists, raising funds for art materials. In April 2024, Creatively became ANS’s National Art Honor Society.\n\nThis club represents a lot of my growth. As Vice President on the 2023–2024 officer team, I learned to:\n• organize events, from the first idea to running the booth on the day\n• speak in front of an audience and lead our members\n• plan activities and work as a team with the other officers\n• coordinate with principals and teachers to get our ideas approved\n• raise funds and make the most of what we had\n\nIt also helped me overcome many fears in high school: speaking in public, talking to new people, asking adults for support, and taking responsibility when things didn’t go as planned. I also designed the club’s brand identity and built its website, which shows everything we have done as a club and where Creatively is going next.",
+   "award": "",
+   "links": [
+    {
+     "label": "Visit the Creatively Art Club website",
+     "url": "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/",
+     "big": true
+    }
+   ],
+   "media": [
+    {
+     "id": "images/creatively-site-about.jpg",
+     "kind": "image",
+     "stage": "Website",
+     "caption": "About us: how the club started in 2021, and our 2023–2024 officer team."
+    },
+    {
+     "id": "images/creatively-site-members.jpg",
+     "kind": "image",
+     "stage": "Website",
+     "caption": "Our club members, from 30 in the first year to 60+."
+    },
+    {
+     "id": "images/creatively-site-events.jpg",
+     "kind": "image",
+     "stage": "Website",
+     "caption": "Our events, like our pirate-themed Fall Festival booth."
+    }
+   ],
+   "i18n": {
+    "es": {
+     "tag": "Liderazgo · Cofundadora · Club de arte",
+     "summary": "El club de arte que cofundé en mi colegio: de 30 a más de 60 miembros, cuatro Creative Challenges y el lugar donde aprendí a liderar.",
+     "body": "Siempre quise crear un club en mi colegio. En los últimos meses del año escolar 2020–2021 cofundé Creatively Art Club en el American Nicaraguan School con una idea sencilla: pensar fuera de la caja.\n\nEl club creció de 30 miembros en su primer año a 60 en el segundo, y mantuvo más de 60 miembros de secundaria y bachillerato en el tercero. Nuestro evento más grande es el Creative Challenge, una competencia anual de arte abierta a todos los estudiantes del ANS: organizamos cuatro, y cuatro colegios se unieron. Durante todo el año también tuvimos stands en el Open House, el Fall Festival y la Kermés, pintamos murales, hicimos ventas de repostería y fuimos mentores de artistas más jóvenes, recaudando fondos para materiales de arte. En abril de 2024, Creatively se convirtió en la National Art Honor Society del ANS.\n\nEste club representa gran parte de mi crecimiento. Como vicepresidenta del equipo de directiva 2023–2024, aprendí a:\n• organizar eventos, desde la primera idea hasta atender el stand el mismo día\n• hablar frente al público y liderar a nuestros miembros\n• planificar actividades y trabajar en equipo con los demás miembros de la directiva\n• coordinar con directores y profesores para que aprobaran nuestras ideas\n• recaudar fondos y aprovechar al máximo lo que teníamos\n\nTambién me ayudó a superar muchos miedos en el colegio: hablar en público, hablar con personas nuevas, pedir apoyo a los adultos y asumir la responsabilidad cuando las cosas no salían como esperábamos. Además, diseñé la identidad de marca del club y construí su sitio web, que muestra todo lo que hemos hecho como club y hacia dónde va Creatively.",
+     "links": {
+      "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/": "Visita el sitio web de Creatively Art Club"
+     },
+     "media": {
+      "images/creatively-site-about.jpg": {
+       "caption": "Sobre nosotros: cómo empezó el club en 2021 y nuestra directiva 2023–2024."
+      },
+      "images/creatively-site-members.jpg": {
+       "caption": "Los miembros del club: de 30 en el primer año a más de 60."
+      },
+      "images/creatively-site-events.jpg": {
+       "caption": "Nuestros eventos, como nuestro stand de piratas en el Fall Festival."
+      }
+     }
+    },
+    "zh": {
+     "title": "Creatively 美术社",
+     "tag": "领导力 · 联合创始人 · 美术社",
+     "summary": "我在高中参与创办的美术社：社员从 30 人增长到 60 多人，举办了四届 Creative Challenge，也是我学会领导的地方。",
+     "body": "我一直想在学校创办一个社团。2020–2021 学年的最后几个月，我在美国尼加拉瓜学校（ANS）参与创办了 Creatively Art Club，理念很简单：跳出框框思考。\n\n社团第一年有 30 名社员，第二年增长到 60 名，第三年依然保持着 60 多名来自初中和高中的社员。我们最大的活动是 Creative Challenge，一项面向 ANS 全体学生的年度艺术比赛：我们一共举办了四届，还有四所学校加入。一年到头，我们还在开放日、秋季嘉年华和义卖会上摆摊，绘制墙画，举办烘焙义卖，并辅导年纪更小的小画家，为购买美术材料筹集资金。2024 年 4 月，Creatively 成为 ANS 的美国国家艺术荣誉协会（National Art Honor Society）分会。\n\n这个社团见证了我的成长。作为 2023–2024 届干部团队的副社长，我学会了：\n• 组织活动，从最初的想法到活动当天亲自守摊\n• 在众人面前讲话，并带领社员\n• 规划活动，和其他干部团队合作\n• 与校长和老师沟通协调，让我们的想法获得批准\n• 筹集资金，把手上的资源发挥到最大\n\n它也帮助我克服了高中时的许多恐惧：当众讲话、和陌生人交流、向大人寻求支持，以及在事情不如预期时承担责任。我还为社团设计了品牌识别并搭建了它的网站，网站记录了我们作为一个社团所做的一切，以及 Creatively 未来的方向。",
+     "links": {
+      "https://ashl3y-lin.github.io/Website_Creatively_Art_Club/": "访问 Creatively 美术社网站"
+     },
+     "media": {
+      "images/creatively-site-about.jpg": {
+       "caption": "关于我们：社团在 2021 年如何起步，以及我们 2023–2024 届的干部团队。"
+      },
+      "images/creatively-site-members.jpg": {
+       "caption": "我们的社员：从第一年的 30 人到 60 多人。"
+      },
+      "images/creatively-site-events.jpg": {
+       "caption": "我们的活动，比如秋季嘉年华上的海盗主题摊位。"
+      }
+     }
+    }
+   }
+  },
+  {
    "id": "a1",
    "section": "advertising",
    "title": "PIM Bandages",
@@ -2475,6 +2516,122 @@
    }
   },
   {
+   "id": "creatively-brand",
+   "section": "branding",
+   "group": "",
+   "year": "2026",
+   "process": false,
+   "coverId": "images/creatively-main-logo.jpg",
+   "coverPos": "contain",
+   "title": "Creatively Art Club Identity Manual | Improved Version",
+   "tag": "Visual identity system",
+   "summary": "A complete brand identity for Creatively Art Club, the art club I co-founded in high school.",
+   "body": "I always wanted to create a brand for Creatively, because it was my high school club and a big part of who I am. So I gave it a complete identity, built around the idea that started it all: think outside the box.\n\nThe logo is a cheerful lightbulb with arms and legs, jumping out of an open box inside a yellow circle. The lightbulb stands for ideas, the arms and legs for the members who bring them to life, the box for the limits we leave behind, and the circle for a community where everyone belongs.\n\nThe 47-page manual covers the brand (who we are, mission, vision and goals, brand DNA and moodboard), the isologotype and its symbolism, naming, construction, main logos, positive and reversed versions, color variations, the slogan “Think outside the box”, correct and incorrect uses, clear space, typography and colors, a UI/UX visual system for the club website in light and dark mode, and mockups on clothing, objects, phones and laptops.",
+   "award": "A club that started in highschool",
+   "links": [
+    {
+     "label": "Brand identity manual (PDF)",
+     "url": "files/Creatively-Brand-Identity-Manual.pdf"
+    }
+   ],
+   "media": [
+    {
+     "id": "images/creatively-main-logo.jpg",
+     "kind": "image",
+     "stage": "Logo",
+     "caption": "Main logo in purple and yellow."
+    },
+    {
+     "id": "images/creatively-logo-variations.jpg",
+     "kind": "image",
+     "stage": "Logo",
+     "caption": "Logo color variations: black, white, yellow and purple."
+    },
+    {
+     "id": "images/creatively-manual-cover.jpg",
+     "kind": "image",
+     "stage": "Identity",
+     "caption": "Cover of the brand identity manual."
+    },
+    {
+     "id": "images/creatively-manual-clothing.jpg",
+     "kind": "image",
+     "stage": "Applications",
+     "caption": "Mockups on clothing."
+    },
+    {
+     "id": "images/creatively-manual-objects.jpg",
+     "kind": "image",
+     "stage": "Applications",
+     "caption": "Mockups on everyday objects."
+    },
+    {
+     "id": "images/screen-shot-2022-01-13-at-11-50-01-2q7b7.png",
+     "kind": "image",
+     "name": "Screen Shot 2022-01-13 at 11.50.01.png",
+     "stage": "Applications",
+     "caption": "Old Original Logo"
+    }
+   ],
+   "i18n": {
+    "es": {
+     "title": "Manual de Identidad de Creatively Art Club | Versión mejorada",
+     "tag": "Sistema de identidad visual",
+     "summary": "Una identidad de marca completa para Creatively Art Club, el club de arte que cofundé en el colegio.",
+     "body": "Siempre quise crear una marca para Creatively, porque fue mi club del colegio y una gran parte de quien soy. Por eso le di una identidad completa, construida alrededor de la idea con la que todo empezó: pensar fuera de la caja.\n\nEl logo es un bombillo alegre con brazos y piernas que salta de una caja abierta dentro de un círculo amarillo. El bombillo representa las ideas; los brazos y las piernas, a los miembros que les dan vida; la caja, los límites que dejamos atrás; y el círculo, una comunidad donde todos pertenecen.\n\nEl manual de 47 páginas incluye la marca (quiénes somos, misión, visión y metas, ADN de marca y moodboard), el isologotipo y su simbolismo, el naming, la construcción, los logos principales, las versiones en positivo y negativo, las variaciones de color, el eslogan «Think outside the box», los usos correctos e incorrectos, el área de respeto, la tipografía y los colores, un sistema visual UI/UX para el sitio web del club en modo claro y oscuro, y mockups en ropa, objetos, celulares y laptops.",
+     "links": {
+      "files/Creatively-Brand-Identity-Manual.pdf": "Manual de identidad de marca (PDF, en inglés)"
+     },
+     "media": {
+      "images/creatively-main-logo.jpg": {
+       "caption": "Logo principal en morado y amarillo."
+      },
+      "images/creatively-logo-variations.jpg": {
+       "caption": "Variaciones de color del logo: negro, blanco, amarillo y morado."
+      },
+      "images/creatively-manual-cover.jpg": {
+       "caption": "Portada del manual de identidad de marca."
+      },
+      "images/creatively-manual-clothing.jpg": {
+       "caption": "Mockups en ropa."
+      },
+      "images/creatively-manual-objects.jpg": {
+       "caption": "Mockups en objetos del día a día."
+      }
+     },
+     "award": "Un club que comenzó en la escuela secundaria"
+    },
+    "zh": {
+     "title": "Creatively 美术社品牌识别手册 | 改进版本",
+     "tag": "视觉识别系统",
+     "summary": "为我在高中参与创办的美术社 Creatively Art Club 打造的完整品牌识别。",
+     "body": "我一直想为 Creatively 做一套品牌设计，因为它是我高中时的社团，也是我成长中很重要的一部分。于是我围绕社团最初的理念\"跳出框框思考\"，为它打造了一套完整的视觉识别。\n\n标志是一个长着手脚的开心灯泡，正从打开的盒子里跳出来，外面围着一个黄色圆圈。灯泡代表创意，手脚代表让创意变成现实的社员，盒子代表我们抛在身后的限制，圆圈则代表一个人人都有归属感的社群。\n\n这本 47 页的手册涵盖：品牌（我们是谁、使命、愿景与目标、品牌基因和情绪板）、标志及其寓意、命名、标志构成、主标志、正负形版本、色彩变化、标语\"Think outside the box\"、正确与错误用法、安全空间、字体与配色、社团网站的 UI/UX 视觉系统（浅色与深色模式），以及服装、日常用品、手机和笔记本电脑上的样机展示。",
+     "links": {
+      "files/Creatively-Brand-Identity-Manual.pdf": "品牌识别手册（PDF，英文）"
+     },
+     "media": {
+      "images/creatively-main-logo.jpg": {
+       "caption": "主标志：紫色与黄色。"
+      },
+      "images/creatively-logo-variations.jpg": {
+       "caption": "标志色彩变化：黑、白、黄、紫。"
+      },
+      "images/creatively-manual-cover.jpg": {
+       "caption": "品牌识别手册封面。"
+      },
+      "images/creatively-manual-clothing.jpg": {
+       "caption": "服装样机。"
+      },
+      "images/creatively-manual-objects.jpg": {
+       "caption": "日常用品样机。"
+      }
+     },
+     "award": "一个在高中时期创办的社团"
+    }
+   },
+   "link": ""
+  },
+  {
    "id": "t1",
    "section": "printing",
    "group": "print",
@@ -2640,5 +2797,5 @@
    }
   }
  },
- "i18nSeed": 1
+ "i18nSeed": 2
 }
