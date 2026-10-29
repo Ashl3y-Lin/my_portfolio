@@ -6,7 +6,17 @@
   "location": "",
   "email": "",
   "avatar": "images/ashley-lin.jpg",
-  "links": []
+  "links": [],
+  "i18n": {
+   "es": {
+    "role": "Artista 3D · Branding · Animación · Publicidad",
+    "bio": "Escribe dos o tres líneas sobre ti: qué haces, qué herramientas usas y qué tipo de proyectos buscas."
+   },
+   "zh": {
+    "role": "3D 艺术家 · 品牌设计 · 动画 · 广告",
+    "bio": "写两三句话介绍你自己：你创作什么、使用哪些工具、在寻找什么样的项目。"
+   }
+  }
  },
  "sections": [
   {
@@ -29,7 +39,27 @@
       "Final render",
       "Wireframe",
       "Process"
-     ]
+     ],
+     "i18n": {
+      "es": {
+       "title": "Estilo 3D",
+       "stages": [
+        "Boceto conceptual",
+        "Render final",
+        "Wireframe",
+        "Proceso"
+       ]
+      },
+      "zh": {
+       "title": "3D 风格",
+       "stages": [
+        "概念草图",
+        "最终渲染",
+        "线框",
+        "制作过程"
+       ]
+      }
+     }
     },
     {
      "id": "2d",
@@ -37,7 +67,23 @@
      "stages": [
       "Final render",
       "Process"
-     ]
+     ],
+     "i18n": {
+      "es": {
+       "title": "Visual 2D",
+       "stages": [
+        "Render final",
+        "Proceso"
+       ]
+      },
+      "zh": {
+       "title": "2D 视觉",
+       "stages": [
+        "最终渲染",
+        "制作过程"
+       ]
+      }
+     }
     },
     {
      "id": "lowpoly",
@@ -46,9 +92,49 @@
       "Final render",
       "Wireframe",
       "Process"
+     ],
+     "i18n": {
+      "es": {
+       "title": "Low poly",
+       "stages": [
+        "Render final",
+        "Wireframe",
+        "Proceso"
+       ]
+      },
+      "zh": {
+       "title": "低多边形",
+       "stages": [
+        "最终渲染",
+        "线框",
+        "制作过程"
+       ]
+      }
+     }
+    }
+   ],
+   "i18n": {
+    "es": {
+     "title": "Blender",
+     "kicker": "3D · Modelado, iluminación y render",
+     "intro": "Mis escenas, personajes y renders de productos en 3D.",
+     "stages": [
+      "Render final",
+      "Wireframe",
+      "Proceso"
+     ]
+    },
+    "zh": {
+     "title": "Blender",
+     "kicker": "3D · 建模、灯光与渲染",
+     "intro": "我的 3D 场景、角色与产品渲染。",
+     "stages": [
+      "最终渲染",
+      "线框",
+      "制作过程"
      ]
     }
-   ]
+   }
   },
   {
    "id": "printing",
@@ -66,7 +152,29 @@
       "Sculpting",
       "Painting",
       "Finished piece"
-     ]
+     ],
+     "i18n": {
+      "es": {
+       "title": "Escultura",
+       "stages": [
+        "Boceto",
+        "Armazón",
+        "Esculpido",
+        "Pintura",
+        "Pieza terminada"
+       ]
+      },
+      "zh": {
+       "title": "雕塑",
+       "stages": [
+        "草图",
+        "骨架",
+        "塑形",
+        "上色",
+        "成品"
+       ]
+      }
+     }
     },
     {
      "id": "print",
@@ -75,9 +183,41 @@
       "3D model",
       "Mesh check",
       "Printed piece"
-     ]
+     ],
+     "i18n": {
+      "es": {
+       "title": "Impresión 3D",
+       "stages": [
+        "Modelo 3D",
+        "Revisión de malla",
+        "Pieza impresa"
+       ]
+      },
+      "zh": {
+       "title": "3D 打印",
+       "stages": [
+        "3D 模型",
+        "网格检查",
+        "打印成品"
+       ]
+      }
+     }
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Producción 3D",
+     "kicker": "Impresión 3D · Escultura",
+     "intro": "Piezas que llevo de la idea al objeto físico, impresas en 3D o esculpidas a mano.",
+     "stages": []
+    },
+    "zh": {
+     "title": "3D 制作",
+     "kicker": "3D 打印 · 雕塑",
+     "intro": "从构想到实物的作品：3D 打印或手工雕塑。",
+     "stages": []
+    }
+   }
   },
   {
    "id": "branding",
@@ -88,7 +228,29 @@
     "Logo",
     "Identity",
     "Applications"
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Branding",
+     "kicker": "Logos · Paletas · Aplicaciones",
+     "intro": "Sistema de identidad visual",
+     "stages": [
+      "Logo",
+      "Identidad",
+      "Aplicaciones"
+     ]
+    },
+    "zh": {
+     "title": "品牌设计",
+     "kicker": "标志 · 配色 · 应用",
+     "intro": "视觉识别系统",
+     "stages": [
+      "标志",
+      "识别系统",
+      "应用"
+     ]
+    }
+   }
   },
   {
    "id": "animation",
@@ -100,7 +262,31 @@
     "Storyboard",
     "Making of",
     "Render"
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Animación",
+     "kicker": "Animación 2D y 3D",
+     "intro": "Animación 2D y 3D, del diseño de personajes y el storyboard al render final.",
+     "stages": [
+      "Diseño de personajes",
+      "Storyboard",
+      "Making of",
+      "Render"
+     ]
+    },
+    "zh": {
+     "title": "动画",
+     "kicker": "2D 与 3D 动画",
+     "intro": "2D 与 3D 动画，从角色设计、分镜到最终渲染。",
+     "stages": [
+      "角色设计",
+      "分镜",
+      "制作花絮",
+      "渲染"
+     ]
+    }
+   }
   },
   {
    "id": "advertising",
@@ -111,7 +297,29 @@
     "Commercial",
     "3D render",
     "Packaging design"
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Publicidad",
+     "kicker": "Campañas y anuncios",
+     "intro": "Anuncios, campañas y piezas para redes sociales.",
+     "stages": [
+      "Comercial",
+      "Render 3D",
+      "Diseño de empaque"
+     ]
+    },
+    "zh": {
+     "title": "广告",
+     "kicker": "广告与宣传",
+     "intro": "广告、宣传活动与社交媒体作品。",
+     "stages": [
+      "广告片",
+      "3D 渲染",
+      "包装设计"
+     ]
+    }
+   }
   },
   {
    "id": "projects",
@@ -126,10 +334,121 @@
     "Mockups",
     "Website",
     "Competition"
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Proyectos",
+     "kicker": "Emprendimiento y tecnología",
+     "intro": "Proyectos en los que he trabajado.",
+     "stages": [
+      "Render 3D",
+      "Identidad de marca",
+      "App",
+      "Material impreso",
+      "Mockups",
+      "Sitio web",
+      "Competencia"
+     ]
+    },
+    "zh": {
+     "title": "项目",
+     "kicker": "创业与科技",
+     "intro": "我参与过的项目。",
+     "stages": [
+      "3D 渲染",
+      "品牌识别",
+      "应用",
+      "印刷物料",
+      "样机展示",
+      "网站",
+      "比赛"
+     ]
+    }
+   }
   }
  ],
  "projects": [
+  {
+   "id": "pmvocc8ptucnt",
+   "section": "projects",
+   "title": "Creative Challenge | Art Competition | Art Gallery| Creatively Club",
+   "tag": "Art Gallery",
+   "year": "2020",
+   "summary": "Creatively Challenge is an art competition, the most important activity hosted by Creatively Club. As Co-Founder and Vice-president of this club, I am excited to have organized this event.",
+   "body": "The purpose of the Creative Challenge is to invite aspiring artists to join in this challenge and create innovative pieces that show your exceptional creativity and artistic skills. Our goal for this challenge is to inspire the community and establish a culture of artistic appreciation at ANS and other schools. By being willing to accept this challenge, you will become part of an ongoing tradition that will foster art and innovative ideas in the community.",
+   "link": "",
+   "media": [
+    {
+     "id": "images/screenshot-2026-10-25-at-3-25-57-pm-b7e6r.png",
+     "kind": "image",
+     "name": "Screenshot 2026-10-25 at 3.25.57 PM.png",
+     "stage": "Competition",
+     "caption": "Art Gallery"
+    },
+    {
+     "id": "images/screenshot-2026-10-25-at-3-22-44-pm-udvyi.png",
+     "kind": "image",
+     "name": "Screenshot 2026-10-25 at 3.22.44 PM.png",
+     "stage": "Competition",
+     "caption": "Art Gallery Overview"
+    },
+    {
+     "id": "images/cccreatively-aub1u.png",
+     "kind": "image",
+     "name": "Cccreatively.png",
+     "stage": "Competition",
+     "caption": "Creatively Club Logo"
+    },
+    {
+     "id": "images/club-tajcv.png",
+     "kind": "image",
+     "name": "club.png",
+     "stage": "Competition",
+     "caption": "Creatively Club Creative Challenge Design"
+    }
+   ],
+   "group": "",
+   "links": [
+    {
+     "label": "Art Gallery Link",
+     "url": "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963"
+    },
+    {
+     "label": "Creative Challenge Website",
+     "url": "https://creativechallenges.wixsite.com/creatively-club-ans"
+    }
+   ],
+   "award": "Creative Challenge 3rd edition",
+   "coverPos": "",
+   "process": true,
+   "coverId": "",
+   "i18n": {
+    "es": {
+     "media": {},
+     "title": "Creative Challenge | Concurso de Arte | Galería de Arte | Creatively Club",
+     "tag": "Galería de Arte",
+     "summary": "Creative Challenge es un concurso de arte y la actividad más importante de Creatively Club. Como cofundadora y vicepresidenta del club, me alegra haber organizado este evento.",
+     "body": "El objetivo de Creative Challenge es invitar a jóvenes artistas a crear obras originales que demuestren su creatividad y talento artístico. Queremos inspirar a la comunidad y promover el aprecio por el arte en ANS y otras escuelas. Al participar, formarás parte de una tradición que impulsa el arte y las nuevas ideas.",
+     "award": "Creative Challenge, 4.ª edición",
+     "links": {
+      "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963": "Enlace a la Galería de Arte",
+      "https://creativechallenges.wixsite.com/creatively-club-ans": "Sitio web de Creative Challenge"
+     }
+    },
+    "zh": {
+     "media": {},
+     "title": "Creative Challenge | 艺术比赛 | 艺术画廊 | Creatively Club",
+     "tag": "艺术画廊",
+     "summary": "Creative Challenge 是 Creatively Club 最重要的活动之一，也是一项艺术比赛。作为俱乐部的联合创始人和副主席，我很高兴能够组织这次活动。",
+     "body": "Creative Challenge 邀请热爱艺术的年轻人创作原创作品，展示他们的创造力和艺术才能。我们的目标是激发社区的灵感，并在 ANS 和其他学校推广艺术欣赏文化。\n\n通过参加比赛，你也将成为这个艺术传统的一部分，一起推动艺术与创新。",
+     "award": "Creative Challenge 第4届",
+     "links": {
+      "https://www.artsteps.com/view/64ee8c0fc514a47bf0f46963": "艺术画廊链接",
+      "https://creativechallenges.wixsite.com/creatively-club-ans": "Creative Challenge 网站"
+     }
+    }
+   }
+  },
   {
    "id": "pmvixh6jwp1g5",
    "section": "branding",
@@ -141,6 +460,12 @@
    "link": "",
    "media": [
     {
+     "id": "images/screenshot-2026-10-29-at-1-09-35-pm-44fkc.png",
+     "kind": "image",
+     "name": "Screenshot 2026-10-29 at 1.09.35 PM.png",
+     "stage": "Applications"
+    },
+    {
      "id": "images/cccreatively-5hq9h.png",
      "kind": "image",
      "name": "Cccreatively.png",
@@ -149,9 +474,21 @@
    ],
    "group": "",
    "links": [],
-   "award": "",
+   "award": "A club that started in highschool",
    "coverPos": "",
-   "process": false
+   "process": false,
+   "i18n": {
+    "zh": {
+     "media": {
+      "images/screenshot-2026-10-29-at-1-09-35-pm-44fkc.png": {
+       "caption": "Creatively Improved logo"
+      }
+     },
+     "links": {},
+     "award": "A club that started in highschool"
+    }
+   },
+   "coverId": ""
   },
   {
    "id": "b1",
@@ -170,7 +507,21 @@
      "stage": "Final render"
     }
    ],
-   "group": "3d"
+   "group": "3d",
+   "i18n": {
+    "es": {
+     "title": "Maga con Astas",
+     "tag": "Personaje",
+     "summary": "Un personaje estilizado con astas y un báculo, de pie sobre un círculo mágico luminoso.",
+     "body": "Personaje modelado y renderizado en Blender: una figura enmascarada con grandes astas, una capa coral ondeante, un báculo con un listón rojo y un círculo mágico en el suelo."
+    },
+    "zh": {
+     "title": "鹿角法师",
+     "tag": "角色",
+     "summary": "一个手持法杖、站在发光召唤阵上的风格化鹿角角色。",
+     "body": "在 Blender 中建模并渲染的角色：戴着面具、长着巨大鹿角的身影，飘动的珊瑚色斗篷，系着红色丝带的法杖，以及地面上的魔法阵。"
+    }
+   }
   },
   {
    "id": "b2",
@@ -189,7 +540,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Viajero con Capa",
+     "tag": "Personaje",
+     "summary": "Un viajero enmascarado con una capa coral ondeante y un báculo dorado.",
+     "body": "Personaje modelado y renderizado en Blender: una figura blanca enmascarada con una capa al viento, bufanda, botas altas y un báculo dorado, sobre una base redonda de exhibición."
+    },
+    "zh": {
+     "title": "披风旅人",
+     "tag": "角色",
+     "summary": "一位身披珊瑚色斗篷、手持金色法杖的蒙面旅人。",
+     "body": "在 Blender 中建模并渲染的角色：白色蒙面身影，随风飘扬的斗篷、围巾、长靴和金色法杖，立于圆形展示底座上。"
+    }
+   }
   },
   {
    "id": "b3",
@@ -208,7 +573,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Chica con Capucha de Zorro",
+     "tag": "Personaje",
+     "summary": "Un personaje chibi con capucha de orejas de zorro y ojos de botón.",
+     "body": "Personaje chibi modelado y renderizado en Blender: capucha con orejas de zorro, capa en forma de cola, ojos de botón, un moño y una base de madera."
+    },
+    "zh": {
+     "title": "狐狸兜帽女孩",
+     "tag": "角色",
+     "summary": "戴着狐狸耳朵兜帽、有着纽扣眼睛的 Q 版角色。",
+     "body": "在 Blender 中建模并渲染的 Q 版角色：狐耳兜帽、尾巴造型的斗篷、纽扣眼睛、蝴蝶结和木质展示底座。"
+    }
+   }
   },
   {
    "id": "b4",
@@ -228,7 +607,21 @@
      "stage": "Final render"
     }
    ],
-   "coverPos": "top"
+   "coverPos": "top",
+   "i18n": {
+    "es": {
+     "title": "Luchadora de Coletas",
+     "tag": "Personaje",
+     "summary": "Una figura estilizada con largas coletas decoradas con rombos naranjas.",
+     "body": "Personaje modelado y renderizado en Blender: una pose segura, largas coletas esculpidas, un traje negro y naranja con detalles de rombos y una base naranja."
+    },
+    "zh": {
+     "title": "双马尾战士",
+     "tag": "角色",
+     "summary": "一个风格化角色，长长的双马尾上点缀着橙色菱形。",
+     "body": "在 Blender 中建模并渲染的角色：自信的姿势、雕刻出的长双马尾、带菱形细节的黑橙服装，以及橙色底座。"
+    }
+   }
   },
   {
    "id": "b5",
@@ -247,7 +640,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Trío de Puerros",
+     "tag": "Personaje",
+     "summary": "Tres personajes puerro, cada uno con su actitud: relajado, curioso y nervioso.",
+     "body": "Tres personajes vegetales modelados y renderizados en Blender, con materiales suaves y mates y caras expresivas."
+    },
+    "zh": {
+     "title": "大葱三人组",
+     "tag": "角色",
+     "summary": "三个大葱角色，各有性格：酷、好奇、紧张。",
+     "body": "在 Blender 中建模并渲染的三个蔬菜角色，采用柔和的哑光材质和富有表情的脸。"
+    }
+   }
   },
   {
    "id": "b6",
@@ -266,7 +673,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Amiguito Zanahoria",
+     "tag": "Personaje",
+     "summary": "Una zanahoria redonda de ojos grandes y mejillas sonrojadas.",
+     "body": "Un tierno personaje zanahoria modelado y renderizado en Blender, con grandes ojos brillantes, rayas pintadas y hojas en la cabeza."
+    },
+    "zh": {
+     "title": "胡萝卜小伙伴",
+     "tag": "角色",
+     "summary": "一根圆滚滚、大眼睛、脸颊泛红的胡萝卜。",
+     "body": "在 Blender 中建模并渲染的可爱胡萝卜角色，有着闪亮的大眼睛、彩绘条纹和叶子头顶。"
+    }
+   }
   },
   {
    "id": "b7",
@@ -285,7 +706,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Niño del Hacha",
+     "tag": "Personaje",
+     "summary": "Un guerrero chibi de pelo naranja alborotado y un hacha de doble filo.",
+     "body": "Personaje chibi modelado y renderizado en Blender, sentado sobre una base de roca esculpida con un hacha de detalles dorados."
+    },
+    "zh": {
+     "title": "斧头小子",
+     "tag": "角色",
+     "summary": "一个橙色乱发、手持双刃斧的 Q 版战士。",
+     "body": "在 Blender 中建模并渲染的 Q 版角色，坐在雕刻的岩石底座上，手握镶金边的斧头。"
+    }
+   }
   },
   {
    "id": "b8",
@@ -304,7 +739,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Mago Elfo",
+     "tag": "Personaje",
+     "summary": "Un elfo chibi con un báculo de luna creciente, sentado en una banca en un prado de flores.",
+     "body": "Personaje chibi modelado y renderizado en Blender, con traje blanco y dorado, un báculo de luna creciente y una base de césped con flores."
+    },
+    "zh": {
+     "title": "精灵法师",
+     "tag": "角色",
+     "summary": "一个手持新月法杖的 Q 版精灵，坐在花丛草地的长椅上。",
+     "body": "在 Blender 中建模并渲染的 Q 版角色，身穿白金色服装，手持新月法杖，底座是开满鲜花的草地。"
+    }
+   }
   },
   {
    "id": "b9",
@@ -323,7 +772,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Pequeño Caballero",
+     "tag": "Personaje",
+     "summary": "Un diminuto caballero con armadura, ojos brillantes, una lanza y un escudo.",
+     "body": "Caballero chibi modelado y renderizado en Blender, con armadura en escala de grises, capa, una lanza con estandarte y una pequeña bandera azul en el casco."
+    },
+    "zh": {
+     "title": "小骑士",
+     "tag": "角色",
+     "summary": "一个身披盔甲、眼睛发光、手持长矛和盾牌的小骑士。",
+     "body": "在 Blender 中建模并渲染的 Q 版骑士，身穿灰色盔甲和斗篷，长矛上挂着旗帜，头盔上插着一面蓝色小旗。"
+    }
+   }
   },
   {
    "id": "b10",
@@ -342,7 +805,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Niño con Perros Gemelos",
+     "tag": "Personaje",
+     "summary": "Un niño chibi que carga un perro blanco, con un perro negro a sus pies.",
+     "body": "Personaje chibi modelado y renderizado en Blender, con pelo puntiagudo brillante, uniforme negro y dos perritos compañeros sobre una base rosada."
+    },
+    "zh": {
+     "title": "男孩与双犬",
+     "tag": "角色",
+     "summary": "一个抱着白色小狗的 Q 版男孩，脚边还有一只黑色小狗。",
+     "body": "在 Blender 中建模并渲染的 Q 版角色，有着光亮的刺猬头、黑色制服，以及站在粉色底座上的两只小狗伙伴。"
+    }
+   }
   },
   {
    "id": "b11",
@@ -361,7 +838,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Abducción Nocturna",
+     "tag": "Escena",
+     "summary": "Un OVNI elevando a una vaca en un bosque de pinos bajo la luna.",
+     "body": "Una escena completa hecha en Blender: un platillo volador con un piloto alienígena, una vaca flotando, un campo de césped con textura y capas de pinos."
+    },
+    "zh": {
+     "title": "夜间劫持",
+     "tag": "场景",
+     "summary": "月光下的松林里，一架飞碟正把一头奶牛吸上天空。",
+     "body": "在 Blender 中搭建的完整场景：载着外星驾驶员的飞碟、漂浮的奶牛、有纹理的草地和层层松树。"
+    }
+   }
   },
   {
    "id": "b12",
@@ -391,7 +882,41 @@
      "time": "Step 2",
      "caption": "The finished 3D character, modeled and rendered in Blender."
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Chica del Impermeable de Rana",
+     "tag": "Personaje · Primer modelo con referencia",
+     "summary": "Mi primer personaje hecho en Blender a partir de una referencia: una chica con impermeable de capucha de rana, del boceto 2D al 3D.",
+     "body": "Mi primera vez construyendo un personaje en Blender a partir de una referencia. Partí de un boceto 2D y lo convertí en un modelo 3D completo: una chica de pelo azul con un impermeable verde enorme con capucha de rana, cordones, bolsillos y botas de lluvia, de pie en un pequeño charco.\n\nEl reto fue conservar el encanto del dibujo, como los grandes ojos de rana, la silueta suave y su sonrisa tímida, mientras le daba volumen a todo y un aspecto de tela suave y acolchada. Dale play para comparar la referencia con el render final.",
+     "media": {
+      "images/frog-girl-sketch.jpg": {
+       "time": "Paso 1",
+       "caption": "El boceto 2D que usé como referencia."
+      },
+      "images/frog-girl-render.jpg": {
+       "time": "Paso 2",
+       "caption": "El personaje 3D terminado, modelado y renderizado en Blender."
+      }
+     }
+    },
+    "zh": {
+     "title": "青蛙雨衣女孩",
+     "tag": "角色 · 第一次参照建模",
+     "summary": "我第一次在 Blender 中参照草图建模的角色：穿着青蛙兜帽雨衣的女孩，从 2D 草图到 3D。",
+     "body": "这是我第一次在 Blender 中参照图稿制作角色。我从一张 2D 草图出发，把它做成完整的 3D 模型：一个蓝发女孩，穿着宽大的绿色青蛙兜帽雨衣，有抽绳、口袋和雨靴，站在一个小水坑里。\n\n难点在于保留原画的可爱之处，比如青蛙的大眼睛、柔和的轮廓和她害羞的微笑，同时让一切都有立体感，呈现柔软蓬松的布料质感。点击播放，对比参考图与最终渲染。",
+     "media": {
+      "images/frog-girl-sketch.jpg": {
+       "time": "第 1 步",
+       "caption": "我用作参考的 2D 草图。"
+      },
+      "images/frog-girl-render.jpg": {
+       "time": "第 2 步",
+       "caption": "完成的 3D 角色，在 Blender 中建模并渲染。"
+      }
+     }
+    }
+   }
   },
   {
    "id": "b13",
@@ -421,7 +946,41 @@
      "time": "Step 2",
      "caption": "The finished 3D character, modeled and rendered in Blender."
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Pequeño Arquero",
+     "tag": "Personaje · Del concepto al 3D",
+     "summary": "Un pequeño arquero con arco y carcaj, llevado de un concepto 2D a una figura 3D.",
+     "body": "Un personaje 3D construido en Blender a partir de un concepto 2D: un joven arquero con gorra, una bufanda sobre la cara, un carcaj de flechas y un arco cruzado sobre el cuerpo, sobre una base redonda.\n\nTraduje el concepto plano y pictórico al 3D, manteniendo las formas facetadas del arco y del pelo, y le di al personaje mi propia paleta de azules y verdes. Dale play para comparar el concepto con el render final.",
+     "media": {
+      "images/little-archer-concept.jpg": {
+       "time": "Paso 1",
+       "caption": "El concepto 2D en el que se basa el modelo."
+      },
+      "images/little-archer-render.jpg": {
+       "time": "Paso 2",
+       "caption": "El personaje 3D terminado, modelado y renderizado en Blender."
+      }
+     }
+    },
+    "zh": {
+     "title": "小弓箭手",
+     "tag": "角色 · 从概念到 3D",
+     "summary": "一个背着箭筒、手持弓的小弓箭手，从 2D 概念图变成 3D 模型。",
+     "body": "在 Blender 中根据 2D 概念图制作的 3D 角色：一个戴帽子、用围巾遮住脸的年轻弓箭手，背着箭筒，弓横在身前，立于圆形底座上。\n\n我把平面、绘画风格的概念图转化为 3D，保留了弓和头发的多边形切面造型，并为角色换上了我自己的蓝绿配色。点击播放，对比概念图与最终渲染。",
+     "media": {
+      "images/little-archer-concept.jpg": {
+       "time": "第 1 步",
+       "caption": "模型所依据的 2D 概念图。"
+      },
+      "images/little-archer-render.jpg": {
+       "time": "第 2 步",
+       "caption": "完成的 3D 角色，在 Blender 中建模并渲染。"
+      }
+     }
+    }
+   }
   },
   {
    "id": "v1",
@@ -440,7 +999,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Koi Yin-Yang",
+     "tag": "Ilustración",
+     "summary": "Un koi negro y uno blanco girando alrededor de una flor de loto, en un estilo plano con contornos de tinta.",
+     "body": "Hecho en Blender con un acabado 2D tipo toon: dos koi formando un yin-yang alrededor de un loto rosado, sobre capas de agua azul."
+    },
+    "zh": {
+     "title": "锦鲤阴阳",
+     "tag": "插画",
+     "summary": "一黑一白两条锦鲤环绕莲花，采用扁平的墨线描边风格。",
+     "body": "在 Blender 中以 2D 卡通着色风格制作：两条锦鲤围绕粉色莲花组成阴阳图案，下方是层叠的蓝色水纹。"
+    }
+   }
   },
   {
    "id": "v2",
@@ -459,7 +1032,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Totoro (Fan Art)",
+     "tag": "Fan art",
+     "summary": "Un Totoro de fan art modelado en Blender con sombreado suave y contornos estilo dibujo a mano.",
+     "body": "Fan art de Totoro, de la película Mi vecino Totoro de Studio Ghibli, modelado en Blender y renderizado con líneas para un aspecto 2D ilustrado."
+    },
+    "zh": {
+     "title": "龙猫（同人作品）",
+     "tag": "同人作品",
+     "summary": "在 Blender 中建模的龙猫同人作品，带有柔和阴影和手绘风格描边。",
+     "body": "吉卜力工作室《龙猫》中龙猫的同人作品，在 Blender 中建模，并用线条渲染呈现 2D 插画效果。"
+    }
+   }
   },
   {
    "id": "v3",
@@ -481,7 +1068,19 @@
    ],
    "award": "",
    "coverPos": "",
-   "process": false
+   "process": false,
+   "i18n": {
+    "es": {
+     "title": "Dúo de las Bandanas",
+     "tag": "Personaje",
+     "summary": "Dos luchadores gruñones en forma de frijol, con bandanas y brazos vendados."
+    },
+    "zh": {
+     "title": "头带二人组",
+     "tag": "角色",
+     "summary": "两个系着头带、手臂缠着绷带、一脸不爽的豆子形格斗家。"
+    }
+   }
   },
   {
    "id": "v4",
@@ -500,7 +1099,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Filo Naranja",
+     "tag": "Personaje",
+     "summary": "Una espadachina en una paleta plana de negro, blanco y naranja.",
+     "body": "Personaje modelado en Blender y renderizado con sombreado toon y contornos para un aspecto 2D plano y gráfico, usando solo negro, blanco y naranja."
+    },
+    "zh": {
+     "title": "橙刃",
+     "tag": "角色",
+     "summary": "一位剑士，只用黑、白、橙三色的扁平配色。",
+     "body": "在 Blender 中建模的角色，用卡通着色和描边渲染，呈现扁平的 2D 平面设计效果，只使用黑、白、橙三种颜色。"
+    }
+   }
   },
   {
    "id": "v5",
@@ -519,7 +1132,21 @@
      "kind": "image",
      "stage": "Final render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Gato Cafetero",
+     "tag": "Personaje",
+     "summary": "Un perezoso gato azul estirándose hacia una taza de café, con contornos estilo dibujo.",
+     "body": "Un gato de caricatura modelado en Blender y renderizado con líneas para un aspecto 2D dibujado a mano, estirado sobre una mesa junto a una taza de café."
+    },
+    "zh": {
+     "title": "咖啡猫",
+     "tag": "角色",
+     "summary": "一只懒洋洋的蓝猫伸手去够咖啡杯，带有手绘风格描边。",
+     "body": "在 Blender 中建模的卡通猫，用线条渲染呈现手绘 2D 效果，它伸展着身体趴在桌上，旁边是一杯咖啡。"
+    }
+   }
   },
   {
    "id": "p1",
@@ -654,7 +1281,49 @@
    ],
    "coverPos": "",
    "process": false,
-   "group": ""
+   "group": "",
+   "i18n": {
+    "es": {
+     "tag": "App de salud femenina",
+     "summary": "Un acompañamiento digital que apoya a las mujeres en cada etapa de su vida: menstruación, embarazo y menopausia.",
+     "award": "🥈 2do lugar · Hackathon Kronox, 10ma edición",
+     "body": "Nuestro proyecto acompaña y apoya integralmente a las mujeres en cada etapa de su vida —menstruación, embarazo y menopausia— con herramientas digitales que brindan información confiable, orientación y apoyo, para que comprendan mejor sus procesos, cuiden su bienestar y tomen decisiones informadas sobre su salud.\n\nEl Equipo MAIRIN ganó el 2do lugar en la 10ma edición del Hackathon Kronox en octubre de 2026, después de tres meses de trabajo en el proyecto. El contenido de la app está disponible en español, miskito y criollo.",
+     "links": {
+      "https://youtu.be/o-AoAJSH-J8": "Video #1 (1 min)",
+      "https://youtu.be/uyFT9Ja565I": "Video #2 (2 min)",
+      "https://ashl3y-lin.github.io/mairin_web/": "Sitio web",
+      "files/MAIRIN-Identity-Manual-EN.pdf": "Manual de identidad (PDF, inglés)",
+      "files/MAIRIN-Identity-Manual-ES.pdf": "Manual de identidad (PDF, español)",
+      "https://instagram.com/mairinapp": "Instagram @mairinapp",
+      "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing": "Brochure: antes y después del lanzamiento de la app",
+      "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing": "Borradores y proceso de trabajo",
+      "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing": "Entregables del hackathon",
+      "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing": "Íconos e ilustraciones",
+      "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing": "Posts de marketing",
+      "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing": "Stickers (Silhouette Studio)"
+     }
+    },
+    "zh": {
+     "tag": "女性健康应用",
+     "summary": "一款陪伴女性走过人生每个阶段的数字助手：月经、怀孕与更年期。",
+     "award": "🥈 第二名 · Kronox 黑客松第十届",
+     "body": "MAIRIN 以数字工具全面陪伴和支持女性走过人生的每个阶段（月经、怀孕和更年期），提供可靠的信息、指导与支持，帮助她们更好地了解自己的身体、照顾自身健康，并在健康问题上做出知情的决定。\n\nMAIRIN 团队经过三个月的努力，于 2026 年 10 月在第十届 Kronox 黑客松中获得第二名。应用内容提供西班牙语、米斯基托语和克里奥尔语版本。",
+     "links": {
+      "https://youtu.be/o-AoAJSH-J8": "视频 #1（1 分钟）",
+      "https://youtu.be/uyFT9Ja565I": "视频 #2（2 分钟）",
+      "https://ashl3y-lin.github.io/mairin_web/": "网站",
+      "files/MAIRIN-Identity-Manual-EN.pdf": "品牌识别手册（PDF，英文）",
+      "files/MAIRIN-Identity-Manual-ES.pdf": "品牌识别手册（PDF，西班牙文）",
+      "https://instagram.com/mairinapp": "Instagram @mairinapp",
+      "https://drive.google.com/file/d/1JSh0-kCTUsf7HAqNM4kMrXA86RS_P-gn/view?usp=sharing": "宣传册：应用上线前后",
+      "https://docs.google.com/document/d/1GkM8IjHCSL1aoTE8ssd4Vd118tEy4AwIZFQnkJ4Ygoo/edit?usp=sharing": "草稿与工作过程",
+      "https://drive.google.com/drive/folders/1pHuNHvvmMehy3QPi7PZY0qcTmMEPm98N?usp=sharing": "黑客松交付成果",
+      "https://drive.google.com/drive/folders/1GdUyLRTrnp4xGKaGAiqJ3utM4pEPc6Ng?usp=sharing": "图标与插画",
+      "https://drive.google.com/drive/folders/1ePjqkz0qsZZrgBjXkCwxkBzv-XRUs1tU?usp=sharing": "营销帖子",
+      "https://drive.google.com/drive/folders/1ltCRHtEZmRmSc9f5N9O183XS7-7Bm9sO?usp=sharing": "贴纸（Silhouette Studio）"
+     }
+    }
+   }
   },
   {
    "id": "p2",
@@ -664,7 +1333,7 @@
    "tag": "Circular economy · AgriTech",
    "award": "🥇🏆 1st place · Latin American Rally, UAM campus & Nicaragua national stage\n🥈 2nd place · Latin American Rally, Latin American stage",
    "summary": "Low-cost agro-hydraulic stations built from recycled appliance motors, for small vegetable farmers.",
-   "body": "AquaMotriz aims to give small vegetable farmers access to affordable pumping and irrigation systems while reducing electronic waste. The proposal recovers and adapts motors from discarded household appliances to build low-cost agro-hydraulic stations that support pumping, irrigation and wind energy, combining circular economy, innovation and sustainability.\n\nAquaMotriz busca facilitar el acceso de pequeños productores hortícolas a sistemas de bombeo y riego económicos, mientras reduce los residuos electrónicos. La propuesta consiste en recuperar y adaptar motores de electrodomésticos en desuso para crear estaciones agrohídricas de bajo costo que apoyen el bombeo, el riego y la energía eólica, combinando economía circular, innovación y sostenibilidad.\n\nTeam Avocado won 1st place at the UAM campus and Nicaragua national stages of the Latin American Rally, and then 2nd place at the Latin American stage.\n\nEl Equipo Avocado ganó el 1er lugar en las etapas de sede (UAM) y nacional (Nicaragua) del Rally Latinoamericano, y luego el 2do lugar en la etapa latinoamericana.",
+   "body": "AquaMotriz aims to give small vegetable farmers access to affordable pumping and irrigation systems while reducing electronic waste. The proposal recovers and adapts motors from discarded household appliances to build low-cost agro-hydraulic stations that support pumping, irrigation and wind energy, combining circular economy, innovation and sustainability.\n\nTeam Avocado won 1st place at the UAM campus and Nicaragua national stages of the Latin American Rally, and then 2nd place at the Latin American stage.",
    "link": "",
    "links": [
     {
@@ -711,7 +1380,31 @@
      "kind": "image",
      "stage": ""
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "tag": "Economía circular · AgriTech",
+     "summary": "Estaciones agrohídricas de bajo costo hechas con motores reciclados de electrodomésticos, para pequeños productores hortícolas.",
+     "award": "🥇🏆 1er lugar · Rally Latinoamericano, etapa de sede UAM y nacional Nicaragua\n🥈 2do lugar · Rally Latinoamericano, etapa latinoamericana",
+     "body": "AquaMotriz busca facilitar el acceso de pequeños productores hortícolas a sistemas de bombeo y riego económicos, mientras reduce los residuos electrónicos. La propuesta consiste en recuperar y adaptar motores de electrodomésticos en desuso para crear estaciones agrohídricas de bajo costo que apoyen el bombeo, el riego y la energía eólica, combinando economía circular, innovación y sostenibilidad.\n\nEl Equipo Avocado ganó el 1er lugar en las etapas de sede (UAM) y nacional (Nicaragua) del Rally Latinoamericano, y luego el 2do lugar en la etapa latinoamericana.",
+     "links": {
+      "https://www.youtube.com/watch?v=g0pXDNbKRIM": "Video (2 min)",
+      "https://www.tiktok.com/@aguacatech5/video/7697464846438124801": "TikTok",
+      "https://drive.google.com/file/d/1KmpHEHPOcYr6Rf3QdV2lm6Yqz6x5RvFo/view?usp=sharing": "Reporte del proyecto (PDF)"
+     }
+    },
+    "zh": {
+     "tag": "循环经济 · 农业科技",
+     "summary": "用回收家电电机打造的低成本农业水力站，服务小型蔬菜种植户。",
+     "award": "🥇🏆 第一名 · 拉丁美洲创新拉力赛，UAM 校区赛与尼加拉瓜全国赛\n🥈 第二名 · 拉丁美洲创新拉力赛，拉美总决赛",
+     "body": "AquaMotriz 致力于让小型蔬菜种植户用得起抽水和灌溉系统，同时减少电子垃圾。我们回收并改造废弃家电中的电机，打造低成本的农业水力站，用于抽水、灌溉和风力发电，将循环经济、创新与可持续发展结合在一起。\n\nAvocado 团队在拉丁美洲创新拉力赛的 UAM 校区赛和尼加拉瓜全国赛中获得第一名，随后在拉美总决赛中获得第二名。",
+     "links": {
+      "https://www.youtube.com/watch?v=g0pXDNbKRIM": "视频（2 分钟）",
+      "https://www.tiktok.com/@aguacatech5/video/7697464846438124801": "TikTok",
+      "https://drive.google.com/file/d/1KmpHEHPOcYr6Rf3QdV2lm6Yqz6x5RvFo/view?usp=sharing": "项目报告（PDF）"
+     }
+    }
+   }
   },
   {
    "id": "p3",
@@ -721,7 +1414,7 @@
    "tag": "Urban innovation",
    "award": "🥇🏆 1st place · National Innovation Rally, Nicaragua (Innovation category)",
    "summary": "Smart, bioclimatic micro-parks that turn illegal dumpsites in Managua into living community spaces, so the trash does not come back.",
-   "body": "— English —\n\nIn Managua, illegal dumpsites keep reappearing on empty lots and green areas. A site that gets cleaned but stays abandoned, with no purpose and no one caring for it, fills up with trash again.\n\nVitalia turns those sites into Creative and Bioclimatic Micro-parks built on three parts:\n• Vitalia Eco: bioclimatic landscaping, low-water plants, furniture made from recovered materials and rainwater harvesting.\n• Vitalia Smart: a low-cost, solar-powered ESP32 IoT node that monitors the park and automates irrigation and lighting, feeding a dashboard and a “Biocreative Index”.\n• Vitalia Community: a “Park Godparents” network, QR-code murals and the “Biocreative Challenge” for students, neighbors and local businesses.\n\nTeam Avocado won 1st place in the Innovation category of the National Innovation Rally (Nicaragua Innova 2026) in late August 2026. I designed the project’s brochure.\n\n— Español —\n\nEn Managua, los botaderos ilegales reaparecen en terrenos baldíos y áreas verdes. Un espacio que se limpia pero sigue abandonado, sin función ni cuidado, vuelve a llenarse de basura.\n\nVitalia es un sistema integral de regeneración urbana que transforma botaderos ilegales en Microparques Creativos y Bioclimáticos Inteligentes, en tres componentes:\n• Vitalia Eco: paisajismo bioclimático, especies de bajo consumo de agua, mobiliario hecho con residuos del sitio y captación de lluvia.\n• Vitalia Smart: un nodo IoT de bajo costo basado en ESP32, alimentado con energía solar, que monitorea el parque y automatiza el riego y la iluminación; los datos alimentan un Dashboard y el «Índice Biocreativo».\n• Vitalia Community: la red «Padrinos del Parque», murales con códigos QR y el «Reto Biocreativo» para estudiantes, vecinos y negocios.\n\nNo limpiamos un botadero para esperar que vuelva la basura: lo transformamos.\n\nEl Equipo Avocado ganó el 1er lugar en la categoría de Innovación del Rally Nacional de Innovación (Nicaragua Innova 2026), a finales de agosto de 2026. Diseñé el brochure del proyecto.",
+   "body": "In Managua, illegal dumpsites keep reappearing on empty lots and green areas. A site that gets cleaned but stays abandoned, with no purpose and no one caring for it, fills up with trash again.\n\nVitalia turns those sites into Creative and Bioclimatic Micro-parks built on three parts:\n• Vitalia Eco: bioclimatic landscaping, low-water plants, furniture made from recovered materials and rainwater harvesting.\n• Vitalia Smart: a low-cost, solar-powered ESP32 IoT node that monitors the park and automates irrigation and lighting, feeding a dashboard and a “Biocreative Index”.\n• Vitalia Community: a “Park Godparents” network, QR-code murals and the “Biocreative Challenge” for students, neighbors and local businesses.\n\nTeam Avocado won 1st place in the Innovation category of the National Innovation Rally (Nicaragua Innova 2026) in late August 2026. I designed the project’s brochure.",
    "link": "",
    "links": [
     {
@@ -767,7 +1460,33 @@
      "kind": "image",
      "stage": ""
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "tag": "Innovación urbana",
+     "summary": "Microparques inteligentes y bioclimáticos que convierten botaderos ilegales de Managua en espacios comunitarios vivos, para que la basura no vuelva.",
+     "award": "🥇🏆 1er lugar · Rally Nacional de Innovación, Nicaragua (categoría Innovación)",
+     "body": "En Managua, los botaderos ilegales reaparecen en terrenos baldíos y áreas verdes. Un espacio que se limpia pero sigue abandonado, sin función ni cuidado, vuelve a llenarse de basura.\n\nVitalia es un sistema integral de regeneración urbana que transforma botaderos ilegales en Microparques Creativos y Bioclimáticos Inteligentes, en tres componentes:\n• Vitalia Eco: paisajismo bioclimático, especies de bajo consumo de agua, mobiliario hecho con residuos del sitio y captación de lluvia.\n• Vitalia Smart: un nodo IoT de bajo costo basado en ESP32, alimentado con energía solar, que monitorea el parque y automatiza el riego y la iluminación; los datos alimentan un Dashboard y el «Índice Biocreativo».\n• Vitalia Community: la red «Padrinos del Parque», murales con códigos QR y el «Reto Biocreativo» para estudiantes, vecinos y negocios.\n\nNo limpiamos un botadero para esperar que vuelva la basura: lo transformamos.\n\nEl Equipo Avocado ganó el 1er lugar en la categoría de Innovación del Rally Nacional de Innovación (Nicaragua Innova 2026), a finales de agosto de 2026. Diseñé el brochure del proyecto.",
+     "links": {
+      "https://youtu.be/Eq8VXgx-7iM": "Video (versión mejorada)",
+      "https://youtu.be/NHt7gJ_N8rU": "Video (versión de la competencia)",
+      "https://drive.google.com/file/d/1BCVMAG3PFUlzgDThVJhZYVH1AUenLv_q/view?usp=sharing": "Documento con propuesta de solución (PDF)",
+      "https://drive.google.com/file/d/1ofonL3tmIv9Nza0Fp6aRYtOGm20fX1Sw/view?usp=drive_link": "Brochure (PDF)"
+     }
+    },
+    "zh": {
+     "tag": "城市创新",
+     "summary": "智能生态微型公园，把马那瓜的非法垃圾场变成充满生机的社区空间，让垃圾不再回来。",
+     "award": "🥇🏆 第一名 · 尼加拉瓜全国创新拉力赛（创新类）",
+     "body": "在马那瓜，非法垃圾场不断在空地和绿地上重新出现。一个地方即使被清理干净，只要仍被荒废、没有用途、无人照看，很快又会堆满垃圾。\n\nVitalia 把这些地方改造成\"创意生态智能微型公园\"，由三部分组成：\n• Vitalia Eco：生态景观设计、节水植物、用回收材料制作的设施，以及雨水收集。\n• Vitalia Smart：低成本、太阳能供电的 ESP32 物联网节点，监测公园状况并自动控制灌溉和照明，数据汇入仪表板和\"生物创意指数\"。\n• Vitalia Community：\"公园守护人\"网络、二维码壁画，以及面向学生、居民和本地商家的\"生物创意挑战\"。\n\nAvocado 团队于 2026 年 8 月底在尼加拉瓜全国创新拉力赛（Nicaragua Innova 2026）创新类中获得第一名。我负责设计项目宣传册。",
+     "links": {
+      "https://youtu.be/Eq8VXgx-7iM": "视频（改进版）",
+      "https://youtu.be/NHt7gJ_N8rU": "视频（参赛提交版）",
+      "https://drive.google.com/file/d/1BCVMAG3PFUlzgDThVJhZYVH1AUenLv_q/view?usp=sharing": "解决方案报告（PDF）",
+      "https://drive.google.com/file/d/1ofonL3tmIv9Nza0Fp6aRYtOGm20fX1Sw/view?usp=drive_link": "宣传册（PDF）"
+     }
+    }
+   }
   },
   {
    "id": "p4",
@@ -777,7 +1496,7 @@
    "tag": "Circular fashion · Textile recycling",
    "award": "🥈🏆 2nd place · Latin American Innovation Rally 2025, UAM DIEM campus stage (Social Impact area)",
    "summary": "A digital platform that connects the community with textile recycling, so your clothes get another life.",
-   "body": "— English —\n\nWe buy fast and throw away even faster. Only 1% of the clothes produced ever get recycled, the textile industry accounts for about 8% of global greenhouse gas emissions, and around 215 billion liters of water are used every year to make textiles.\n\nReviste is a digital platform that connects the community with textile recycling: donate, reuse, transform.\n• Donate online: register the clothes you no longer wear on the Reviste website.\n• We collect: donated clothes, plus clothes rescued from landfills, go to our center and are sorted into three grades. Excellent condition (AAA) is resold second-hand; medium condition (AA) is customized into a new style; worn-out pieces are shredded and pressed with a bio-based adhesive into new fabric for local artisans.\n• The shredder: a machine modeled in 3D with two electric motors, each connected by a chain to a crusher made of two stacks of gears turning in opposite directions, inside a box covered in clear plastic.\n• We close the loop: the products return to the platform, and part of the profits funds rural education projects.\n\nReviste contributes to 8 UN Sustainable Development Goals. Team AguacaTech won 2nd place at the UAM DIEM campus stage of the Latin American Innovation Rally, in the Social Impact area (Challenge 02: Textile Recycling).\n\n— Español —\n\nCompramos rápido. Desechamos más rápido. Solo el 1% de las prendas producidas logra reciclarse, la industria textil genera cerca del 8% de las emisiones globales de gases de efecto invernadero y se usan unos 215 billones de litros de agua cada año para producir textiles.\n\nReviste es una plataforma digital que conecta a tu comunidad con el reciclaje textil: dona, reutiliza, transforma.\n• Dona en línea: registra en el sitio web de Reviste las prendas que ya no usas.\n• Recolectamos: la ropa donada, y la rescatada de vertederos, llega a nuestro centro y se clasifica en tres categorías. Excelente estado (AAA) se vende como segunda mano; estado medio (AA) se personaliza y se convierte en un estilo nuevo; las prendas en mal estado se trituran y compactan con un adhesivo biobasado para crear tela para artesanos locales.\n• La trituradora: una máquina modelada en 3D con dos motores eléctricos, cada uno conectado por una cadena a una trituradora de 2 pilas de engranajes que giran en sentidos opuestos, dentro de una caja cubierta de plástico transparente.\n• Cerramos el ciclo: los productos vuelven a la plataforma y parte de las ganancias financia proyectos educativos rurales.\n\nTu ropa merece otra vida. Reviste contribuye a 8 ODS de la ONU. El equipo AguacaTech obtuvo el segundo lugar en la etapa de sede (UAM, Sede DIEM) del Rally Latinoamericano de Innovación, en el Área Impacto Social (Desafío 02: Reciclado Textil).",
+   "body": "We buy fast and throw away even faster. Only 1% of the clothes produced ever get recycled, the textile industry accounts for about 8% of global greenhouse gas emissions, and around 215 billion liters of water are used every year to make textiles.\n\nReviste is a digital platform that connects the community with textile recycling: donate, reuse, transform.\n• Donate online: register the clothes you no longer wear on the Reviste website.\n• We collect: donated clothes, plus clothes rescued from landfills, go to our center and are sorted into three grades. Excellent condition (AAA) is resold second-hand; medium condition (AA) is customized into a new style; worn-out pieces are shredded and pressed with a bio-based adhesive into new fabric for local artisans.\n• The shredder: a machine modeled in 3D with two electric motors, each connected by a chain to a crusher made of two stacks of gears turning in opposite directions, inside a box covered in clear plastic.\n• We close the loop: the products return to the platform, and part of the profits funds rural education projects.\n\nReviste contributes to 8 UN Sustainable Development Goals. Team AguacaTech won 2nd place at the UAM DIEM campus stage of the Latin American Innovation Rally, in the Social Impact area (Challenge 02: Textile Recycling).",
    "link": "",
    "links": [
     {
@@ -819,7 +1538,31 @@
      "kind": "image",
      "stage": "3D render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "tag": "Moda circular · Reciclaje textil",
+     "summary": "Una plataforma digital que conecta a la comunidad con el reciclaje textil, para que tu ropa tenga otra vida.",
+     "award": "🥈🏆 2do lugar · Rally Latinoamericano de Innovación 2025, etapa de sede UAM DIEM (Área Impacto Social)",
+     "body": "Compramos rápido. Desechamos más rápido. Solo el 1% de las prendas producidas logra reciclarse, la industria textil genera cerca del 8% de las emisiones globales de gases de efecto invernadero y se usan unos 215 billones de litros de agua cada año para producir textiles.\n\nReviste es una plataforma digital que conecta a tu comunidad con el reciclaje textil: dona, reutiliza, transforma.\n• Dona en línea: registra en el sitio web de Reviste las prendas que ya no usas.\n• Recolectamos: la ropa donada, y la rescatada de vertederos, llega a nuestro centro y se clasifica en tres categorías. Excelente estado (AAA) se vende como segunda mano; estado medio (AA) se personaliza y se convierte en un estilo nuevo; las prendas en mal estado se trituran y compactan con un adhesivo biobasado para crear tela para artesanos locales.\n• La trituradora: una máquina modelada en 3D con dos motores eléctricos, cada uno conectado por una cadena a una trituradora de 2 pilas de engranajes que giran en sentidos opuestos, dentro de una caja cubierta de plástico transparente.\n• Cerramos el ciclo: los productos vuelven a la plataforma y parte de las ganancias financia proyectos educativos rurales.\n\nTu ropa merece otra vida. Reviste contribuye a 8 ODS de la ONU. El equipo AguacaTech obtuvo el segundo lugar en la etapa de sede (UAM, Sede DIEM) del Rally Latinoamericano de Innovación, en el Área Impacto Social (Desafío 02: Reciclado Textil).",
+     "links": {
+      "https://illuminateyouquote.wixsite.com/reviste": "Sitio web de Reviste",
+      "https://www.youtube.com/watch?v=UUU2PZUgIx4": "Video",
+      "files/Reviste-Project-Report.pdf": "Reporte del proyecto (PDF)"
+     }
+    },
+    "zh": {
+     "tag": "循环时尚 · 纺织品回收",
+     "summary": "一个把社区与纺织品回收连接起来的数字平台，让你的衣服拥有第二次生命。",
+     "award": "🥈🏆 第二名 · 2025 拉丁美洲创新拉力赛，UAM DIEM 校区赛（社会影响领域）",
+     "body": "我们买得快，扔得更快。全球生产的衣物只有 1% 得到回收，纺织业约占全球温室气体排放的 8%，每年生产纺织品要消耗约 2150 亿升水。\n\nReviste 是一个把社区与纺织品回收连接起来的数字平台：捐赠、再利用、再改造。\n• 在线捐赠：在 Reviste 网站登记你不再穿的衣服。\n• 我们回收：捐赠的衣物以及从垃圾填埋场救回的衣物送到我们的中心，按三个等级分类。状况极好（AAA）的作为二手衣物出售；状况一般（AA）的改造成新款式；破旧的衣物则被粉碎，并用生物基黏合剂压制成新布料，供本地手工艺人使用。\n• 粉碎机：一台用 3D 建模的机器，有两个电机，每个电机通过链条连接由两组反向旋转齿轮组成的粉碎装置，外面罩着透明塑料箱。\n• 形成闭环：产品回到平台销售，部分利润用于资助乡村教育项目。\n\nReviste 助力实现联合国 8 项可持续发展目标。AguacaTech 团队在拉丁美洲创新拉力赛 UAM DIEM 校区赛的社会影响领域（挑战 02：纺织品回收）中获得第二名。",
+     "links": {
+      "https://illuminateyouquote.wixsite.com/reviste": "Reviste 网站",
+      "https://www.youtube.com/watch?v=UUU2PZUgIx4": "视频",
+      "files/Reviste-Project-Report.pdf": "项目报告（PDF）"
+     }
+    }
+   }
   },
   {
    "id": "r1",
@@ -862,7 +1605,31 @@
      "kind": "image",
      "stage": ""
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Sitio web de ANS Robotics",
+     "tag": "Robótica · Diseño web",
+     "summary": "Un sitio web de aprendizaje que creé para el nuevo programa de robótica de mi colegio, más tres años compitiendo en la WRO y ahora como entrenadora.",
+     "award": "🥈 2do lugar · World Robot Olympiad (WRO), después de 3 años compitiendo",
+     "body": "Creé ANS Robotics, un sitio web para el nuevo programa de robótica de mi colegio, donde los estudiantes aprenden robótica mientras se divierten.\n\nCómo lo construí: me apasionaba la robótica, quería ayudar a mi comunidad y era completamente principiante en programación. Mi video (enlace abajo) cuenta ese camino:\n• Aprender por mi cuenta a construir un sitio web desde cero con cursos gratuitos en línea.\n• Planificar el diseño y la estructura del sitio.\n• Grabar los movimientos de los robots para mostrar cómo funcionan.\n• Unir todo y publicarlo en internet.\n\nCompetí en la World Robot Olympiad (WRO) durante tres años y seguí mejorando hasta llegar al podio:\n• Año 1: 5to lugar\n• Año 2: 4to lugar\n• Año 3: 2do lugar\n\nHoy soy la entrenadora de robótica de mi colegio y llevo a mis equipos hacia el campeonato.",
+     "links": {
+      "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/": "Sitio web de ANS Robotics",
+      "https://youtu.be/xHw7wPLTmTk": "Video: mi camino construyendo el sitio web"
+     }
+    },
+    "zh": {
+     "title": "ANS 机器人网站",
+     "tag": "机器人 · 网页设计",
+     "summary": "我为高中新成立的机器人课程制作的学习网站，以及三年参加 WRO 比赛、如今担任教练的经历。",
+     "award": "🥈 第二名 · 世界机器人奥林匹克（WRO），参赛三年后登上领奖台",
+     "body": "我创建了 ANS Robotics 学习平台，这是为我们高中新成立的机器人课程制作的网站，让同学们在快乐中学习机器人。\n\n我是怎么做出来的：我热爱机器人，想帮助我的社区，而且当时完全是编程新手。我的视频（链接见下方）记录了这段历程：\n• 通过免费的网络课程，自学从零开始搭建网站。\n• 规划网站的设计与结构。\n• 拍摄机器人的动作，展示它们如何运作。\n• 把一切整合起来并发布到网上。\n\n我参加了三年世界机器人奥林匹克（WRO），一路进步，最终登上领奖台：\n• 第一年：第五名\n• 第二年：第四名\n• 第三年：第二名\n\n如今我是学校的机器人教练，带领我的队伍向冠军迈进。",
+     "links": {
+      "https://ashl3y-lin.github.io/ANS-robotic_Way-1_Exploration_Home/": "ANS Robotics 网站",
+      "https://youtu.be/xHw7wPLTmTk": "视频：我搭建网站的历程"
+     }
+    }
+   }
   },
   {
    "id": "a1",
@@ -890,7 +1657,21 @@
      "kind": "image",
      "stage": "Packaging design"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Curitas PIM",
+     "tag": "Primer comercial · Personajes originales · Hecho en Blender",
+     "summary": "«La mejor curita del mundo»: mi primer comercial, protagonizado por Pio, Iko y Mill, tres personajes que creé.",
+     "body": "Toda gran curita necesita un héroe. La mía necesitaba tres.\n\nPIM es un trío de personajes que nació de mi imaginación: Pio el pollito, Iko la oveja y Mill el gato. Juntos, sus nombres forman PIM, y son el comienzo de una serie que tengo en mente. Esta caja de curitas es su primer trabajo.\n\nFue mi primera vez haciendo un comercial. Dibujé los personajes, diseñé el empaque alrededor de ellos (frente, lados, la pestaña para colgar y hasta un código de barras), envolví el arte en una caja 3D en Blender y animé la revelación, con curitas saliendo volando de la caja.\n\nEl eslogan lo dice todo: «La mejor curita del mundo». Un pulgar arriba, una curita y cero raspones."
+    },
+    "zh": {
+     "title": "PIM 创可贴",
+     "tag": "第一支广告 · 原创角色 · Blender 制作",
+     "summary": "\"史上最好的创可贴\"：我的第一支广告，由我创作的 Pio、Iko 和 Mill 三个角色主演。",
+     "body": "每一片好创可贴都需要一位英雄，而我的需要三位。\n\nPIM 是我凭想象创作的三人组：小鸡 Pio、绵羊 Iko 和猫咪 Mill。三个名字合起来就是 PIM，他们也是我心中一部系列作品的开端。这盒创可贴是他们的第一份工作。\n\n这是我第一次制作广告。我画出角色，围绕他们设计包装（正面、侧面、挂钩片，甚至还有条形码），在 Blender 中把图案包裹到 3D 盒子上，并制作了开盒动画，让创可贴从盒子里飞出来。\n\n标语说明了一切：\"史上最好的创可贴\"。竖起大拇指，贴上一片，小伤小痛全都不见。"
+    }
+   }
   },
   {
    "id": "a2",
@@ -919,7 +1700,21 @@
      "stage": "3D render"
     }
    ],
-   "coverId": "images/iphone-render-1.jpg"
+   "coverId": "images/iphone-render-1.jpg",
+   "i18n": {
+    "es": {
+     "title": "Anuncio conceptual de iPhone",
+     "tag": "Anuncio 3D de producto · Concepto · Hecho en Blender",
+     "summary": "Un spot 3D de producto para un iPhone rosado, modelado, iluminado y animado en Blender.",
+     "body": "Un comercial corto de producto al estilo de un lanzamiento tecnológico: la cámara se desliza alrededor de un iPhone rosado en la oscuridad y revela el módulo de cámaras, los botones laterales, los bordes y el marco de la pantalla en una serie de primeros planos.\n\nModelé el teléfono, monté la iluminación de estudio y animé los movimientos de cámara en Blender. Es una pieza conceptual personal para practicar visualización de productos, no un anuncio encargado por Apple."
+    },
+    "zh": {
+     "title": "iPhone 概念广告",
+     "tag": "3D 产品广告 · 概念作品 · Blender 制作",
+     "summary": "一支为粉色 iPhone 制作的 3D 产品短片，在 Blender 中完成建模、打光和动画。",
+     "body": "一支科技发布会风格的产品短片：镜头在黑暗中环绕一部粉色 iPhone 滑动，通过一系列特写展示摄像头模组、侧边按键、机身边缘和屏幕边框。\n\n我在 Blender 中完成了手机建模、搭建棚拍灯光并制作镜头动画。这是一件用于练习产品可视化的个人概念作品，并非苹果公司委托的广告。"
+    }
+   }
   },
   {
    "id": "a3",
@@ -948,7 +1743,21 @@
      "kind": "image",
      "stage": "3D render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Anuncio conceptual del reloj Baby-G",
+     "tag": "Anuncio 3D de producto · Concepto · Hecho en Blender",
+     "summary": "Un spot 3D de producto para un reloj Baby-G blanco y dorado, de un giro lento en primer plano a su presentación en un estuche de regalo.",
+     "body": "Un comercial de producto para un reloj Baby-G blanco con bisel dorado y manecillas luminosas. La animación gira lentamente el reloj para mostrar la esfera, el bisel y el brazalete de eslabones, y las imágenes fijas lo presentan en un primer plano oscuro y dentro de un estuche de madera forrado de terciopelo azul.\n\nModelé el reloj, su brazalete y el estuche de presentación, y monté la iluminación y la animación de cámara en Blender. Es una pieza conceptual personal para practicar visualización de productos, no un anuncio encargado por Casio."
+    },
+    "zh": {
+     "title": "Baby-G 手表概念广告",
+     "tag": "3D 产品广告 · 概念作品 · Blender 制作",
+     "summary": "一支为白金配色 Baby-G 手表制作的 3D 产品短片，从缓慢旋转的特写到礼盒展示。",
+     "body": "一支白色 Baby-G 手表的产品广告，手表配有金色表圈和夜光指针。动画让手表缓缓旋转，展示表盘、表圈和链节表带；静态图则呈现暗调特写，以及手表躺在蓝色天鹅绒内衬木质礼盒中的画面。\n\n我在 Blender 中完成了手表、表带和展示盒的建模，并搭建灯光、制作镜头动画。这是一件用于练习产品可视化的个人概念作品，并非卡西欧委托的广告。"
+    }
+   }
   },
   {
    "id": "a4",
@@ -972,7 +1781,21 @@
      "kind": "image",
      "stage": "3D render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Anuncio conceptual Nerf Elite 2.3",
+     "tag": "Anuncio 3D de producto · Concepto · Hecho en Blender",
+     "summary": "Un spot 3D corto para un lanzador Nerf naranja y azul que termina disparando un dardo.",
+     "body": "Un comercial rápido para un lanzador de juguete: la cámara rodea el modelo «Elite 2.3» naranja y azul en un estudio limpio, y luego el lanzador dispara un dardo que cruza la pantalla.\n\nModelé el lanzador, el dardo y los detalles, y monté la iluminación y la animación en Blender. Es una pieza conceptual personal para practicar visualización de productos, no un anuncio encargado por Nerf ni Hasbro."
+    },
+    "zh": {
+     "title": "Nerf Elite 2.3 概念广告",
+     "tag": "3D 产品广告 · 概念作品 · Blender 制作",
+     "summary": "一支橙蓝配色 Nerf 发射器的 3D 产品短片，结尾发射出一枚软弹。",
+     "body": "一支玩具发射器的快节奏产品广告：镜头在简洁的摄影棚中环绕橙蓝配色的\"Elite 2.3\"模型，随后发射器射出一枚软弹，划过画面。\n\n我在 Blender 中完成了发射器、软弹和细节的建模，并搭建灯光、制作动画。这是一件用于练习产品可视化的个人概念作品，并非 Nerf 或孩之宝委托的广告。"
+    }
+   }
   },
   {
    "id": "an2",
@@ -1013,7 +1836,29 @@
      "kind": "image",
      "stage": "Character design"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "tag": "Animación de arte 2D · Serie original",
+     "summary": "Una serie animada protagonizada por Pio, Iko y Mill, tres personajes que creé y les di vida.",
+     "body": "Siempre quise crear mis propios personajes. En 2025 lo hice posible.\n\nPio el pollito, Iko la oveja y Mill el gato: tres personajes que salieron directamente de mi imaginación y a los que quise darles vida. Junta sus nombres y obtienes PIM.\n\nCreé PIM como una serie animada para YouTube y redes sociales. Hasta ahora he hecho 4 episodios, además de un short que presenta al trío. La serie está en pausa por ahora, pero los personajes están listos para más.\n\nLo que aprendí:\n• Cómo diseñar personajes desde cero, del primer boceto a un estilo consistente.\n• Qué hace a un buen personaje: una personalidad única y rasgos claros. Pio es alegre, Iko es indiferente y Mill es juguetón, y se nota antes de que digan una palabra.\n• Qué cautiva al público: en animaciones cortas como estas, las expresiones exageradas y dramáticas son las que dejan ver la personalidad de un personaje.",
+     "links": {
+      "https://www.youtube.com/channel/UCOBdLZuojNimDScZw_MrUfA": "Canal de YouTube de PIM",
+      "https://youtu.be/frOI_FOqxjM": "Ver todos los episodios",
+      "https://youtube.com/shorts/sUX2VXuhQY0": "Presentación de PIM (Short)"
+     }
+    },
+    "zh": {
+     "tag": "2D 美术动画 · 原创系列",
+     "summary": "一部由 Pio、Iko 和 Mill 主演的动画系列，三个角色都由我创作并赋予生命。",
+     "body": "我一直想创造属于自己的角色。2025 年，我做到了。\n\n小鸡 Pio、绵羊 Iko 和猫咪 Mill：三个直接来自我想象的角色，我想让他们活起来。把他们的名字放在一起，就是 PIM。\n\n我把 PIM 打造成面向 YouTube 和社交媒体的动画系列。目前我已经制作了 4 集，外加一支介绍三人组的短片。这个系列暂时停更，但角色们随时准备好迎接更多故事。\n\n我学到的：\n• 如何从零开始设计角色，从第一张草图到统一的造型。\n• 好角色的关键：独特的个性和鲜明的特点。Pio 开朗，Iko 一脸淡定，Mill 爱玩，还没开口你就能看出来。\n• 什么能吸引观众：在这样的短动画里，夸张而戏剧化的表情最能展现角色的个性。",
+     "links": {
+      "https://www.youtube.com/channel/UCOBdLZuojNimDScZw_MrUfA": "PIM 的 YouTube 频道",
+      "https://youtu.be/frOI_FOqxjM": "观看全部剧集",
+      "https://youtube.com/shorts/sUX2VXuhQY0": "PIM 介绍（短片）"
+     }
+    }
+   }
   },
   {
    "id": "an1",
@@ -1041,7 +1886,27 @@
      "kind": "image",
      "stage": "Render"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Animación del club Creatively",
+     "tag": "Animación de arte 2D",
+     "summary": "La historia detrás del logo del club Creatively: un pequeño bombillo que aprende a pensar fuera de la caja.",
+     "body": "Una animación de arte 2D que cuenta la historia detrás del logo del club Creatively, cuyo lema es «Piensa fuera de la caja».\n\nLa animación sigue a un pequeño bombillo luminoso y termina en el logo del club: el bombillo saltando de una caja abierta junto al nombre Creatively.",
+     "links": {
+      "https://youtu.be/BA6XbgSX7vY": "Ver la animación en YouTube"
+     }
+    },
+    "zh": {
+     "title": "Creatively 社团动画",
+     "tag": "2D 美术动画",
+     "summary": "Creatively 社团标志背后的故事：一个小灯泡学会跳出框框思考。",
+     "body": "一部 2D 美术动画，讲述 Creatively 社团标志背后的故事，社团的口号是\"跳出框框思考\"。\n\n动画跟随一个发光的小灯泡角色，最后定格在社团标志上：灯泡从打开的盒子里跳出来，旁边是 Creatively 的字标。",
+     "links": {
+      "https://youtu.be/BA6XbgSX7vY": "在 YouTube 上观看动画"
+     }
+    }
+   }
   },
   {
    "id": "s1",
@@ -1093,7 +1958,60 @@
      "time": "4:40 PM",
      "caption": "Finished: the koi inside a clear case with gold corners, like a tiny pond."
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Pez Koi",
+     "tag": "Primera escultura",
+     "summary": "Mi primera escultura: dos koi girando en un pequeño estanque, de la arcilla cruda a la pieza terminada en una tarde.",
+     "body": "Mi primer proyecto de escultura: dos peces koi, uno dorado y otro blanco con manchas rojas y negras, nadando uno alrededor del otro en un pequeño estanque verde.\n\nToda la pieza se hizo en un solo día, el 29 de diciembre de 2021. Dale play para seguirla paso a paso, desde la arcilla sin pintar poco antes del mediodía hasta la pieza terminada al final de la tarde.",
+     "media": {
+      "images/koi-1-clay.jpg": {
+       "caption": "Arcilla sin pintar: dando forma a los dos koi, sus aletas y la base del estanque."
+      },
+      "images/koi-2-first-color.jpg": {
+       "caption": "Primera capa de color: un koi dorado, un koi blanco y un estanque verde."
+      },
+      "images/koi-3-patterns.jpg": {
+       "caption": "Agregando las manchas rojo-naranja y las aletas."
+      },
+      "images/koi-4-details.jpg": {
+       "caption": "Manchas negras y un toque de brillantina en las escamas."
+      },
+      "images/koi-5-finished.jpg": {
+       "caption": "Terminado: los koi dentro de una caja transparente con esquinas doradas, como un pequeño estanque."
+      }
+     }
+    },
+    "zh": {
+     "title": "锦鲤",
+     "tag": "第一件雕塑",
+     "summary": "我的第一件雕塑：两条锦鲤在小池塘里游动，一个下午从陶土做到成品。",
+     "body": "我的第一个雕塑作品：两条锦鲤，一条金色，一条白底带红黑花纹，在绿色的小池塘里相互环绕游动。\n\n整件作品在一天之内完成，那天是 2021 年 12 月 29 日。点击播放，一步步看它从中午前的素坯变成傍晚时分的成品。",
+     "media": {
+      "images/koi-1-clay.jpg": {
+       "time": "上午 11:57",
+       "caption": "素坯：塑造两条锦鲤、鱼鳍和池塘底座。"
+      },
+      "images/koi-2-first-color.jpg": {
+       "time": "下午 2:27",
+       "caption": "第一层颜色：金色锦鲤、白色锦鲤和绿色池塘。"
+      },
+      "images/koi-3-patterns.jpg": {
+       "time": "下午 2:55",
+       "caption": "加上橙红色花纹和鱼鳍。"
+      },
+      "images/koi-4-details.jpg": {
+       "time": "下午 3:46",
+       "caption": "黑色斑点，鳞片上再撒一点闪粉。"
+      },
+      "images/koi-5-finished.jpg": {
+       "time": "下午 4:40",
+       "caption": "完成：锦鲤放进带金色包角的透明盒子里，像一个迷你池塘。"
+      }
+     }
+    }
+   }
   },
   {
    "id": "s2",
@@ -1144,7 +2062,65 @@
      "time": "June 18",
      "caption": "Finished: gold details, glitter and whiskers bring the dragon to life."
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Dragón",
+     "tag": "Escultura",
+     "summary": "Un dragón enroscado que se eleva desde una base azul, construido sobre un esqueleto de papel aluminio durante tres semanas.",
+     "body": "Un dragón que se enrosca hacia arriba desde una base azul con forma de olas, con melena dorada, escamas rojas y naranjas y largos bigotes.\n\nA diferencia de mi primera escultura, esta la planeé desde el principio. Dibujé el diseño el 12 de febrero y lo construí en mayo y junio: empezó como un esqueleto de papel aluminio retorcido, esa misma mañana lo cubrí de arcilla, y luego lo pinté y detallé capa por capa. Dale play para seguirlo del primer boceto a la pieza terminada.",
+     "media": {
+      "images/dragon-1-sketch.jpg": {
+       "time": "12 feb",
+       "caption": "El diseño original: un dragón enroscado entre nubes, planeado en dorado, rojo y brillantina dorada."
+      },
+      "images/dragon-2-armature.jpg": {
+       "time": "28 may · 10:13 a. m.",
+       "caption": "El esqueleto: papel aluminio retorcido con la forma sinuosa del dragón."
+      },
+      "images/dragon-3-clay.jpg": {
+       "time": "28 may · 12:29 p. m.",
+       "caption": "Dos horas después: cubierto de arcilla, con la cabeza, los cuernos, las garras y la base."
+      },
+      "images/dragon-4-painting.jpg": {
+       "time": "8 jun",
+       "caption": "Color: escamas rojas y naranjas, melena dorada y una base de mar azul."
+      },
+      "images/dragon-5-finished.jpg": {
+       "time": "18 jun",
+       "caption": "Terminado: detalles dorados, brillantina y bigotes le dan vida al dragón."
+      }
+     }
+    },
+    "zh": {
+     "title": "龙",
+     "tag": "雕塑",
+     "summary": "一条从蓝色底座盘旋而上的龙，用三周时间在铝箔骨架上塑造而成。",
+     "body": "一条从蓝色浪花底座盘旋而上的龙，有金色鬃毛、红橙色鳞片和长长的龙须。\n\n和我的第一件雕塑不同，这件作品从一开始就经过规划。我在 2 月 12 日画好设计图，并在 5 月和 6 月完成制作：先用铝箔拧出骨架，当天上午就覆上陶土，之后一层层上色、刻画细节。点击播放，从第一张草图一路看到成品。",
+     "media": {
+      "images/dragon-1-sketch.jpg": {
+       "time": "2 月 12 日",
+       "caption": "最初的设计：一条在云间盘旋的龙，计划用金色、红色和金色闪粉。"
+      },
+      "images/dragon-2-armature.jpg": {
+       "time": "5 月 28 日 · 上午 10:13",
+       "caption": "骨架：用铝箔拧成龙蜿蜒的身体。"
+      },
+      "images/dragon-3-clay.jpg": {
+       "time": "5 月 28 日 · 中午 12:29",
+       "caption": "两小时后：覆上陶土，做出头部、龙角、爪子和底座。"
+      },
+      "images/dragon-4-painting.jpg": {
+       "time": "6 月 8 日",
+       "caption": "上色：红橙色鳞片、金色鬃毛和蓝色海浪底座。"
+      },
+      "images/dragon-5-finished.jpg": {
+       "time": "6 月 18 日",
+       "caption": "完成：金色细节、闪粉和龙须让龙活了过来。"
+      }
+     }
+    }
+   }
   },
   {
    "id": "s3",
@@ -1188,7 +2164,57 @@
      "time": "June 10",
      "caption": "Finished: bright green, orange and red foliage covers the valley."
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Paisaje del Valle del Río",
+     "tag": "Paisaje",
+     "summary": "Un valle de río en miniatura con montañas, un puente de tablas, un velero y una pequeña aldea en una isla.",
+     "body": "Un paisaje en miniatura completo en lugar de una sola figura: un río que corre entre montañas, un gran árbol viejo, un puente de tablas de madera, un velero y una islita con casitas.\n\nLo bocetè el 30 de mayo como un reto personal y lo construí en cuatro días: primero esculpí todo el terreno en arcilla, luego pinté el agua y las rocas, y al final agregué follaje de colores para darle vida al valle. Dale play para verlo cambiar.",
+     "media": {
+      "images/scenery-1-sketch.jpg": {
+       "time": "30 may",
+       "caption": "El plan, dibujado como un «reto»: un paisaje al atardecer con tierra, un puente, un bote y casas tocando el agua."
+      },
+      "images/scenery-2-clay.jpg": {
+       "time": "7 jun · 5:16 p. m.",
+       "caption": "El terreno en arcilla sin pintar: las montañas, el árbol, el puente de tablas y el bote."
+      },
+      "images/scenery-3-painted.jpg": {
+       "time": "8 jun",
+       "caption": "Pintado: un río azul, rocas verdes con musgo y una aldea en la isla."
+      },
+      "images/scenery-4-finished.jpg": {
+       "time": "10 jun",
+       "caption": "Terminado: follaje verde, naranja y rojo cubre el valle."
+      }
+     }
+    },
+    "zh": {
+     "title": "河谷风景",
+     "tag": "风景",
+     "summary": "一座迷你河谷，有山峦、木板桥、帆船，以及岛上的小村庄。",
+     "body": "这次不是单个人物，而是一整片迷你风景：一条在群山间流淌的河、一棵古老的大树、一座木板桥、一艘帆船，还有一座建着小房子的小岛。\n\n我在 5 月 30 日把它画成草图，作为给自己的挑战，然后用四天完成：先用陶土塑出整个地形，再给水面和岩石上色，最后加上五彩的植被，让山谷活起来。点击播放，看看它的变化。",
+     "media": {
+      "images/scenery-1-sketch.jpg": {
+       "time": "5 月 30 日",
+       "caption": "计划图，标题写着\"挑战\"：黄昏时的风景，有陆地、桥、船和临水的房屋。"
+      },
+      "images/scenery-2-clay.jpg": {
+       "time": "6 月 7 日 · 下午 5:16",
+       "caption": "素坯地形：山峦、大树、木板桥和小船。"
+      },
+      "images/scenery-3-painted.jpg": {
+       "time": "6 月 8 日",
+       "caption": "上色后：蓝色的河、长满青苔的绿色岩石和岛上的村庄。"
+      },
+      "images/scenery-4-finished.jpg": {
+       "time": "6 月 10 日",
+       "caption": "完成：绿色、橙色和红色的植被覆盖了整座山谷。"
+      }
+     }
+    }
+   }
   },
   {
    "id": "s4",
@@ -1207,7 +2233,21 @@
      "kind": "image",
      "stage": "Finished piece"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Tigrecitos",
+     "tag": "Regalos hechos a mano",
+     "summary": "Seis tigrecitos esculpidos a mano, cada uno hecho para regalar.",
+     "body": "Un set de seis tigrecitos, cada uno esculpido y pintado a mano, con rayas naranjas, patitas blancas y un pequeño aro arriba para poder colgarlos.\n\nLos hice como regalos, y eso fue lo que más me enseñó: un regalo hecho con mis propias manos y mi esfuerzo vale mucho más que cualquier cosa comprada en una tienda."
+    },
+    "zh": {
+     "title": "小老虎",
+     "tag": "手工礼物",
+     "summary": "六只手工雕塑的小老虎，每一只都是为送人而做。",
+     "body": "一套六只小老虎，每一只都是手工捏制和上色的，有橙色条纹、白色小爪，顶部还有一个小挂环，可以挂起来。\n\n我把它们当作礼物送出，这件事让我学到最多：用自己的双手和心血做出的礼物，比任何在商店买来的东西都更有意义。"
+    }
+   }
   },
   {
    "id": "s5",
@@ -1244,7 +2284,49 @@
      "time": "Finished",
      "caption": "Finished: painted red roses and a blue-purple hummingbird covered in glitter."
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Colibrí y Rosas",
+     "tag": "Escultura",
+     "summary": "Un colibrí en pleno vuelo bebiendo de un ramo de rosas rojas, esculpido y pintado a mano.",
+     "body": "Un colibrí suspendido en el aire con las alas levantadas, con su pico largo y delgado metido en un ramo de rosas rojas y botones sobre una base verde de hojas.\n\nLo más difícil fueron las piezas delgadas y delicadas: los pétalos en capas, las alas abiertas y el pico. Una vez moldeada la arcilla, pinté las rosas de rojo, el pájaro en azules y morados, y terminé todo con brillantina para que brille con la luz. Lo diseñé el 30 de mayo y lo esculpí el 6 de junio. Dale play para seguirlo del boceto al color final.",
+     "media": {
+      "images/hummingbird-1-sketch.jpg": {
+       "time": "30 may",
+       "caption": "El diseño: el colibrí acercándose a las flores, con notas sobre colores y plantas."
+      },
+      "images/hummingbird-2-clay.jpg": {
+       "time": "6 jun",
+       "caption": "Arcilla sin pintar: el colibrí, las rosas y la base de hojas, antes de pintar."
+      },
+      "images/hummingbird-3-finished.jpg": {
+       "time": "Terminado",
+       "caption": "Terminado: rosas rojas pintadas y un colibrí azul y morado cubierto de brillantina."
+      }
+     }
+    },
+    "zh": {
+     "title": "蜂鸟与玫瑰",
+     "tag": "雕塑",
+     "summary": "一只在空中吸食红玫瑰花蜜的蜂鸟，手工雕塑并上色。",
+     "body": "一只振翅悬停的蜂鸟，细长的喙伸进一簇红玫瑰和花苞之中，底座是绿色的叶子。\n\n最难的是那些又薄又精细的部分：层层叠叠的玫瑰花瓣、张开的翅膀和鸟喙。陶土定型后，我把玫瑰涂成红色，把鸟涂成蓝紫色，最后撒上闪粉，让它在光下闪闪发亮。我在 5 月 30 日完成设计，6 月 6 日完成雕塑。点击播放，从草图一路看到最终上色。",
+     "media": {
+      "images/hummingbird-1-sketch.jpg": {
+       "time": "5 月 30 日",
+       "caption": "设计图：蜂鸟探向花朵，旁边写着颜色和植物的备注。"
+      },
+      "images/hummingbird-2-clay.jpg": {
+       "time": "6 月 6 日",
+       "caption": "素坯：上色前的蜂鸟、玫瑰和叶子底座。"
+      },
+      "images/hummingbird-3-finished.jpg": {
+       "time": "完成",
+       "caption": "完成：涂成红色的玫瑰和撒满闪粉的蓝紫色蜂鸟。"
+      }
+     }
+    }
+   }
   },
   {
    "id": "br1",
@@ -1340,7 +2422,57 @@
      "kind": "image",
      "stage": "Applications"
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Manual de Identidad MAIRIN",
+     "tag": "Sistema de identidad visual",
+     "summary": "El manual completo de identidad de marca de MAIRIN, una app de salud femenina: logo, colores, tipografía, íconos, UI y mockups.",
+     "body": "Un sistema completo de identidad visual para MAIRIN, una app de salud femenina que acompaña a las mujeres en cada etapa de su vida.\n\nEl manual de 42 páginas cubre la marca (quiénes somos, misión, visión, ADN de marca y público objetivo), el moodboard, el logo y su simbolismo, la construcción, las variaciones de color y las versiones en positivo y negativo, los usos correctos e incorrectos, el área de respeto y los tamaños mínimos, la tipografía y los colores corporativos, los íconos propios, el sistema visual UI/UX (campos, tarjetas, botones) y mockups en ropa, papelería, botellas, bolsas y la propia app.",
+     "links": {
+      "files/MAIRIN-Identity-Manual-EN.pdf": "Manual de identidad (PDF, inglés)",
+      "files/MAIRIN-Identity-Manual-ES.pdf": "Manual de identidad (PDF, español)"
+     },
+     "media": {
+      "images/mairin-manual-main-logos.jpg": {
+       "caption": "Logos principales"
+      },
+      "images/mairin-manual-color-variations.jpg": {
+       "caption": "Variaciones de color"
+      },
+      "images/mairin-manual-positive-negative.jpg": {
+       "caption": "Versiones en positivo y negativo"
+      },
+      "images/mairin-manual-typography.jpg": {
+       "caption": "Tipografía corporativa"
+      }
+     }
+    },
+    "zh": {
+     "title": "MAIRIN 品牌识别手册",
+     "tag": "视觉识别系统",
+     "summary": "女性健康应用 MAIRIN 的完整品牌识别手册：标志、配色、字体、图标、界面与样机。",
+     "body": "为 MAIRIN 打造的完整视觉识别系统。MAIRIN 是一款陪伴女性走过人生每个阶段的女性健康应用。\n\n这本 42 页的手册涵盖：品牌（我们是谁、使命、愿景、品牌基因和目标受众）、情绪板、标志及其寓意、标志构成、色彩变化与正负形版本、正确与错误用法、安全空间与最小尺寸、企业字体与配色、定制图标、UI/UX 视觉系统（输入框、卡片、按钮），以及在服装、文具、水瓶、手提袋和应用本身上的样机展示。",
+     "links": {
+      "files/MAIRIN-Identity-Manual-EN.pdf": "品牌识别手册（PDF，英文）",
+      "files/MAIRIN-Identity-Manual-ES.pdf": "品牌识别手册（PDF，西班牙文）"
+     },
+     "media": {
+      "images/mairin-manual-main-logos.jpg": {
+       "caption": "主标志"
+      },
+      "images/mairin-manual-color-variations.jpg": {
+       "caption": "色彩变化"
+      },
+      "images/mairin-manual-positive-negative.jpg": {
+       "caption": "正负形版本"
+      },
+      "images/mairin-manual-typography.jpg": {
+       "caption": "企业字体"
+      }
+     }
+    }
+   }
   },
   {
    "id": "t1",
@@ -1383,7 +2515,49 @@
      "time": "Tinkercad",
      "caption": "The same file in Tinkercad, placed on the build plate as a printer would see it."
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "Figura de la Virgen María",
+     "tag": "Impresión 3D · Un regalo de agradecimiento",
+     "summary": "Una figura modelada en Blender y probada como .stl para impresión 3D, hecha como regalo de agradecimiento.",
+     "body": "Una figura de la Virgen María, modelada en Blender y preparada como archivo .stl para impresión 3D: un velo blanco suave con borde dorado, una aureola y un corazón rojo.\n\nLa hice como regalo para una persona muy importante en mi vida, alguien que me ha apoyado muchísimo. Con esta pieza quiero mostrarle cuánto he avanzado y darle las gracias.\n\nEsta figura fue un proceso de prueba y error. Mi primer intento salió muy mal, pero aprendí de él, y así fue como aprendí a modelar personas en 3D. Esta versión es el resultado de empezar de nuevo con lo que me enseñó ese primer intento.\n\nTodavía no tengo una impresora 3D, así que probé el archivo como lo leería una impresora. Exporté el modelo desde Blender como .stl y lo abrí en Fusion y Tinkercad para comprobar que la malla se mantiene unida. Esas pruebas mostraron dónde la geometría aún necesita trabajo, sobre todo en la cara, antes de estar lista para imprimir. Dale play para seguir el proceso.",
+     "links": {
+      "https://drive.google.com/drive/folders/17EWn1K_AjD48LKI-Zxi4EYukAjvu29RC?usp=sharing": "Archivos del proyecto (Google Drive)"
+     },
+     "media": {
+      "images/virgin-mary-render.jpg": {
+       "caption": "El render final en Blender: velo, aureola y corazón."
+      },
+      "images/virgin-mary-fusion.jpg": {
+       "caption": "El .stl exportado abierto en Fusion para revisar la malla como un solo sólido."
+      },
+      "images/virgin-mary-tinkercad.jpg": {
+       "caption": "El mismo archivo en Tinkercad, colocado en la placa de impresión como lo vería una impresora."
+      }
+     }
+    },
+    "zh": {
+     "title": "圣母玛利亚雕像",
+     "tag": "3D 打印 · 一份感谢的礼物",
+     "summary": "一尊在 Blender 中建模、并以 .stl 文件测试 3D 打印的雕像，作为感谢的礼物。",
+     "body": "一尊圣母玛利亚雕像，在 Blender 中建模，并准备成用于 3D 打印的 .stl 文件：柔软的白色头纱镶着金边，头顶有光环，胸前是一颗红心。\n\n我把它做成礼物，送给我生命中一位非常重要的人，她一直给予我很多支持。我想通过这件作品让她看到我的成长，也向她说声谢谢。\n\n这尊雕像是不断试错的过程。我的第一次尝试做得非常糟糕，但我从中吸取了教训，也正是这样学会了用 3D 塑造人物。现在这个版本，是我带着第一次的经验重新开始的成果。\n\n我还没有 3D 打印机，所以我用打印机读取文件的方式来测试它。我把模型从 Blender 导出为 .stl，在 Fusion 和 Tinkercad 中打开，检查网格是否完整。这些检查显示出几何结构仍有需要改进的地方，特别是脸部，之后才能打印。点击播放，跟着看整个过程。",
+     "links": {
+      "https://drive.google.com/drive/folders/17EWn1K_AjD48LKI-Zxi4EYukAjvu29RC?usp=sharing": "项目文件（Google Drive）"
+     },
+     "media": {
+      "images/virgin-mary-render.jpg": {
+       "caption": "Blender 中的最终渲染：头纱、光环和红心。"
+      },
+      "images/virgin-mary-fusion.jpg": {
+       "caption": "在 Fusion 中打开导出的 .stl，把网格当作一个实体来检查。"
+      },
+      "images/virgin-mary-tinkercad.jpg": {
+       "caption": "同一个文件在 Tinkercad 中放到打印平台上，模拟打印机看到的样子。"
+      }
+     }
+    }
+   }
   },
   {
    "id": "l1",
@@ -1415,11 +2589,56 @@
      "stage": "Final render",
      "caption": "Close view from inside the field."
     }
-   ]
+   ],
+   "i18n": {
+    "es": {
+     "title": "OVNI Alienígena Abduciendo una Vaca",
+     "tag": "Escena · Low poly",
+     "summary": "Un diorama low poly de noche: un platillo volador eleva a una vaca de un campo cercado mientras el rebaño observa.",
+     "body": "Un diorama low poly hecho en Blender: un cuadrado de campo flotando bajo un cielo nocturno estrellado, con una cerca de madera, pinos facetados y rocas como cristales. Un platillo volador flota entre dos nubes cuadradas y eleva a una vaca por los aires, mientras el resto del rebaño se reúne alrededor del punto de luz para mirar.\n\nLa escena se muestra desde tres ángulos de cámara: desde arriba, de frente y desde una vista baja y cercana dentro del campo.",
+     "media": {
+      "images/ufo-cow-front.jpg": {
+       "caption": "Vista frontal."
+      },
+      "images/ufo-cow-top.jpg": {
+       "caption": "Vista desde arriba."
+      },
+      "images/ufo-cow-close.jpg": {
+       "caption": "Vista cercana desde dentro del campo."
+      }
+     }
+    },
+    "zh": {
+     "title": "外星飞碟绑架奶牛",
+     "tag": "场景 · 低多边形",
+     "summary": "一个夜晚的低多边形微缩场景：飞碟把一头奶牛从围栏草地里吸上天，牛群在一旁围观。",
+     "body": "在 Blender 中制作的低多边形微缩场景：一块漂浮在星空下的方形草地，有木围栏、多边形松树和水晶般的岩石。一架飞碟悬停在两朵方块云之间，把一头奶牛吸到空中，其余的牛群聚在发光的光圈周围看热闹。\n\n场景从三个镜头角度展示：俯视、正面，以及在草地里的低角度近景。",
+     "media": {
+      "images/ufo-cow-front.jpg": {
+       "caption": "正面视角。"
+      },
+      "images/ufo-cow-top.jpg": {
+       "caption": "俯视视角。"
+      },
+      "images/ufo-cow-close.jpg": {
+       "caption": "从草地内部的近景视角。"
+      }
+     }
+    }
+   }
   }
  ],
  "site": {
   "title": "Ashley Lin · Portfolio",
-  "logo": "images/alf-logo.png"
- }
+  "logo": "images/alf-logo.png",
+  "i18n": {
+   "es": {
+    "title": "Ashley Lin · Portafolio"
+   },
+   "zh": {
+    "title": "Ashley Lin · 作品集"
+   }
+  }
+ },
+ "i18nSeed": 1
 }
