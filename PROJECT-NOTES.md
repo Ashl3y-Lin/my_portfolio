@@ -5,7 +5,7 @@
 >
 > **For the AI reading this:** this file explains how the site works and where we left off. The repository is the source of truth. Read `data.json` for the current content before suggesting changes.
 
-Last updated: October 2026.
+Last updated: 29 October 2026.
 
 ---
 
@@ -16,10 +16,10 @@ Ashley Lin's personal portfolio: all her creative and tech projects. Hosted free
 - **Sections:**
   - **Blender:** the biggest focus. Categories: 3D style, 2D visual, Low poly.
   - **3D Production:** Sculpting, 3D printing.
-  - **Branding**
+  - **Branding:** MAIRIN Identity Manual, Creatively Art Club Identity Manual.
   - **Animation**
   - **Advertising**
-  - **Projects:** MAIRIN, AquaMotriz, Vitalia, Reviste, ANS Robotics website.
+  - **Projects:** MAIRIN, AquaMotriz, Vitalia, Reviste, ANS Robotics website, Creatively Art Club (with a big button to the club website).
 - **Look:**
   - Her color palette: white background, blush `#F5F0F4`, mauve `#886C7B`, slate/navy `#2A3744`, blue-gray.
   - Sans-serif fonts: Archivo (titles), Figtree (text), Barlow Condensed (small labels), Noto Sans SC (Chinese).
@@ -32,7 +32,7 @@ Ashley Lin's personal portfolio: all her creative and tech projects. Hosted free
 | --- | --- |
 | `index.html` | The whole website **and** the built-in editor (HTML, CSS and JavaScript in one file) |
 | `data.json` | All content: profile, sections, projects, links, image lists, translations |
-| `i18n.json` | Ready-made Spanish and Chinese translations, merged in once (see §5) |
+| `i18n.json` | Ready-made translations and new projects, merged in once (see §5) |
 | `images/` | Images, GIFs, logo, favicon |
 | `files/` | PDFs (MAIRIN identity manuals in English and Spanish, Reviste report) |
 | `README.md` | Step-by-step instructions for Ashley (setup, editing, PIN, languages) |
@@ -69,11 +69,16 @@ projects: [{id, section, group, title, year, tag, summary, body, award,
 
 Any field without a translation shows the English text.
 
+A link with `"big": true` shows as a large button on the card and at the top of the project window. Editor: tick **Big button** next to the link.
+
 ## 5. Languages
 
 - Visitors pick **EN · ES · 中文**. The choice is remembered, first-time visitors get their browser's language, and links can use `?lang=es` or `?lang=zh`.
 - **New text is not translated automatically.** Ashley adds it in EN, then switches to ES or 中文, clicks Edit, and types the translation. Or she pastes the English to an AI and copies the result back in.
-- `i18n.json` was a one-time seed. It is merged on load until `data.json` has `i18nSeed: 1`. A seed translation is only used while the English text still matches the text it was translated from.
+- `i18n.json` is a one-time seed, merged on load until `data.json` has the same `i18nSeed` number as the seed's `version`.
+  - Version 1 holds the translations. A seed translation is only used while the English text still matches the text it was translated from.
+  - Version 2 adds new projects (`add`), with their translations included: the Creatively brand manual and the Creatively Art Club project. A project is only added if its id isn't already there.
+  - This lets new content be shipped without overwriting Ashley's live `data.json`. To add more content this way, bump `version` and add to `add`.
 
 ## 6. Facts to keep correct
 

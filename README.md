@@ -8,6 +8,7 @@ Personal portfolio website, hosted on GitHub Pages, with a built-in editor prote
 | --- | --- |
 | `index.html` | The website and the editor |
 | `data.json` | All your text, projects, sections and links |
+| `i18n.json` | Ready-made Spanish and Chinese translations, used until your first save |
 | `images/` | Every image, GIF, logo and favicon |
 | `files/` | PDFs (MAIRIN identity manuals, Reviste report) |
 | `.nojekyll` | Tells GitHub Pages to publish the files as they are |
@@ -45,7 +46,7 @@ The editor needs a key that lets it write to this one repository.
    - edit your profile, photo, logo and the browser tab title
    - add, edit, reorder and delete projects
    - upload images, GIFs and videos, and group them into stages
-   - add links and upload PDFs
+   - add links and upload PDFs (tick **Big button** to show an important link as a large button)
    - add, rename, reorder and delete sections and categories
 3. Click **Save & publish**. Your site updates for everyone in about a minute.
 
@@ -57,3 +58,11 @@ The editor needs a key that lets it write to this one repository.
 - Every save is a normal GitHub commit, so you can see and undo any change in the repository's history.
 - **Lost a device or forgot your PIN?** Delete the key on GitHub (**Settings → Personal access tokens**) and create a new one. Then, on the site, choose **Forgot PIN?** and set it up again.
 - **When the key expires,** saving will tell you. Create a new key and use **Forgot PIN?** to enter it.
+
+## Languages (English, Español, 中文)
+
+- Visitors switch language with **EN · ES · 中文** at the top right. The site remembers their choice, and first-time visitors get their browser's language.
+- You can share a link in one language: add `?lang=es` or `?lang=zh` to the address.
+- **To edit a translation,** switch to ES or 中文, unlock with your PIN and edit as usual. The editor shows a note saying which language you're editing; empty fields show the English text.
+- Year, links, images and stages are shared by all languages. Add or remove categories in EN.
+- If you change the English text of a project, its ready-made translation stops showing (so visitors never see an old translation) until you write a new one in that language.

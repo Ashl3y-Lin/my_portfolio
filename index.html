@@ -314,6 +314,22 @@ html[lang="zh-Hans"] .eyebrow,html[lang="zh-Hans"] .steps .st,html[lang="zh-Hans
 .lang[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
 .lang:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 @media (max-width:720px){.langs{margin-left:auto}.lang{padding:4px 7px;font-size:12.5px}}
+.biglink{display:flex;align-items:center;gap:14px;text-decoration:none;background:var(--accent);color:var(--on-accent);border-radius:14px;padding:16px 20px;box-shadow:0 6px 18px -8px rgba(42,55,68,.45);transition:transform .15s ease, box-shadow .15s ease}
+.biglink:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(42,55,68,.55)}
+.biglink:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.biglink .bl-text{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+.biglink .bl-label{font-family:var(--f-display);font-weight:700;font-size:19px;line-height:1.2}
+.biglink .bl-url{font-size:13px;opacity:.85;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.biglink .bl-arrow{flex:none;width:40px;height:40px;border-radius:50%;background:var(--on-accent);color:var(--accent);display:grid;place-items:center;font-size:20px;font-weight:700}
+.biglinks{display:flex;flex-direction:column;gap:10px}
+.card .biglink{padding:11px 14px;border-radius:10px;gap:10px;margin-top:2px}
+.card .biglink .bl-label{font-size:15.5px}
+.card .biglink .bl-arrow{width:30px;height:30px;font-size:16px}
+.band .card .biglink{background:var(--band-accent);color:var(--band);box-shadow:none}
+.band .card .biglink .bl-arrow{background:var(--band);color:var(--band-accent)}
+.check.mini{font-size:13px;gap:6px;white-space:nowrap}
+.linkrow.has-big{grid-template-columns:1fr 1.4fr auto auto}
+@media (max-width:720px){.linkrow.has-big{grid-template-columns:1fr}}
 .lang-note{margin:0;padding:10px 12px;border-radius:8px;background:var(--tint);color:var(--ink);font-size:14px}
 </style>
 </head>
@@ -370,7 +386,9 @@ function langSwitch(){
 /* Ready-made translations (i18n.json). Merged once; after the owner saves, they live in data.json.
    A translation is only used if the English text is still the one it was translated from. */
 function mergeSeed(d, seed){
-  if (!seed || !d || (d.i18nSeed||0) >= (seed.version||1)) return false;
+  const from = (d && d.i18nSeed)||0;
+  if (!seed || !d || from >= (seed.version||1)) return false;
+  if (from < 1){
   for (const p of d.projects||[]){ const fx = seed.baseFix && seed.baseFix[p.id]; if (fx && p[fx.field]===fx.old) p[fx.field] = fx.new }
   const same = (a,b)=>JSON.stringify(a)===JSON.stringify(b);
   const put = (o, lng, vals, en)=>{
@@ -394,6 +412,16 @@ function mergeSeed(d, seed){
       for (const g of s.groups||[]) put(g, lng, v[lng].groups && v[lng].groups[g.id], v.en && v.en.groups && v.en.groups[g.id]);
     }
     for (const p of d.projects||[]){ const v = seed.projects && seed.projects[p.id]; if (v) put(p, lng, v[lng], v.en) }
+  }
+  }
+  // new projects (added once; after that they are yours to edit or delete)
+  d.projects = d.projects||[];
+  for (const np of seed.add||[]){
+    if (from >= (np.since||2) || d.projects.some(p=>p.id===np.id)) continue;
+    if (!(d.sections||[]).some(x=>x.id===np.section)) continue;
+    const p = JSON.parse(JSON.stringify(np)); delete p.since;
+    let at = -1; d.projects.forEach((x,i)=>{ if (x.section===p.section) at = i });
+    if (at < 0) d.projects.push(p); else d.projects.splice(at+1, 0, p);
   }
   d.i18nSeed = seed.version||1;
   return true;
@@ -587,6 +615,7 @@ function card(pr){
     h('h3',{}, h('button',{onclick:()=>openProject(pr)}, tr(pr,'title')||t('Untitled'))),
     pr.award ? h('div',{class:'award',text:tr(pr,'award')}) : null,
     pr.summary ? h('p',{text:tr(pr,'summary')}) : null,
+    bigLinks(pr, true),
     editing ? h('div',{class:'tools'},
       h('button',{class:'btn small',onclick:()=>openProjectEditor(pr)},'Edit'),
       h('button',{class:'btn small',disabled:sidx===0,'aria-label':'Move earlier',onclick:()=>move(pr,-1)},'↑'),
@@ -622,8 +651,17 @@ function dialog(content){
   document.body.append(d); d.showModal(); return d;
 }
 
+function bigLinks(pr, compact){
+  const ls = (pr.links||[]).filter(l=>l.url && l.big);
+  if (!ls.length) return null;
+  const host = u=>{ try{ const x = new URL(u, location.href); return x.host + x.pathname.replace(/\/$/,'') }catch(e){ return u } };
+  const one = l=>h('a',{class:'biglink',href:l.url,target:'_blank',rel:'noopener'},
+    h('span',{class:'bl-text'}, h('span',{class:'bl-label',text:trLink(pr,l)||l.url}), compact ? null : h('span',{class:'bl-url',text:host(l.url)})),
+    h('span',{class:'bl-arrow','aria-hidden':'true'},'↗'));
+  return compact ? one(ls[0]) : h('div',{class:'biglinks'}, ls.map(one));
+}
 function linkList(pr){
-  const ls = (pr.links||[]).filter(l=>l.url);
+  const ls = (pr.links||[]).filter(l=>l.url && !l.big);
   if (pr.link && !ls.some(l=>l.url===pr.link)) ls.unshift({label:t('Project link'),url:pr.link});
   if (!ls.length) return null;
   return h('div',{class:'plinks'}, ls.map(l=>h('a',{href:l.url,target:'_blank',rel:'noopener'}, (trLink(pr,l)||l.url)+' ↗')));
@@ -678,6 +716,7 @@ function openProject(pr){
     h('div',{class:'dlg-head'},
       h('div',{}, h('div',{class:'meta'}, h('span',{text:tr(s,'title')}), pr.year?h('span',{text:'· '+pr.year}):null, pr.tag?h('span',{text:'· '+tr(pr,'tag')}):null), h('h2',{text:tr(pr,'title')})),
       h('button',{class:'x','aria-label':t('Close'),onclick:()=>d.close()},'×')),
+    bigLinks(pr),
     (pr.body||pr.summary) ? h('p',{class:'body',text:tr(pr,'body')||tr(pr,'summary')}) : null,
     pr.award ? h('div',{class:'award big',text:tr(pr,'award')}) : null,
     linkList(pr),
@@ -769,7 +808,8 @@ function openProjectEditor(pr, sectionId, groupId){
       const a=h('input',{class:'mini',value:(LX?l._t:l.label)||'',placeholder:(LX&&l.label)||'Label (Video, Behance, Website…)','aria-label':'Link label'});
       const b=h('input',{class:'mini',value:l.url||'',placeholder:'https://…','aria-label':'Link URL'});
       a.oninput=()=>{ if (LX) l._t=a.value; else l.label=a.value }; b.oninput=()=>l.url=b.value.trim();
-      return h('div',{class:'linkrow'}, a, b, h('button',{type:'button',class:'btn small',onclick:()=>{draft.links.splice(i,1);drawLinks()}},'Remove'));
+      const big=h('input',{type:'checkbox'}); big.checked=!!l.big; big.onchange=()=>{ if (big.checked) l.big=true; else delete l.big };
+      return h('div',{class:'linkrow has-big'}, a, b, h('label',{class:'check mini',title:'Show this link as a big button'}, big, 'Big button'), h('button',{type:'button',class:'btn small',onclick:()=>{draft.links.splice(i,1);drawLinks()}},'Remove'));
     }));
   }
   drawLinks();
