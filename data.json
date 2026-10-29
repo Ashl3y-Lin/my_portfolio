@@ -460,6 +460,12 @@
    "link": "",
    "media": [
     {
+     "id": "images/screenshot-2026-10-29-at-1-09-35-pm-44fkc.png",
+     "kind": "image",
+     "name": "Screenshot 2026-10-29 at 1.09.35 PM.png",
+     "stage": "Applications"
+    },
+    {
      "id": "images/cccreatively-5hq9h.png",
      "kind": "image",
      "name": "Cccreatively.png",
@@ -468,9 +474,21 @@
    ],
    "group": "",
    "links": [],
-   "award": "",
+   "award": "A club that started in highschool",
    "coverPos": "",
-   "process": false
+   "process": false,
+   "i18n": {
+    "zh": {
+     "media": {
+      "images/screenshot-2026-10-29-at-1-09-35-pm-44fkc.png": {
+       "caption": "Creatively Improved logo"
+      }
+     },
+     "links": {},
+     "award": "A club that started in highschool"
+    }
+   },
+   "coverId": ""
   },
   {
    "id": "b1",
