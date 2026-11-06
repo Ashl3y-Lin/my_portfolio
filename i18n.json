@@ -1,5 +1,5 @@
 {
- "version": 2,
+ "version": 3,
  "add": [
   {
    "id": "creatively-brand",
@@ -184,6 +184,129 @@
       },
       "images/creatively-site-events.jpg": {
        "caption": "我们的活动，比如秋季嘉年华上的海盗主题摊位。"
+      }
+     }
+    }
+   }
+  }
+ ],
+ "update": [
+  {
+   "id": "l1",
+   "since": 3,
+   "set": {
+    "title": "UFO Kidnap Cows",
+    "year": "2026",
+    "tag": "Scene · Low poly · Free download",
+    "summary": "My first published low poly scene: a UFO kidnaps a cow from a farm while the other cows look on, puzzled.",
+    "body": "A small night-time farm diorama: a UFO abducting a cow. Modeled low poly with flat shading.\n\nThis is my first published low poly work. The story: a UFO is kidnapping a cow from the farm, while the other cows stand around, puzzled about what is happening.\n\nTriangles: 13,286\nVertices: 6,818\nObjects: 42\nMade in: Blender 4.3 (opens in Blender 4.3 or newer)\nRender: Cycles\n\nYou can download the files and the full work for free on Gumroad.",
+    "award": "",
+    "link": "",
+    "process": false,
+    "coverId": "images/ufo-kidnap-cows-turntable.gif",
+    "coverPos": "center",
+    "links": [
+     {
+      "label": "Download the files for free (Gumroad)",
+      "url": "https://piomill.gumroad.com/l/UFOKidnapCows",
+      "big": true
+     }
+    ],
+    "media": [
+     {
+      "id": "images/ufo-kidnap-cows-turntable.gif",
+      "kind": "image",
+      "stage": "Final render",
+      "caption": "A full turn around the diorama."
+     },
+     {
+      "id": "images/ufo-kidnap-cows-hero.jpg",
+      "kind": "image",
+      "stage": "Final render",
+      "caption": "Three-quarter view: the UFO beams a cow up while the herd watches."
+     },
+     {
+      "id": "images/ufo-kidnap-cows-close.jpg",
+      "kind": "image",
+      "stage": "Final render",
+      "caption": "Low view from inside the field, looking up at the beam."
+     },
+     {
+      "id": "images/ufo-kidnap-cows-top.jpg",
+      "kind": "image",
+      "stage": "Final render",
+      "caption": "View from above."
+     },
+     {
+      "id": "images/ufo-kidnap-cows-side.jpg",
+      "kind": "image",
+      "stage": "Final render",
+      "caption": "Side view of the farm."
+     },
+     {
+      "id": "images/ufo-kidnap-cows-clay.jpg",
+      "kind": "image",
+      "stage": "Process",
+      "caption": "Clay render: the models without color, showing the low poly shapes."
+     }
+    ],
+    "i18n": {
+     "es": {
+      "title": "OVNI Secuestra Vacas",
+      "tag": "Escena · Low poly · Descarga gratis",
+      "summary": "Mi primera escena low poly publicada: un OVNI secuestra una vaca de una granja mientras las demás vacas miran, desconcertadas.",
+      "body": "Un pequeño diorama de una granja de noche: un OVNI abduciendo una vaca. Modelado en low poly con sombreado plano.\n\nEs mi primer trabajo low poly publicado. La historia: un OVNI está secuestrando una vaca de la granja, mientras las demás vacas la rodean, desconcertadas, sin entender qué está pasando.\n\nTriángulos: 13,286\nVértices: 6,818\nObjetos: 42\nHecho en: Blender 4.3 (se abre en Blender 4.3 o posterior)\nRender: Cycles\n\nPuedes descargar los archivos y el trabajo completo gratis en Gumroad.",
+      "links": {
+       "https://piomill.gumroad.com/l/UFOKidnapCows": "Descarga los archivos gratis (Gumroad)"
+      },
+      "media": {
+       "images/ufo-kidnap-cows-turntable.gif": {
+        "caption": "Una vuelta completa alrededor del diorama."
+       },
+       "images/ufo-kidnap-cows-hero.jpg": {
+        "caption": "Vista en tres cuartos: el OVNI eleva una vaca mientras el rebaño observa."
+       },
+       "images/ufo-kidnap-cows-close.jpg": {
+        "caption": "Vista baja desde dentro del campo, mirando hacia el rayo."
+       },
+       "images/ufo-kidnap-cows-top.jpg": {
+        "caption": "Vista desde arriba."
+       },
+       "images/ufo-kidnap-cows-side.jpg": {
+        "caption": "Vista lateral de la granja."
+       },
+       "images/ufo-kidnap-cows-clay.jpg": {
+        "caption": "Render en arcilla: los modelos sin color, mostrando las formas low poly."
+       }
+      }
+     },
+     "zh": {
+      "title": "飞碟绑架奶牛",
+      "tag": "场景 · 低多边形 · 免费下载",
+      "summary": "我第一个公开发布的低多边形场景：飞碟正从农场绑走一头奶牛，其他奶牛一脸困惑地看着。",
+      "body": "一个小小的夜晚农场微缩场景：飞碟正在绑架一头奶牛。采用低多边形建模和平面着色。\n\n这是我第一个公开发布的低多边形作品。故事是这样的：一架飞碟正从农场里绑走一头奶牛，其他奶牛围在旁边，一脸困惑，不知道发生了什么。\n\n三角面：13,286\n顶点：6,818\n物体：42\n制作软件：Blender 4.3（需用 Blender 4.3 或更新版本打开）\n渲染器：Cycles\n\n你可以在 Gumroad 上免费下载文件和完整作品。",
+      "links": {
+       "https://piomill.gumroad.com/l/UFOKidnapCows": "免费下载文件（Gumroad）"
+      },
+      "media": {
+       "images/ufo-kidnap-cows-turntable.gif": {
+        "caption": "环绕微缩场景旋转一整圈。"
+       },
+       "images/ufo-kidnap-cows-hero.jpg": {
+        "caption": "四分之三视角：飞碟把一头奶牛吸上天，牛群在一旁围观。"
+       },
+       "images/ufo-kidnap-cows-close.jpg": {
+        "caption": "从草地内部的低角度仰望光束。"
+       },
+       "images/ufo-kidnap-cows-top.jpg": {
+        "caption": "俯视视角。"
+       },
+       "images/ufo-kidnap-cows-side.jpg": {
+        "caption": "农场侧面视角。"
+       },
+       "images/ufo-kidnap-cows-clay.jpg": {
+        "caption": "白模渲染：去掉颜色的模型，展现低多边形的造型。"
+       }
       }
      }
     }

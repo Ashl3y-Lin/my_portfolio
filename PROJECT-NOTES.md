@@ -5,7 +5,7 @@
 >
 > **For the AI reading this:** this file explains how the site works and where we left off. The repository is the source of truth. Read `data.json` for the current content before suggesting changes.
 
-Last updated: 29 October 2026.
+Last updated: 5 November 2026.
 
 ---
 
@@ -78,7 +78,8 @@ A link with `"big": true` shows as a large button on the card and at the top of 
 - `i18n.json` is a one-time seed, merged on load until `data.json` has the same `i18nSeed` number as the seed's `version`.
   - Version 1 holds the translations. A seed translation is only used while the English text still matches the text it was translated from.
   - Version 2 adds new projects (`add`), with their translations included: the Creatively brand manual and the Creatively Art Club project. A project is only added if its id isn't already there.
-  - This lets new content be shipped without overwriting Ashley's live `data.json`. To add more content this way, bump `version` and add to `add`.
+  - Version 3 (`update`) replaces the low poly UFO project (id `l1`) once: new title "UFO Kidnap Cows", new images, stats, and a big Gumroad download button (https://piomill.gumroad.com/l/UFOKidnapCows).
+  - This lets new content be shipped without overwriting Ashley's live `data.json`. To add more content this way, bump `version` and add to `add` (new projects) or `update` (replace fields of an existing project).
 
 ## 6. Facts to keep correct
 
@@ -97,3 +98,5 @@ A link with `"big": true` shows as a large button on the card and at the top of 
 - [ ] Idea: auto-resize uploaded images to about 2000 px to keep the site light.
 - [ ] Idea: if the GitHub token has expired, keep unsaved changes instead of losing them.
 - Limits to remember (GitHub Pages): about 1 GB site size, 100 GB/month bandwidth, about 10 publishes per hour.
+
+- Low poly pieces each get a big **download** button to the free files on Gumroad (store: piomill.gumroad.com).

@@ -423,6 +423,12 @@ function mergeSeed(d, seed){
     let at = -1; d.projects.forEach((x,i)=>{ if (x.section===p.section) at = i });
     if (at < 0) d.projects.push(p); else d.projects.splice(at+1, 0, p);
   }
+  // replaced projects (applied once)
+  for (const up of seed.update||[]){
+    if (from >= (up.since||3)) continue;
+    const p = d.projects.find(x=>x.id===up.id); if (!p) continue;
+    Object.assign(p, JSON.parse(JSON.stringify(up.set)));
+  }
   d.i18nSeed = seed.version||1;
   return true;
 }
