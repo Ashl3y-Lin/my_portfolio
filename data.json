@@ -2771,6 +2771,10 @@
      "label": "Download the files for free (Gumroad)",
      "url": "https://ashpim.gumroad.com/l/UFOKidnapCows",
      "big": true
+    },
+    {
+     "label": "Sketchfab",
+     "url": "https://skfb.ly/pPZ9P"
     }
    ],
    "media": [
@@ -2874,7 +2878,7 @@
    "award": "",
    "process": false,
    "coverId": "images/ufo-kidnap-cows-turntable.gif",
-   "coverPos": "center"
+   "coverPos": ""
   }
  ],
  "site": {
