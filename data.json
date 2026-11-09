@@ -424,7 +424,31 @@
    ],
    "award": "Diorama",
    "coverPos": "",
-   "process": false
+   "process": false,
+   "i18n": {
+    "es": {
+     "media": {},
+     "tag": "Escena · Low poly · Descarga gratis",
+     "links": {
+      "https://ashpim.gumroad.com/l/Canyon_Camp_PIM_Ash": "Descarga en Gumroad"
+     },
+     "summary": "Un cañón desértico flotante con un pequeño campamento. Modelado en low poly con sombreado plano.",
+     "body": "Triángulos: 19,224\nVértices:   11,742\nObjetos:    71 (68 mallas, 1 luz, 1 cámara, 1 pivote de giro)\nHecho en:   Blender 4.3 (se abre en Blender 4.3 o posterior)\nRender:     Cycles",
+     "award": "Diorama",
+     "title": "Campamento del Cañón"
+    },
+    "zh": {
+     "media": {},
+     "title": "峡谷营地 (Xiágǔ Yíngdì)",
+     "tag": "场景 · 低多边形 · 免费下载",
+     "summary": "一座漂浮的沙漠峡谷，里面有一个小营地 。采用低多边形（Low Poly）风格与平面着色建模。",
+     "body": "三角面：19,224\n顶点：  11,742\n物体：  71（68 个网格、1 盏灯光、1 台摄像机、1 个转台轴心）\n制作软件：Blender 4.3（可在 Blender 4.3 或更新版本中打开）\n渲染器：  Cycles",
+     "award": "场景模型（Diorama）",
+     "links": {
+      "https://ashpim.gumroad.com/l/Canyon_Camp_PIM_Ash": "在 Gumroad 下载"
+     }
+    }
+   }
   },
   {
    "id": "p1",
