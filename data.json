@@ -369,6 +369,44 @@
  ],
  "projects": [
   {
+   "id": "pmw9sjrkkta5o",
+   "section": "blender",
+   "title": "Canyon Camp",
+   "tag": "Scene · Low poly · Free download",
+   "year": "2026",
+   "summary": "A floating desert canyon with a small camp. Modeled low poly with flat shading.",
+   "body": "Triangles: 19,224\nVertices:  11,742\nObjects:   71 (68 meshes, 1 light, 1 camera, 1 turntable pivot)\nMade in:   Blender 4.3 (opens in Blender 4.3 or newer)\nRender:    Cycles",
+   "link": "",
+   "media": [
+    {
+     "id": "images/canyon-camp-turnable-oqh6w.gif",
+     "kind": "image",
+     "name": "Canyon_Camp_Turnable.gif",
+     "stage": "Process",
+     "caption": "Canyon_gif"
+    },
+    {
+     "id": "images/render-canyon-camp-beauty3-8qc8r.png",
+     "kind": "image",
+     "name": "Render_Canyon Camp_Beauty3.png",
+     "stage": "Process",
+     "caption": "Canyon_Zoomed in"
+    },
+    {
+     "id": "images/render-canyon-camp-beauty2-q6tfp.png",
+     "kind": "image",
+     "name": "Render_Canyon Camp_Beauty2.png",
+     "stage": "Process",
+     "caption": "Canyon_side"
+    }
+   ],
+   "group": "lowpoly",
+   "links": [],
+   "award": "",
+   "coverPos": "",
+   "process": false
+  },
+  {
    "id": "p1",
    "section": "projects",
    "title": "MAIRIN",
