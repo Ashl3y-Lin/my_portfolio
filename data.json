@@ -398,6 +398,12 @@
      "name": "Render_Canyon Camp_Beauty2.png",
      "stage": "Process",
      "caption": "Canyon_side"
+    },
+    {
+     "id": "images/render-canyon-camp-clay-5bthu.png",
+     "kind": "image",
+     "name": "Render_Canyon Camp_Clay.png",
+     "stage": "Process"
     }
    ],
    "group": "lowpoly",
